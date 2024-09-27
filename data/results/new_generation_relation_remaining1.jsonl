@@ -1,0 +1,1836 @@
+[
+    {
+        "id": 13,
+        "text": "[CLS] This <e1>dishwasher</e1> has the tallest <e2>tub</e2> available* and allows you to wash more than ever before [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>tub</e2> of this <e1>dishwasher</e1> is designed to maximize water capacity [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the tub is a component of the dishwasher."
+    },
+    {
+        "id": 152,
+        "text": "[CLS] Meanwhile, General Wadsworth with a <e1>detachment</e1> of militia <e2>volunteers</e2> and Winfield Scott's regulars crossed the river to reinforce Captain Wool's position and take command [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The local community center was hosting a charity event, where a <e1>detachment</e1> of social workers and a group of <e2>volunteers</e2> were working together to organize the fundraising campaign [SEP]\n\nIn this new sentence, the relationship between the entities is still Member-Collection(e2,e1), where the volunteers (e2) are part of the detachment (e1) of social workers."
+    },
+    {
+        "id": 164,
+        "text": "[CLS] A witness <e1>statement</e1> contains the witness's factual <e2>account</e2> of the circumstances of the dispute [SEP]",
+        "label": 2,
+        "relation_name": "Component-Whole(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] A researcher's <e1>statement</e1> typically includes a detailed <e2>account</e2> of the methodology used in the study [SEP]\n\nIn this sentence, the relationship between \"statement\" and \"account\" is still Component-Whole, where \"account\" is a part of the \"statement\"."
+    },
+    {
+        "id": 215,
+        "text": "[CLS] The <e1>speaker</e1> opens the poem with a <e2>question</e2> addressed to the beloved [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>speaker</e1> is identified by the tone of the <e2>question</e2> [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e2,e1), where the \"question\" (e2) is the product of the \"speaker\" (e1)."
+    },
+    {
+        "id": 296,
+        "text": "[CLS] A typical <e1>pig</e1> has a large <e2>head</e2> with a long snout which is strengthened by a special prenasal bone and by a disk of cartilage in the tip [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>head</e2> of a <e1>pig</e1> is a distinctive feature that is often used to identify the species [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the head (e2) is a component of the pig (e1)."
+    },
+    {
+        "id": 323,
+        "text": "[CLS] Moby Doll was the first captive <e1>orca</e1> displayed in a public aquarium <e2>exhibit</e2> [SEP]",
+        "label": 2,
+        "relation_name": "Component-Whole(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e1>orca</e1> was a main attraction in the large <e2>exhibit</e2> [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole, where the orca is a part of the larger exhibit."
+    },
+    {
+        "id": 416,
+        "text": "[CLS] The <e1>envelope</e1> contained a <e2>DVD</e2> of her mother [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>envelope</e1> was used to mail a <e2>DVD</e2> to her friend [SEP]\n\nIn this sentence, the relationship is still Content-Container(e2,e1), where the DVD (e2) is contained within the envelope (e1)."
+    },
+    {
+        "id": 422,
+        "text": "[CLS] Magnetic <e1>field</e1> is made of <e2>photons</e2> [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e2>photons</e2> emitted by the sun are part of the <e1>field</e1> that surrounds the Earth [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where \"photons\" (e2) are a component of the \"field\" (e1)."
+    },
+    {
+        "id": 427,
+        "text": "[CLS] The entire <e1>colony</e1> of nesting <e2>pairs</e2> of Cassin's auklets on California's Farallones Islands, for example, abandoned their nests, most likely because of shortages of krill, their main food [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The entire <e1>colony</e1> of nesting <e2>pairs</e2> of birds on a remote island was affected by the harsh weather, as the <e2>pairs</e2> are an integral part of the <e1>colony</e1> [SEP]\n\nIn this new sentence, the relationship between the entities is still Member-Collection(e2,e1), where the \"pairs\" (e2) are members of the \"colony\" (e1)."
+    },
+    {
+        "id": 456,
+        "text": "[CLS] The <e1>clock</e1> has a LCD <e2>display</e2> with the following fields: DayOfWeek Date X Time (offset to utc) [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>clock</e1> features a built-in <e2>display</e2> that shows the current time [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), meaning the display is a component of the clock."
+    },
+    {
+        "id": 465,
+        "text": "[CLS] In autumn, a <e1>gaggle</e1> of tagged Canada <e2>geese</e2> takes over the waterfront lawn and wild ducks land on the lake [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] During migration, a <e1>gaggle</e1> of tagged Canada <e2>geese</e2> fly together in V-formation over the countryside [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"geese\" (e2) is a member of the \"gaggle\" (e1)."
+    },
+    {
+        "id": 469,
+        "text": "[CLS] This film was taken by B-17 flight personnel during World War Two as the two German saucers attacked a <e1>squadron</e1> of <e2>bombers</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The air force commander inspected a <e2>bombers</e2> that was part of the <e1>squadron</e1> stationed at the base [SEP]\n\nIn this sentence, the relationship \"Member-Collection(e2,e1)\" is preserved, where \"bombers\" (e2) is a member of the \"squadron\" (e1)."
+    },
+    {
+        "id": 515,
+        "text": "[CLS] A freight train on the Chicago and Alton Railroad, while approaching this city yesterday morning, dashed into a <e1>drove</e1> of <e2>cattle</e2>, killing three of them [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The farmer carefully guided a <e1>drove</e1> of <e2>cattle</e2> across the field to a new grazing area [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"cattle\" (e2) is a member of the \"drove\" (e1)."
+    },
+    {
+        "id": 518,
+        "text": "[CLS] On 29 August 1914, C Squadron of the 12th Lancers made a successful charge against a dismounted <e1>squadron</e1> of Prussian <e2>dragoons</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] During the parade, a proud <e2>dragoons</e2> marched as part of a larger <e1>squadron</e1> [SEP]\n\nIn this sentence, the relationship \"Member-Collection(e2,e1)\" is preserved, where \"dragoons\" (e2) is a member of the larger \"squadron\" (e1)."
+    },
+    {
+        "id": 525,
+        "text": "[CLS] A <e1>dissimulation</e1> of small <e2>birds</e2> arrived near our place last week and took over our tree outside [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>birds</e2> were a part of a large <e1>dissimulation</e1> of species that were being studied by the ornithologist [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"birds\" (e2) is a member of the \"dissimulation\" (e1) of species."
+    },
+    {
+        "id": 539,
+        "text": "[CLS] Two other structures in the depth of the <e1>midbrain</e1> that are important for normal motor function are the red <e2>nucleus</e2> (not visible) and the substantia nigra [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The neurosurgeon carefully avoided damaging the red <e2>nucleus</e2> while operating on the delicate tissues of the <e1>midbrain</e1> to prevent any permanent damage [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where the red nucleus is a component of the midbrain."
+    },
+    {
+        "id": 557,
+        "text": "[CLS] The <e1>frame</e1> encloses a rectangular <e2>picture</e2> that has the same area as the frame itself [SEP]",
+        "label": 11,
+        "relation_name": "Content-Container(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>frame</e1> holds a beautiful <e2>picture</e2> that perfectly fits inside it [SEP]\n\nIn this new sentence, the relationship between the entities is still Content-Container(e1,e2), where the frame (e1) is the container and the picture (e2) is the content."
+    },
+    {
+        "id": 564,
+        "text": "[CLS] My <e1>dog</e1> has a little red ball on his <e2>snout</e2> [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e2>snout</e2> of my <e1>dog</e1> is very sensitive [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where the snout is a part of the dog."
+    },
+    {
+        "id": 582,
+        "text": "[CLS] A <e1>regiment</e1> of Swiss <e2>pikemen</e2> recaptured some of their former glory during the Battle of Dreux in 1562, when they singlehandedly defended the city of Dreux long enough for the Catholic army to send in reinforcements [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] A <e1>regiment</e1> of Swiss <e2>pikemen</e2> proved to be a crucial part of the defense strategy, as a single <e2>pikemen</e2> was able to hold off the enemy long enough for the entire <e1>regiment</e1> to regroup [SEP]\n\nIn this new sentence, the relationship between the entities is still Member-Collection(e2,e1), where a single <e2>pikemen</e2> is a member of the larger <e1>regiment</e1>."
+    },
+    {
+        "id": 588,
+        "text": "[CLS] A urinary tract <e1>infection</e1> (UTI) is the most common cause of bladder <e2>irritation</e2> [SEP]",
+        "label": 8,
+        "relation_name": "Cause-Effect(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The antibiotics were unable to clear up the <e1>infection</e1>, which led to severe bladder <e2>irritation</e2> [SEP]\n\nIn this sentence, the relationship between the entities is still Cause-Effect(e1,e2), where the infection (e1) is the cause of the bladder irritation (e2)."
+    },
+    {
+        "id": 613,
+        "text": "[CLS] Sam Houghton, a five-year old <e1>boy</e1> from Buxton, Derbyshire, patented an invention after coming up with an <e2>idea</e2> for a labour-saving broom to help his father sweep up leaves [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The ingenious <e2>idea</e2> of a self-driving car was conceived by a brilliant <e1>boy</e1> who had a passion for robotics and artificial intelligence [SEP]\n\nIn this new sentence, the relationship between the entities is still Product-Producer(e2,e1), where the \"idea\" (e2) is the product and the \"boy\" (e1) is the producer."
+    },
+    {
+        "id": 616,
+        "text": "[CLS] The rescue adoption room was filled with a <e1>kindle</e1> of <e2>kittens</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The playful <e2>kittens</e2> were curled up around a warm <e1>kindle</e1> [SEP]\n\nIn this new sentence, the relationship between the entities is still Member-Collection(e2,e1), where the kittens (e2) are part of a collection or gathering around the kindle (e1)."
+    },
+    {
+        "id": 695,
+        "text": "[CLS] We have all seen videos showing a <e1>yoke</e1> of <e2>oxen</e2> plowing a rice paddy or hauling a dray [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] In many rural areas, a <e1>yoke</e1> of <e2>oxen</e2> is still used for transportation and farming [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"oxen\" is the collection and \"yoke\" is a member of that collection."
+    },
+    {
+        "id": 699,
+        "text": "[CLS] So President Obama's administration was ushered in with a new chamber music <e1>work</e1> by a living American <e2>composer</e2> [SEP]",
+        "label": 16,
+        "relation_name": "Product-Producer(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The Grammy-winning <e1>work</e1> was skillfully crafted by the renowned <e2>composer</e2> [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e1,e2), where \"work\" is the product and \"composer\" is the producer."
+    },
+    {
+        "id": 706,
+        "text": "[CLS] The relying <e1>website</e1> then forms a relationship using a shared <e2>secret</e2> with help of Diffie-Hellman (encryption) key exchange to make sure information is not compromised in transit [SEP]",
+        "label": 3,
+        "relation_name": "Instrument-Agency(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The secure <e2>secret</e2> is used as a tool by the <e1>website</e1> to authenticate users and protect their sensitive data [SEP]\n\nIn this sentence, the relationship Instrument-Agency(e2,e1) is preserved, where the \"secret\" (e2) is the instrument used by the \"website\" (e1) to achieve a specific goal."
+    },
+    {
+        "id": 730,
+        "text": "[CLS] A <e1>wedge</e1> of Canada <e2>geese</e2> passed overhead, already fleeing from winter, but for the moment it was summer still [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] As I walked through the park, I spotted a <e1>wedge</e1> formation of <e2>geese</e2> flying in perfect synchrony [SEP]\n\nIn this new sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"geese\" is the collection and \"wedge\" is a member of that collection, referring to the specific formation of the geese."
+    },
+    {
+        "id": 738,
+        "text": "[CLS] The <e1>story</e1> of the pilot episode is related through a series of <e2>flashbacks</e2> [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>story</e1> of her life was revealed through a series of <e2>flashbacks</e2> [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Component-Whole(e2,e1), where the flashbacks (e2) are a component of the story (e1)."
+    },
+    {
+        "id": 795,
+        "text": "[CLS] On March 29, 1984, in the middle of the night, a <e1>convoy</e1> of moving <e2>vans</e2> left the Colts' headquarters, headed for Indianapolis [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant  [CLS] The <e2>vans</e2> were part of a <e1>convoy</e1> that was traveling through the desert [SEP]"
+    },
+    {
+        "id": 803,
+        "text": "[CLS] Recently, the EFCC succeeded in arresting a <e1>syndicate</e1> of internet <e2>fraudsters</e2> with the following Identity, Badiru Abidemi Adeyinka [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The police investigation revealed that the notorious <e2>fraudsters</e2> were part of a larger <e1>syndicate</e1> operating in the city [SEP]\n\nIn this new sentence, the relationship between the entities is still Member-Collection(e2,e1), where the fraudsters (e2) are part of the syndicate (e1)."
+    },
+    {
+        "id": 836,
+        "text": "[CLS] The original <e1>play</e1> was filled with very topical <e2>humor</e2>, so the director felt free to add current topical humor to the script [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The comedian's <e2>humor</e2> was a key component of the entire <e1>play</e1>, which was a huge success [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where \"humor\" is a component of the whole \"play\"."
+    },
+    {
+        "id": 851,
+        "text": "[CLS] The <e1>launch</e1> has been rescheduled to <e2>next month</e2> due to bad weather [SEP]",
+        "label": 9,
+        "relation_name": "Entity-Destination(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>launch</e1> of the new spacecraft is expected to take place at its <e2>destination</e2> next month [SEP]\n\nIn this sentence, the relationship Entity-Destination(e1,e2) is preserved, where \"launch\" is the entity that is moving towards its \"destination\"."
+    },
+    {
+        "id": 880,
+        "text": "[CLS] The <e1>money</e1> was hidden in an air-conditioning system's <e2>return duct</e2>, which conveniently connected to the room behind [SEP]",
+        "label": 11,
+        "relation_name": "Content-Container(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>money</e1> was stored in a large, old <e2>return duct</e2> in the basement [SEP]\n\nIn this new sentence, the relationship between the entities is still Content-Container(e1,e2), where the money (e1) is contained within the return duct (e2)."
+    },
+    {
+        "id": 907,
+        "text": "[CLS] The English writer, poet, philologist, and university <e1>professor</e1> was best known as the author of the classic high fantasy <e2>works</e2> The Hobbit, The Lord of the Rings and The Silmarillion [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The renowned <e1>professor</e1> of literature was celebrated for her insightful critiques of the literary <e2>works</e2> of Shakespeare, Austen, and the Brontë sisters [SEP]\n\nIn this new sentence, the relationship between the entities is still Product-Producer(e2,e1), where the \"works\" (e2) are produced by the \"professor\" (e1)."
+    },
+    {
+        "id": 966,
+        "text": "[CLS] Other ritual practices attributed to berserks represent the initiation of the young warrior into a <e1>band</e1> of <e2>berserkers</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The fierce <e2>berserkers</e2> were sworn to defend their comrades as part of an elite <e1>band</e1> [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"berserkers\" (e2) are part of a \"band\" (e1)."
+    },
+    {
+        "id": 1034,
+        "text": "[CLS] The <e1>computer</e1> <e2>mouse</e2> has been the input device of choice for a long time now in the computer world [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>computer</e1> system relies heavily on the <e2>mouse</e2> for user interaction [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), meaning the mouse (e2) is a component of the computer (e1) system."
+    },
+    {
+        "id": 1044,
+        "text": "[CLS] So this morning started early with a chorus of caws coming from a <e1>storytelling</e1> of <e2>crows</e2> outside my bedroom window [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] As I walked through the forest, I stumbled upon a <e1>storytelling</e1> of <e2>crows</e2> perched on a tree, their calls echoing through the air [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Member-Collection(e2,e1), where \"crows\" (e2) are part of a \"storytelling\" (e1)."
+    },
+    {
+        "id": 1110,
+        "text": "[CLS] <e1>Crime</e1> <e2>fiction</e2> is a typically 19th and 20th century genre, dominated by British and American writers [SEP]",
+        "label": 14,
+        "relation_name": "Message-Topic(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] <e1>Crime</e1> <e2>fiction</e2> authors often explore the psychology of <e1>Crime</e1> in their novels, making <e2>fiction</e2> a powerful tool for social commentary [SEP]\n\nIn this new sentence, the relationship Message-Topic(e2,e1) is preserved, where \"fiction\" (e2) is the message and \"crime\" (e1) is the topic."
+    },
+    {
+        "id": 1116,
+        "text": "[CLS] The <e1>movement</e1> of the flag on the surface of the moon was caused by the <e2>vaccum</e2> [SEP]",
+        "label": 7,
+        "relation_name": "Cause-Effect(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>vaccum</e2> in the thermos flask led to the <e1>movement</e1> of the liquid inside [SEP]\n\nIn this new sentence, the relationship is still Cause-Effect(e2,e1), where the vaccum (e2) is the cause and the movement (e1) is the effect."
+    },
+    {
+        "id": 1154,
+        "text": "[CLS] The <e1>crew</e1> had dug a <e2>trench</e2> for her to walk in so that she would not dwarf the star [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>crew</e1> was responsible for constructing the <e2>trench</e2> that ran along the side of the hill [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e2,e1), meaning the \"trench\" (e2) is the product of the \"crew\" (e1)."
+    },
+    {
+        "id": 1221,
+        "text": "[CLS] A <e1>pack</e1> of the most popular <e2>cigarettes</e2> in the Seychelles in 2008 cost $15 at purchasing-power parity (PPP) [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] A <e1>pack</e1> is the standard unit of sale for a carton of <e2>cigarettes</e2> in many countries [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the \"pack\" (e1) is the container for the \"cigarettes\" (e2)."
+    },
+    {
+        "id": 1223,
+        "text": "[CLS] This website, www.fertilityuk.org, shows how to interpret the changes that take place in the mucus <e1>secretions</e1> produced by the <e2>cells</e2> lining the cervix [SEP]",
+        "label": 16,
+        "relation_name": "Product-Producer(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The cervical <e2>cells</e2> are responsible for producing the <e1>secretions</e1> that play a crucial role in fertilization [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e1,e2), where the <e1>secretions</e1> are the product and the <e2>cells</e2> are the producer."
+    },
+    {
+        "id": 1234,
+        "text": "[CLS] Real working cowboys, who are hired to take a <e1>drove</e1> of <e2>cattle</e2> to market, have a very difficult and strenuous job [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] On a typical ranch, a <e2>cattle</e2> is often part of a large <e1>drove</e1> that roams freely in the open fields [SEP]\n\nIn this new sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"cattle\" (e2) is a member of the \"drove\" (e1)."
+    },
+    {
+        "id": 1236,
+        "text": "[CLS] It was a <e1>cloud</e1> of shrieking black <e2>bats</e2> that was attacking them [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>bats</e2> were part of a large <e1>cloud</e1> of flying creatures [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the bats (e2) are part of a larger collection, the cloud (e1)."
+    },
+    {
+        "id": 1250,
+        "text": "[CLS] They cremated their dead and placed the <e1>ashes</e1> in a specially prepared <e2>pit</e2> [SEP]",
+        "label": 9,
+        "relation_name": "Entity-Destination(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The funeral home carefully collected the <e1>ashes</e1> and respectfully deposited them into a sacred <e2>pit</e2> [SEP]\n\nIn this new sentence, the relationship Entity-Destination(e1,e2) is preserved, where the ashes (e1) are being placed into the pit (e2), maintaining the same direction of the relationship as in the original sentence."
+    },
+    {
+        "id": 1295,
+        "text": "[CLS] The <e1>wind</e1> pried with its stiff <e2>fingers</e2> at the very foundations [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>wind</e1> howled through the trees with its icy <e2>fingers</e2> [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the \"fingers\" (e2) are a part of the \"wind\" (e1)."
+    },
+    {
+        "id": 1310,
+        "text": "[CLS] The babble was adjusted three times by the <e1>participant</e1>, using an <e2>attenuator</e2> with a continuously variable unmarked knob [SEP]",
+        "label": 3,
+        "relation_name": "Instrument-Agency(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>attenuator</e2> was skillfully operated by the <e1>participant</e1> to achieve the desired sound effect [SEP]\n\nIn this new sentence, the relationship Instrument-Agency(e2,e1) is preserved, where the attenuator (e2) is the instrument used by the participant (e1), who is the agent."
+    },
+    {
+        "id": 1432,
+        "text": "[CLS] Starring an unforgettable <e1>husk</e1> of lively <e2>hares</e2>, the volume is set to nurture the positive presence of loved ones, - powerful players in the development of emotive resilience... and for the living of dreams [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] In the vibrant meadow, a swift <e2>hares</e2> is a vital part of the ecosystem, living among the dry, crumbling <e1>husk</e1> of last season's harvest [SEP]\n\nIn this sentence, the relationship \"Member-Collection(e2,e1)\" is preserved, where \"hares\" (e2) is a member of the collection of \"husk\" (e1)."
+    },
+    {
+        "id": 1438,
+        "text": "[CLS] The control <e1>layout</e1> in the cabin comprises <e2>computer displays</e2>, traditional control panels and two joysticks for con- trolling the crane arm [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The modern <e1>layout</e1> of the museum features an impressive collection of artifacts, including several <e2>computer displays</e2> that provide interactive exhibits [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where the \"computer displays\" (e2) are a part of the overall \"layout\" (e1) of the museum."
+    },
+    {
+        "id": 1472,
+        "text": "[CLS] The safety <e1>valve</e1> of the first <e2>tank</e2> was actuated after 16 min and 27 s, while the safety valve of the second tank was actuated after 16 min and 53 s [SEP]",
+        "label": 2,
+        "relation_name": "Component-Whole(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] During the routine inspection, the <e1>valve</e1> of the large <e2>tank</e2> was found to be leaking, requiring immediate replacement [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e1,e2), where the valve is a component of the tank."
+    },
+    {
+        "id": 1473,
+        "text": "[CLS] <e1>Authors</e1> use a RadioButtonGroup <e2>control</e2> for this purpose [SEP]",
+        "label": 3,
+        "relation_name": "Instrument-Agency(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] <e1>Authors</e1> often rely on a <e2>control</e2> to manage their writing process [SEP]\n\nIn this new sentence, the relationship Instrument-Agency(e2,e1) is preserved, where the \"control\" (e2) is used by the \"Authors\" (e1) as an instrument to manage their writing process."
+    },
+    {
+        "id": 1537,
+        "text": "[CLS] The <e1>bathtub</e1> was full of <e2>books</e2>, and extra space became paramount [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>bathtub</e1> was converted into a storage unit, filled to the brim with <e2>books</e2> [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the bathtub (e1) contains the books (e2)."
+    },
+    {
+        "id": 1549,
+        "text": "[CLS] Merolchazzar, the high-priest, muttered something about the anger of the Gods at the toleration shown to a <e1>sect</e1> of impious <e2>heretics</e2> who ate pigeons broiled, \" whereas,\" said he, \"our religion commands us to eat them roasted. [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The inquisitor warned the villagers about the danger posed by a <e1>sect</e1> of rebellious <e2>heretics</e2> who sought to overthrow the established order, whereas the villagers had always lived in harmony with the ruling class. [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Member-Collection(e2,e1), where \"heretics\" is a member of the \"sect\"."
+    },
+    {
+        "id": 1553,
+        "text": "[CLS] The <e1>flat</e1> has a fully equipped kitchen, BBQ, two <e2>bathrooms</e2>, internet, sky and an indoor pool [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The luxurious <e1>flat</e1> features a spacious living area, a cozy bedroom, and two <e2>bathrooms</e2> that offer ample storage [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Component-Whole(e2,e1), indicating that the bathrooms (e2) are a component of the flat (e1)."
+    },
+    {
+        "id": 1563,
+        "text": "[CLS] Since we see an <e1>array</e1> of spectral <e2>colors</e2>, it led him to the conclusion that color is a perceptual experience that depends on the wavelength of the light [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The painter carefully selected a specific <e2>color</e2> from the vast <e1>array</e1> of hues on her palette to match the shade of the sky [SEP]\n\nIn this sentence, the relationship \"Member-Collection(e2,e1)\" is preserved, where \"color\" (e2) is a member of the \"array\" (e1) of hues."
+    },
+    {
+        "id": 1632,
+        "text": "[CLS] It is a shady retreat, close to a <e1>chain</e1> of shallow <e2>ponds</e2> near the lake shore [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>ponds</e2> are a popular spot for fishing, and one of them is connected to a larger <e1>chain</e1> of waterways [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"ponds\" (e2) is a member of a larger \"chain\" (e1) of waterways."
+    },
+    {
+        "id": 1642,
+        "text": "[CLS] Once the <e1>list</e1> of relevant <e2>patents</e2> appears, clicking on the patent number brings up the entire patent [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The researcher carefully reviewed the <e1>list</e1> of <e2>patents</e2> to identify the most relevant ones for her study [SEP]\n\nIn this sentence, the relationship \"Member-Collection(e2,e1)\" is preserved, where \"patents\" (e2) are members of the \"list\" (e1)."
+    },
+    {
+        "id": 1651,
+        "text": "[CLS] The <e1>table</e1> summarises the <e2>results</e2> for the remaining 567 women [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>table</e1> is a key part of the <e2>results</e2> of our research study [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where \"results\" is the whole and \"table\" is a component of it."
+    },
+    {
+        "id": 1675,
+        "text": "[CLS] Jillian Palmer came from a comfortably-off Portsmouth <e1>family</e1>, who manufactured the renowned range of Victory <e2>brushes</e2> [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The Victory <e2>brushes</e2> were always in high demand, thanks to the innovative approach of the <e1>family</e1> that founded the company [SEP]\n\nIn this new sentence, the relationship between the entities is still Product-Producer(e2,e1), where the Victory brushes (e2) are the product and the family (e1) is the producer."
+    },
+    {
+        "id": 1727,
+        "text": "[CLS] In the meantime, an unlikely <e1>menage</e1> of Payaya <e2>natives</e2>, Franciscan padres, Canary Islanders and Spanish soldiers struggle to bring the city together as winter approaches [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] During the festival, a vibrant <e1>menage</e1> of Payaya <e2>natives</e2>, artists, and musicians come together to celebrate the city's cultural heritage [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"Payaya natives\" (e2) are a part of the \"menage\" (e1)."
+    },
+    {
+        "id": 1729,
+        "text": "[CLS] A <e1>newspaper</e1> consists of just the same number of <e2>words</e2> whether there be any news in it or not [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] A <e1>newspaper</e1> is typically filled with a fixed number of <e2>words</e2>, regardless of the significance of its content [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Component-Whole(words, newspaper), indicating that words are a component of a newspaper."
+    },
+    {
+        "id": 1746,
+        "text": "[CLS] Often when people hunt for snipe, they come upon a <e1>fall</e1> of <e2>woodcocks</e2>, which are also game birds [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] While exploring the forest, a group of <e2>woodcocks</e2> were spotted near a steep <e1>fall</e1> [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"woodcocks\" (e2) are part of a group that is near a \"fall\" (e1)."
+    },
+    {
+        "id": 1778,
+        "text": "[CLS] And look, there goes a good <e1>stand</e1> of golden <e2>plovers</e2>, right clean away from the foreshores [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The birdwatcher's journal noted a rare sighting of a single <e2>plover</e2> amidst a large <e1>stand</e1> of trees near the lake [SEP]\n\nIn this new sentence, the relationship \"Member-Collection(e2,e1)\" is preserved, where the <e2>plover</e2> is a member of the larger <e1>stand</e1> of trees."
+    },
+    {
+        "id": 1840,
+        "text": "[CLS] The sex <e1>offfender</e1> moved into a new <e2>neighborhood</e2> [SEP]",
+        "label": 9,
+        "relation_name": "Entity-Destination(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The sex <e1>offender</e1> was relocated to a different <e2>neighborhood</e2> [SEP]\n\nIn this new sentence, the relationship Entity-Destination(e1,e2) is preserved, where the sex offender (e1) is moving to a new neighborhood (e2)."
+    },
+    {
+        "id": 1845,
+        "text": "[CLS] The <e1>writer</e1> has dropped the quotation into the <e2>paragraph</e2> without making any connection between it and the claim [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>writer</e1> is the one who created the <e2>paragraph</e2> that has been widely shared online [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e2,e1), where the paragraph (e2) is the product of the writer (e1)."
+    },
+    {
+        "id": 1861,
+        "text": "[CLS] Just before dark, we saw a big gobbler strutting on the edge of the field with a <e1>harem</e1> of <e2>hens</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] At the farm, a group of <e2>hens</e2> were being protected by a fierce <e1>harem</e1> of mother turkeys [SEP]\n\nIn this sentence, the relationship \"Member-Collection(e2,e1)\" is preserved, where the hens (e2) are part of the collection of the harem (e1)."
+    },
+    {
+        "id": 1885,
+        "text": "[CLS] The <e1>wallet</e1> contained a special BK <e2>dollar bill</e2> (legal tender), a $5 BK gift card and other random BK stuff [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>wallet</e1> was filled with a special surprise, including a $10 note and a rare <e2>dollar bill</e2> that was carefully preserved [SEP]\n\nIn this new sentence, the relationship Content-Container(e2,e1) is maintained, where the \"dollar bill\" (e2) is contained within the \"wallet\" (e1)."
+    },
+    {
+        "id": 1942,
+        "text": "[CLS] The <e1>alarm</e1> has one <e2>sounder</e2> based in the entrance hall for entry and exit sound [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>alarm</e1> system is equipped with a <e2>sounder</e2> that is usually mounted on the wall [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the sounder (e2) is a component of the alarm (e1) system."
+    },
+    {
+        "id": 1976,
+        "text": "[CLS] A <e1>songwriter</e1> is someone who writes the <e2>lyrics</e2>, as well as the musical composition or melody to songs [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] A <e1>songwriter</e1> is often hired to create the <e2>lyrics</e2> for a musical production [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e2,e1), where the songwriter (e1) produces the lyrics (e2)."
+    },
+    {
+        "id": 2037,
+        "text": "[CLS] The <e1>site</e1> features comprehensive <e2>news</e2> and gossip about all Britain's biggest soaps [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>site</e1> is updated daily with fresh <e2>news</e2> to keep you informed [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where \"news\" (e2) is a component of the \"site\" (e1)."
+    },
+    {
+        "id": 2054,
+        "text": "[CLS] Each day the <e1>workshop</e1> accommodated a few invited <e2>talks</e2> targeted towards generating discussions on open problems [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The academic conference featured a few invited <e2>talks</e2> that were an integral part of the larger <e1>workshop</e1> [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the talks (e2) are a component of the larger workshop (e1)."
+    },
+    {
+        "id": 2066,
+        "text": "[CLS] There are numerous <e1>researches</e1> pointing out the public <e2>image</e2> of mathematics [SEP]",
+        "label": 13,
+        "relation_name": "Message-Topic(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The latest <e1>researches</e1> have shed light on the changing <e2>image</e2> of mathematics [SEP]\n\nIn this new sentence, the relationship between the entities is still Message-Topic(e1,e2), where \"researches\" (e1) is the message and \"image\" (e2) is the topic."
+    },
+    {
+        "id": 2082,
+        "text": "[CLS] The <e1>crust</e1> of the <e2>earth</e2> is composed of a great variety of igneous, metamorphic, and sedimentary rocks [SEP]",
+        "label": 2,
+        "relation_name": "Component-Whole(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>crust</e1> of a <e2>earth</e2> oven is designed to withstand extremely high temperatures [SEP]\n\nIn this sentence, the relationship between \"crust\" and \"earth\" is still Component-Whole, where \"crust\" is a part of the \"earth\" oven."
+    },
+    {
+        "id": 2102,
+        "text": "[CLS] A spokeswoman for OneWest Bank acknowledged that an official, confronted with a <e1>ream</e1> of foreclosure <e2>papers</e2>, had mistakenly signed for two different banks -- just as the Deutsche Bank official did [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The lawyer carefully reviewed the <e1>ream</e1> of documents, searching for a specific <e2>papers</e2> that would prove the defendant's innocence [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"papers\" (e2) is a member of the collection of documents referred to as a \"ream\" (e1)."
+    },
+    {
+        "id": 2261,
+        "text": "[CLS] The <e1>viewer</e1> wields the <e2>remote</e2> [SEP]",
+        "label": 3,
+        "relation_name": "Instrument-Agency(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e1>viewer</e1> uses the <e2>remote</e2> to change the channel [SEP]\n\nIn this sentence, the relationship between the entities is still Instrument-Agency(e2,e1), where the remote (e2) is the instrument used by the viewer (e1) to perform an action."
+    },
+    {
+        "id": 2292,
+        "text": "[CLS] The <e1>marsupial</e1> <e2>pouch</e2> helps keep the young attached to a teat [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>marsupial</e1> <e2>pouch</e2> is a vital part of the <e1>marsupial</e1> anatomy [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the pouch (e2) is a part of the marsupial (e1)."
+    },
+    {
+        "id": 2297,
+        "text": "[CLS] The <e1>relationship</e1> between Gaelic and Australian football is the subject of a <e2>controversy</e2> among historians [SEP]",
+        "label": 14,
+        "relation_name": "Message-Topic(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The heated debate among sports enthusiasts has sparked a <e2>controversy</e2> surrounding the origins of the <e1>relationship</e1> between Gaelic and Australian football [SEP]\n\nIn this new sentence, the relationship between the entities is still Message-Topic(e2,e1), where the controversy (e2) is the message and the relationship (e1) is the topic."
+    },
+    {
+        "id": 2307,
+        "text": "[CLS] A <e1>pedometer</e1> uses a spring loaded <e2>arm</e2> to measure the vertical movement [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] A <e1>pedometer</e1> consists of a mechanical <e2>arm</e2> that tracks every step [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the arm (e2) is a component of the pedometer (e1)."
+    },
+    {
+        "id": 2333,
+        "text": "[CLS] The developed <e1>mechanism</e1> is composed of a dual coaxial high-precision <e2>goniometer</e2>, which has theta-in and theta-out axes with 0.0025\" resolution, and two crystal mounts connected to the rotation axes (Fig. 1) [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The advanced <e1>mechanism</e1> utilizes a sophisticated <e2>goniometer</e2> as a crucial component to achieve precise angular measurements [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where the goniometer is a part of the mechanism."
+    },
+    {
+        "id": 2360,
+        "text": "[CLS] The crowd congregating near the dwelling reminded one man of \"a huge <e1>cluster</e1> of swarming <e2>bees</e2> extending far back [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The apiarist carefully approached the hive, aware of the huge <e1>cluster</e1> of swarming <e2>bees</e2> that called it home [SEP]\n\nIn this new sentence, the relationship between the entities is still Member-Collection(e2,e1), where the bees (e2) are part of the cluster (e1)."
+    },
+    {
+        "id": 2408,
+        "text": "[CLS] It is a relatively simple task to lubricate your <e1>brake</e1> <e2>cables</e2> periodically [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] When assembling a bicycle, make sure to properly attach the <e1>brake</e1> <e2>cables</e2> to the frame [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), meaning the cables (e2) are a component of the brake (e1)."
+    },
+    {
+        "id": 2440,
+        "text": "[CLS] I feel honored to have been awarded this scholarship, since it comes from the governing <e1>body</e1> of <e2>pathologists</e2>, which decides who is worthy and who they think will progress to become successful in this field [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] As a renowned <e2>pathologists</e2>, Dr. Smith is a respected member of the medical <e1>body</e1> that oversees the accreditation of hospitals nationwide [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"pathologists\" (e2) is a member of the \"body\" (e1)."
+    },
+    {
+        "id": 2445,
+        "text": "[CLS] I will need a Stevyn sized box as I have more mucus than an <e1>escargotoire</e1> of giant African land <e2>snails</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The slimy trail left behind by a giant African land <e2>snails</e2> is a clear indication that it belongs to a thriving <e1>escargotoire</e1> [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the giant African land snails (e2) are members of an escargotoire (e1), which is a collection of snails."
+    },
+    {
+        "id": 2457,
+        "text": "[CLS] An expansion <e1>tank</e1> has a vertically set up <e2>cylinder</e2> with a float therein, which forms a separating element between water and gas in the cylinder [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The scuba gear consists of a <e2>cylinder</e2> that contains a smaller <e1>tank</e1> used for storing compressed air [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the cylinder (e2) is the whole and the tank (e1) is a component of it."
+    },
+    {
+        "id": 2461,
+        "text": "[CLS] A young girl tries to fit in with a <e1>clique</e1> of popular middle school <e2>girls</e2> after moving into the guest house of one of their homes [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>girls</e2> in the school team welcomed a new <e1>clique</e1> of students who were eager to participate in the tournament [SEP]\n\nIn this sentence, the relationship \"Member-Collection(e2,e1)\" is preserved, where the \"girls\" (e2) are part of the \"clique\" (e1)."
+    },
+    {
+        "id": 2475,
+        "text": "[CLS] The northern half of the <e1>block</e1> includes a <e2>parking structure</e2> with five levels [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>parking structure</e2> is a key feature of the <e1>block</e1> that attracts many visitors [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the parking structure (e2) is a component of the block (e1)."
+    },
+    {
+        "id": 2497,
+        "text": "[CLS] Only then did I notice an <e1>ambush</e1> of <e2>tigers</e2> pacing us on the far shore [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] As we entered the wildlife sanctuary, we were startled by a <e2>tigers</e2> that was part of a larger <e1>ambush</e1> waiting to be relocated [SEP]\n\nIn this new sentence, the relationship \"Member-Collection(e2,e1)\" is preserved, where \"tigers\" (e2) is a member of the \"ambush\" (e1) collection."
+    },
+    {
+        "id": 2515,
+        "text": "[CLS] The <e1>room</e1> includes a queen bed, <e2>shower</e2> and tub and sitting room with sofa bed [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>room</e1> features a comfortable <e2>shower</e2> as one of its luxurious amenities [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where the shower (e2) is a component of the room (e1)."
+    },
+    {
+        "id": 2521,
+        "text": "[CLS] With the <e1>pollution</e1> caused by the <e2>buring</e2> of coal, the light-colored tree trunks became darker due to soot [SEP]",
+        "label": 7,
+        "relation_name": "Cause-Effect(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The massive <e2>buring</e2> of fossil fuels led to a significant increase in <e1>pollution</e1> in the city's atmosphere [SEP]\n\nIn this sentence, the relationship Cause-Effect(e2,e1) is preserved, where the burning of fossil fuels (e2) causes an increase in pollution (e1)."
+    },
+    {
+        "id": 2567,
+        "text": "[CLS] I am currently taking a <e1>medication</e1> which causes <e2>tingling</e2> in my hands and feet, but I also have vitamin d deficiency r/t hyperparathyroidism and my calcium is up and down [SEP]",
+        "label": 8,
+        "relation_name": "Cause-Effect(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The doctor warned me that the new <e1>medication</e1> may have a side effect of <e2>tingling</e2> in my fingers and toes, so I need to monitor my condition closely [SEP]\n\nIn this new sentence, the relationship between the entities is still Cause-Effect(e1,e2), where the medication (e1) is the cause and the tingling (e2) is the effect."
+    },
+    {
+        "id": 2592,
+        "text": "[CLS] The <e1>bottles</e1> contained a <e2>substance</e2> authorities believe is human fat [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e1>bottles</e1> were filled with a <e2>substance</e2> that was later identified as human fat [SEP]\n\nIn this new sentence, the relationship Content-Container(e2,e1) is preserved, where the substance (e2) is contained within the bottles (e1)."
+    },
+    {
+        "id": 2631,
+        "text": "[CLS] The <e1>locker</e1> contained a big fluffy <e2>robe</e2> for me to change into [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>robe</e1> was neatly folded and placed inside the <e2>locker</e2> [SEP]\n\nIn this new sentence, the relationship is still Content-Container(e2,e1), where the \"robe\" (e1) is contained within the \"locker\" (e2)."
+    },
+    {
+        "id": 2642,
+        "text": "[CLS] The slot <e1>machine</e1> contains computer <e2>software</e2> known as random number generator [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The computer <e2>software</e2> is a crucial part of the <e1>machine</e1> [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where the software (e2) is a component of the machine (e1)."
+    },
+    {
+        "id": 2645,
+        "text": "[CLS] It took the great Ronald Reagan years to develop his vast <e1>coterie</e1> of left wing <e2>haters</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The infamous dictator had a large following of left wing <e2>haters</e2> who were all part of his vast <e1>coterie</e1> [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the \"haters\" are part of the \"coterie\"."
+    },
+    {
+        "id": 2649,
+        "text": "[CLS] Thousands of drummers and dancers perform in the streets of Kandy accompanied by a <e1>parade</e1> of ornamented <e2>elephants</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The vibrant procession features a <e1>parade</e1> of majestic <e2>elephants</e2> marching in perfect harmony [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the elephants (e2) are part of the parade (e1)."
+    },
+    {
+        "id": 2657,
+        "text": "[CLS] Bruce had fallen out of favour and Koro and Cleo settled into a more conventional relationship, producing another <e1>clutch</e1> of <e2>chicks</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] After a successful breeding season, the farmer was thrilled to see a new <e2>chicks</e2> emerge from the <e1>clutch</e1> [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"chicks\" (e2) are members of the \"clutch\" (e1)."
+    },
+    {
+        "id": 2699,
+        "text": "[CLS] The <e1>unit</e1> consists of a mobile launcher, an <e2>interceptor</e2> and a command and control battle management and communication (C2BMC) system [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>unit</e1> is protected by a defense system that includes an <e2>interceptor</e2> as one of its key components [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the interceptor is a part of the unit."
+    },
+    {
+        "id": 2767,
+        "text": "[CLS] Pakistan captain Younis Khan was on Thursday forced to skip a pre-scheduled media discussion session in the city after being bitten by an <e1>erst</e1> of honey <e2>bees</e2> outside his home [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The apiarist carefully approached the hive to extract honey, but was suddenly surrounded by an <e1>erst</e1> of angry <e2>bees</e2> that had escaped [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"bees\" (e2) is the collection and \"erst\" (e1) is a member of that collection."
+    },
+    {
+        "id": 2893,
+        "text": "[CLS] The <e1>fish</e1> <e2>gill</e2> is arguably one of the most complex transport epithelia in the biological world [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>gill</e2> is a vital <e1>fish</e1> organ that extracts oxygen from water [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the gill is a component of the fish."
+    },
+    {
+        "id": 2917,
+        "text": "[CLS] Even in its harshest moments, the guitars sound like a <e1>chorus</e1> of fuzzed-out <e2>angels</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\n[CLS] In the heavenly realm, the <e2>angels</e2> form a <e1>chorus</e1> that echoes divine harmony [SEP]\n\nIn this new sentence, the relationship between the entities \"angels\" (e2) and \"chorus\" (e1) remains the same, i.e., Member-Collection(e2,e1), where \"angels\" are part of the \"chorus\"."
+    },
+    {
+        "id": 2937,
+        "text": "[CLS] Your <e1>cat</e1> uses these <e2>whiskers</e2> to judge the size of an opening [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>whiskers</e2> of your <e1>cat</e1> are highly sensitive [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the whiskers are a component of the cat."
+    },
+    {
+        "id": 2964,
+        "text": "[CLS] The <e1>package</e1> includes the BBC \"Fight for Life\" <e2>series</e2> of videos, which chronicles the difficulties experienced in the lives of women giving birth in developing countries [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>package</e1> is a collection of educational materials, including the BBC \"Fight for Life\" <e2>series</e2> that explores global health issues [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Component-Whole(e2,e1), where the \"series\" (e2) is a component of the larger \"package\" (e1)."
+    },
+    {
+        "id": 2980,
+        "text": "[CLS] A little ringed plover flew over the water at the bottom of the <e1>colony</e1> of <e2>vultures</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] A <e2>vulture</e2> perched on the edge of the <e1>colony</e1> [SEP]\n\nIn this sentence, the relationship is still Member-Collection(e2,e1), where the vulture (e2) is a member of the colony (e1)."
+    },
+    {
+        "id": 3032,
+        "text": "[CLS] The <e1>base</e1> of the shrine encloses a lone datura <e2>seedpod</e2> [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>base</e1> of the ancient vase holds a delicate, antique <e2>seedpod</e2> [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the seedpod (e2) is contained within the base (e1) of the vase."
+    },
+    {
+        "id": 3036,
+        "text": "[CLS] The <e1>property</e1> comprises of three <e2>bedrooms</e2>, kitchen, lounge / diner and both a shower room and bathroom [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>property</e1> is a spacious house that includes a master <e2>bedrooms</e2> with an attached balcony [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where the \"bedrooms\" (e2) is a component of the larger \"property\" (e1)."
+    },
+    {
+        "id": 3093,
+        "text": "[CLS] The antioxidant <e1>therapy</e1> was comprised of <e2>vitamin</e2> E, vitamin C, beta carotene, and selenium [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The healthy <e1>therapy</e1> program included a daily dose of <e2>vitamin</e2> supplements to boost the immune system [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where \"vitamin\" (e2) is a component of the \"therapy\" (e1) program."
+    },
+    {
+        "id": 3152,
+        "text": "[CLS] My vegetable garden was destroyed by a <e1>labor</e1> of <e2>moles</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>moles</e2> were organized into a highly efficient <e1>labor</e1> force [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the moles (e2) are part of a labor (e1) force."
+    },
+    {
+        "id": 3156,
+        "text": "[CLS] This science-fiction thriller by a Seattle author is the story of Jane Charlotte, a young <e1>woman</e1> who tells her increasingly surreal <e2>tale</e2> of murder, kidnapping and an evil tribe of \"bad monkeys\" who are trying to control her actions to a skeptical psychiatrist [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The award-winning <e2>tale</e2> of a lifetime was penned by the renowned <e1>woman</e1> author, who poured her heart and soul into the manuscript [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e2,e1), where the \"tale\" (e2) is the product of the \"woman\" (e1), who is the producer."
+    },
+    {
+        "id": 3160,
+        "text": "[CLS] The <e1>hall</e1> has a <e2>lift</e2> and full access for the disabled [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>hall</e1> is equipped with a <e2>lift</e2> for easy navigation [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), meaning the lift (e2) is a component of the hall (e1)."
+    },
+    {
+        "id": 3181,
+        "text": "[CLS] A <e1>battery</e1> of <e2>barracudas</e2> relies on ambush [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] A <e1>battery</e1> is formed by a school of <e2>barracudas</e2> [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the barracudas (e2) form a collection that includes the battery (e1)."
+    },
+    {
+        "id": 3188,
+        "text": "[CLS] I have removed the <e1>bubbles</e1> into the glass <e2>tubes</e2> [SEP]",
+        "label": 9,
+        "relation_name": "Entity-Destination(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The scientist carefully inserted the <e1>bubbles</e1> into the narrow <e2>tubes</e2> [SEP]\n\nIn this new sentence, the relationship Entity-Destination(e1,e2) is preserved, where the bubbles (e1) are being inserted into the tubes (e2), maintaining the same direction of the relationship."
+    },
+    {
+        "id": 3203,
+        "text": "[CLS] The <e1>winery</e1> includes <e2>gardens</e2> [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>gardens</e2> are a beautiful part of the <e1>winery</e1> [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole, with the gardens (e2) being a part of the winery (e1)."
+    },
+    {
+        "id": 3251,
+        "text": "[CLS] The <e1>wounds</e1> caused by the scourging and the <e2>thorns</e2> are almost invisible [SEP]",
+        "label": 7,
+        "relation_name": "Cause-Effect(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>wounds</e1> suffered by the patient were a direct result of the sharp <e2>thorns</e2> [SEP]\n\nIn this sentence, the relationship is still Cause-Effect(e2,e1), where the thorns (e2) caused the wounds (e1)."
+    },
+    {
+        "id": 3263,
+        "text": "[CLS] The bottom <e1>tier</e1> was made with two bath <e2>towels</e2>, the third tier with one bath towel, the second tier with two hand towels [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The luxurious <e1>tier</e1> was composed of several plush <e2>towels</e2> that were carefully arranged to create a cozy ambiance [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where the towels (e2) are a component of the tier (e1)."
+    },
+    {
+        "id": 3276,
+        "text": "[CLS] The first civilization to have a dedicated force of military engineering specialists were the Romans, whose army contained a dedicated <e1>corps</e1> of military <e2>engineers</e2> known as architecti [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The construction company's team of skilled workers included a dedicated <e1>corps</e1> of experienced <e2>engineers</e2> who were responsible for designing the new highway system [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"engineers\" (e2) are members of the \"corps\" (e1)."
+    },
+    {
+        "id": 3312,
+        "text": "[CLS] The <e1>marriage</e1> combined the <e2>rituals</e2> of the Mangalorean bride and the Punjabi groom with the vows being exchanged according to South Indian tradition while pre-wedding rituals like 'Mehendi' and 'Sangeet' conducted as per Punjabi tradition [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>marriage</e1> ceremony incorporated the <e2>rituals</e2> of the groom's family, which were an integral part of the overall celebration [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the \"rituals\" (e2) are a part of the larger \"marriage\" (e1) ceremony."
+    },
+    {
+        "id": 3324,
+        "text": "[CLS] <e1>Birds</e1> take a lot of time caring for their <e2>feathers</e2> [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] <e1>Birds</e1> preen their <e2>feathers</e2> to keep them clean and shiny [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where \"feathers\" (e2) is a component of \"birds\" (e1)."
+    },
+    {
+        "id": 3333,
+        "text": "[CLS] When the guard happened upon a mass <e1>grave</e1> dug by this sick <e2>fool</e2>, a massive, horned, disgusting behemoth was digging itself out [SEP]",
+        "label": 16,
+        "relation_name": "Product-Producer(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The archaeologist carefully excavated the ancient <e1>grave</e1> built by the primitive but ingenious <e2>fool</e2> who had designed it as a tomb for their leader [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e1,e2), where the \"grave\" (e1) is the product and the \"fool\" (e2) is the producer."
+    },
+    {
+        "id": 3355,
+        "text": "[CLS] In the 50s, as the postwar generation lived lives of \"Leave It to Beaver,\" a <e1>subculture</e1> of <e2>beatniks</e2> and musicians was busy being \"mischievous, irreverent, impulsive, drunken, and sex-obsessed,\" breaking the social mores that came along with Ike and the Baby Boom [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] In the underground music scene, a <e1>subculture</e1> of artists and free thinkers was influenced by the spontaneous performances of <e2>beatniks</e2> and musicians who rejected mainstream values [SEP]\n\nIn this new sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"beatniks\" (e2) is a member of the \"subculture\" (e1)."
+    },
+    {
+        "id": 3487,
+        "text": "[CLS] At one point, for instance, attacking a large <e1>division</e1> of <e2>musketeers</e2> with a small group of lancer cavalry resulted in a massacre of the musketeers [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] During the parade, a single <e2>musketeer</e2> was part of a large <e1>division</e1> that marched in perfect synchrony [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the musketeer (e2) is a member of the division (e1)."
+    },
+    {
+        "id": 3493,
+        "text": "[CLS] <e1>Insects</e1> <e2>wings</e2> are very thin so the poor insect must beat (or flap) their wings very fast so that they can really take off to fly [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The delicate <e2>wings</e2> of the <e1>insects</e1> require precise movement to generate the lift needed for flight [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where \"wings\" is a component of \"insects\"."
+    },
+    {
+        "id": 3501,
+        "text": "[CLS] Doctors have inserted GHG <e1>mitigation</e1> into the <e2>prescriptions</e2> [SEP]",
+        "label": 9,
+        "relation_name": "Entity-Destination(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The new policy requires companies to include GHG <e1>mitigation</e1> in their environmental <e2>prescriptions</e2> [SEP]\n\nIn this sentence, the relationship Entity-Destination(e1,e2) is preserved, where \"mitigation\" (e1) is still the entity that is being directed towards \"prescriptions\" (e2)."
+    },
+    {
+        "id": 3523,
+        "text": "[CLS] Suddenly, they were in Oxford Street, amid a <e1>throng</e1> of <e2>shoppers</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The tourists got lost in the <e2>shoppers</e2> who were part of a huge <e1>throng</e1> [SEP]\n\nIn this sentence, the relationship \"Member-Collection\" is preserved, where \"shoppers\" (e2) are part of a larger \"throng\" (e1)."
+    },
+    {
+        "id": 3540,
+        "text": "[CLS] That <e1>car</e1> had a number of GPS sensors and lasers, a <e2>camera</e2>, and other equipment to help it make its way through the course [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>camera</e2> was an essential part of the <e1>car</e1>'s advanced navigation system [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the camera is a component of the car."
+    },
+    {
+        "id": 3544,
+        "text": "[CLS] For the zillionth time in a Hindi film, a <e1>bride</e1> runs away from the <e2>pheras</e2> on her wedding day [SEP]",
+        "label": 17,
+        "relation_name": "Entity-Origin(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>bride</e1> had always dreamed of escaping the traditional <e2>pheras</e2> that her family had planned for her [SEP]\n\nIn this sentence, the relationship Entity-Origin(e1,e2) is preserved, where the bride (e1) originates from or is associated with the pheras (e2)."
+    },
+    {
+        "id": 3567,
+        "text": "[CLS] Of these one of the very first that occurred to me was, that there is seldom so much perfection in <e1>works</e1> composed of many separate <e2>parts</e2>, upon which different hands had been employed, as in those completed by a single master [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The intricate <e2>parts</e2> of a Swiss watch are a testament to the craftsmanship of the manufacturer, who ensures that each component contributes to the overall quality of the <e1>works</e1> [SEP]\n\nIn this sentence, the relationship between \"parts\" (e2) and \"works\" (e1) is still Component-Whole, where \"parts\" are components of the whole \"works\"."
+    },
+    {
+        "id": 3620,
+        "text": "[CLS] A bizarre <e1>idea</e1> springing from the mind of an original-thinking <e2>teenager</e2> in Malta is put into a chat room and picked up by an interested schoolteacher in Cleveland [SEP]",
+        "label": 16,
+        "relation_name": "Product-Producer(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] A brilliant <e1>idea</e1> conceived by the innovative <e2>teenager</e2> in a science fair is later developed into a revolutionary product [SEP]\n\nIn this sentence, the relationship between the entities remains the same: Product-Producer(e1,e2), where the \"idea\" is the product and the \"teenager\" is the producer."
+    },
+    {
+        "id": 3646,
+        "text": "[CLS] A <e1>nation</e1> is a group of <e2>people</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] A <e2>people</e2> are part of a larger <e1>nation</e1> [SEP]\n\nIn this sentence, the relationship \"Member-Collection(e2,e1)\" is preserved, where \"people\" (e2) are members of the collection \"nation\" (e1)."
+    },
+    {
+        "id": 3793,
+        "text": "[CLS] New Haven <e1>police</e1> <e2>chief</e2> James Lewis left his post after his contract expired Jan. 31 [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e2>chief</e2> of the department, James Lewis, is a respected member of the <e1>police</e1> force [SEP]\n\nIn this sentence, the relationship \"Member-Collection(e2,e1)\" is preserved, where \"chief\" (e2) is a member of the \"police\" (e1) force."
+    },
+    {
+        "id": 3819,
+        "text": "[CLS] The <e1>festival</e1> involved two practical <e2>competitions</e2> and a lecture [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>festival</e1> featured a series of events, including two exciting <e2>competitions</e2> and a keynote speech [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Component-Whole(e2,e1), where the competitions (e2) are a part of the larger festival (e1) event."
+    },
+    {
+        "id": 3820,
+        "text": "[CLS] Outside the walls of Athens, the site of the Academy was a sacred <e1>grove</e1> of olive <e2>trees</e2>, still recalled in the phrase \"the groves of Academe. [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] In the heart of the ancient city, the philosopher wandered through a peaceful <e1>grove</e1> of towering <e2>trees</e2>, seeking inspiration for his next great work. [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the olive trees (e2) are part of the grove (e1)."
+    },
+    {
+        "id": 3866,
+        "text": "[CLS] This <e1>door</e1> <e2>handle</e2> is in gold color and is installed on the front door [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>handle</e2> is attached to the main part of the <e1>door</e1> [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the handle (e2) is a component of the door (e1)."
+    },
+    {
+        "id": 3901,
+        "text": "[CLS] The election judges found in a <e1>ballot box</e1> some <e2>ballots</e2> that were not the kind properly belonging in it; they've put those ballots aside [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The auditor discovered in a <e1>ballot box</e1> several <e2>ballots</e2> that were not supposed to be stored there; she carefully placed those ballots in a secure location [SEP]\n\nIn this new sentence, the relationship between the entities is still Content-Container(e2,e1), where the <e2>ballots</e2> are contained within the <e1>ballot box</e1>."
+    },
+    {
+        "id": 3916,
+        "text": "[CLS] <e1>Fish</e1> use their <e2>muscles</e2> to move their bodies and fins [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] <e1>Fish</e1> have a unique skeletal system that is made up of <e2>muscles</e2> [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where \"muscles\" (e2) is a component of the \"fish\" (e1)."
+    },
+    {
+        "id": 3928,
+        "text": "[CLS] The story of the epic struggle between the Islamic Empire of the Ottomans and the Christian Kingdoms of Eastern Europe is told from the perspective of a secret fraternity, the Excubitors, a <e1>brotherhood</e1> of <e2>counselors</e2> to kings, sultans, head of churches, knights, scholars, financiers, and merchant adventurers who hold influential positions on both sides of the conflict [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\n[CLS] In the prestigious academic institution, the <e2>counselors</e2> are part of a <e1>brotherhood</e1> of esteemed professors, researchers, and scholars who have made groundbreaking contributions to their respective fields [SEP]"
+    },
+    {
+        "id": 3944,
+        "text": "[CLS] The chosen <e1>volume</e1> contains <e2>software</e2> which is newer than the software you are installing [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The latest <e1>volume</e1> of the magazine features a review of the newly released <e2>software</e2> [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the software (e2) is contained within the volume (e1) of the magazine."
+    },
+    {
+        "id": 3949,
+        "text": "[CLS] The <e1>study</e1> is the first major contribution to the global warming debate by an <e2>economist</e2>, rather than an environmental scientist [SEP]",
+        "label": 16,
+        "relation_name": "Product-Producer(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>study</e1> was conducted by a renowned <e2>economist</e2> who has written extensively on the topic [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e1,e2), where the study (e1) is the product of the economist (e2)."
+    },
+    {
+        "id": 3978,
+        "text": "[CLS] For other useful ideas on how to use e-texts to aide literary analysis the girls read Robert Harris's \"The personal <e1>computer</e1> as a tool for <e2>student</e2> literary analysis\" [SEP]",
+        "label": 4,
+        "relation_name": "Instrument-Agency(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The teacher demonstrated how a personal computer can be an effective tool for a student to complete their assignments efficiently [SEP]\n\nIn this sentence, the relationship between the entities is still Instrument-Agency, where the \"personal computer\" (e1) is the instrument used by the \"student\" (e2) to complete their assignments."
+    },
+    {
+        "id": 3984,
+        "text": "[CLS] The Manor, with its <e1>tower</e1> of endangered Rothschild's <e2>giraffes</e2>, also features an education center where kids can take guided walks through the surrounding primeval forest and learn about the rich local flora and fauna [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The wildlife sanctuary, home to a breeding program for endangered Rothschild's <e2>giraffes</e2>, features a unique <e1>tower</e1> designed to mimic their natural habitat and provide a safe space for the animals to roam [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the Rothschild's giraffes (e2) are part of the collection housed in the tower (e1)."
+    },
+    {
+        "id": 3986,
+        "text": "[CLS] The <e1>apartment</e1> has a separate <e2>dining room</e2>, which can easily be converted into a third bedroom if need be [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>apartment</e1> features a spacious <e2>dining room</e2> that can be utilized as a home office or guest room [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Component-Whole(e2,e1), where the dining room (e2) is a component of the apartment (e1)."
+    },
+    {
+        "id": 3990,
+        "text": "[CLS] The goods and services that make up this <e1>economy</e1> are sadly familiar: <e2>prostitution</e2>, slavery, drugs, arms, protection rackets, money laundering [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The illicit activities that fuel this <e1>economy</e1> are often linked to organized crime, including <e2>prostitution</e2>, which is a significant contributor to the problem [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where \"prostitution\" (e2) is a component of the larger \"economy\" (e1)."
+    },
+    {
+        "id": 3994,
+        "text": "[CLS] The <e1>message</e1> is being delivered to the <e2>mailman</e2> [SEP]",
+        "label": 9,
+        "relation_name": "Entity-Destination(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e1>message</e1> is being handed over to the <e2>mailman</e2> [SEP]\n\nIn this new sentence, the relationship Entity-Destination(e1,e2) is preserved, where the message (e1) is being delivered to the mailman (e2)."
+    },
+    {
+        "id": 4061,
+        "text": "[CLS] A <e1>bazaar</e1> of fledgling <e2>guillemots</e2> braved a plunge from the Flat this afternoon to raucous cheering from the crowd [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] A <e1>bazaar</e1> welcomed a group of <e2>guillemots</e2> that had wandered away from their flock and were looking for a new place to settle [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the guillemots (e2) are part of the bazaar (e1)."
+    },
+    {
+        "id": 4071,
+        "text": "[CLS] The <e1>wallet</e1> contained a driver's license, <e2>passport</e2>, a couple credit cards and $16 in cash [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>wallet</e1> was found to have a <e2>passport</e2> along with some other important documents [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the passport (e2) is contained within the wallet (e1)."
+    },
+    {
+        "id": 4094,
+        "text": "[CLS] This amazing <e1>machine</e1> contained a shift <e2>register</e2> made out of a motor and a rotor as well as a keyboard ROM consisting solely of levers and springs [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The engineer carefully examined the <e1>machine</e1> to understand how the <e2>register</e2> was integrated into its complex system [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Component-Whole(e2,e1), where the \"register\" is a component of the larger \"machine\"."
+    },
+    {
+        "id": 4100,
+        "text": "[CLS] This <e1>volume</e1> contains a <e2>selection</e2> of Japanese prose literature dating from the classical age [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>selection</e2> of essays in this <e1>volume</e1> showcases the author's expertise [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where \"selection\" is a part of the \"volume\"."
+    },
+    {
+        "id": 4156,
+        "text": "[CLS] A <e1>bottle</e1> with <e2>cereal</e2> in it contains more calories than the bottle alone so it can set your baby up for some overeating habits [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] A <e1>bottle</e1> filled with <e2>cereal</e2> can be a convenient snack, but make sure to check the nutrition label to avoid overfeeding your child [SEP]\n\nIn this new sentence, the relationship between the entities is still Content-Container(e2,e1), where the cereal (e2) is contained within the bottle (e1)."
+    },
+    {
+        "id": 4160,
+        "text": "[CLS] <e1>Treatment</e1> consists of antifungal <e2>therapy</e2>, surgery, and supportive care [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>therapy</e2> is a crucial <e1>treatment</e1> approach for patients with chronic illnesses [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where \"therapy\" is a component of the overall \"treatment\" approach."
+    },
+    {
+        "id": 4183,
+        "text": "[CLS] They had stumbled upon a <e1>nest</e1> of saltwater <e2>crocodiles</e2> that had made their home deep into the swamp, near the coastline [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The wildlife expert had been tracking a <e1>nest</e1> of saltwater <e2>crocodiles</e2> that had been thriving in the protected area [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the saltwater crocodiles (e2) are members of the nest (e1)."
+    },
+    {
+        "id": 4203,
+        "text": "[CLS] Beaulieu's predilection for the work of Hugo was evident in the recurrent use of grotesque or architecturally fantastic pictorial material from the <e1>poet</e1>'s <e2>pen</e2> and ink sketches, with the whale a recurrent figure [SEP]",
+        "label": 3,
+        "relation_name": "Instrument-Agency(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The artist's latest sculpture was inspired by the vivid descriptions from the <e1>poet</e1>'s <e2>pen</e2>, which seemed to bring the characters to life with every stroke [SEP]\n\nIn this sentence, the relationship between the entities is still Instrument-Agency(e2,e1), where the \"pen\" (e2) is the instrument used by the \"poet\" (e1) to create the vivid descriptions."
+    },
+    {
+        "id": 4231,
+        "text": "[CLS] The <e1>method</e1> comprises a cleaning <e2>step</e2> of applying a cleaning fluid on the teats and/or the udder [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>method</e1> involves a detailed <e2>step</e2> for analyzing the data [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the \"step\" is a part of the overall \"method\"."
+    },
+    {
+        "id": 4267,
+        "text": "[CLS] <e1>Herds</e1> with one <e2>stallion</e2> were organized in many stud farms, and a large number of separate lines were recognized [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] <e1>Herds</e1> were often led by a single dominant <e2>stallion</e2> in the wild [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the stallion is a member of the herd."
+    },
+    {
+        "id": 4352,
+        "text": "[CLS] The <e1>man</e1> delivers one more hard-charging book about the hellish demands of corporate law with the help of a well-used cookie <e2>cutter</e2> [SEP]",
+        "label": 3,
+        "relation_name": "Instrument-Agency(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e1>man</e1> uses a well-worn <e2>cutter</e2> to slice through the thick rope [SEP]\n\nIn this sentence, the relationship Instrument-Agency(e2,e1) is preserved, where the \"cutter\" (e2) is the instrument used by the \"man\" (e1) to perform an action."
+    },
+    {
+        "id": 4360,
+        "text": "[CLS] She saved up to 80% on <e1>ring</e1> <e2>binders</e2>, lever arch files, box files, folders, manilla wallets, suspension files, plastic wallets and plastic pockets [SEP]",
+        "label": 2,
+        "relation_name": "Component-Whole(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The office supply store offered discounts on various products, including <e1>ring</e1> <e2>binders</e2>, staplers, tape, and paper clips [SEP]\n\nIn this sentence, the relationship between \"ring\" and \"binders\" is still Component-Whole, where \"ring\" is a component of \"binders\" (ring binders)."
+    },
+    {
+        "id": 4382,
+        "text": "[CLS] As per traditional Indian thinking, seeing a <e1>brood</e1> of <e2>chickens</e2> along with a hen is a bad omen [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] At the farm, a <e1>brood</e1> of <e2>chickens</e2> was found roaming freely in the yard [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"chickens\" is the collection and \"brood\" is a member of that collection."
+    },
+    {
+        "id": 4413,
+        "text": "[CLS] Each weekday one <e1>photograph</e1> by a <e2>member</e2> of the Utata flickr group is chosen to be featured on the Utata Blog [SEP]",
+        "label": 16,
+        "relation_name": "Product-Producer(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The gallery features a stunning <e1>photograph</e1> taken by a talented <e2>member</e2> of the local photography club [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e1,e2), where the photograph (e1) is the product and the member (e2) is the producer."
+    },
+    {
+        "id": 4487,
+        "text": "[CLS] The <e1>mansion</e1> has a small <e2>museum</e2> with exhibits linked to the building's history, including antique Singer sewing machines [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>museum</e2> is a significant part of the <e1>mansion</e1> that attracts tourists from all over the world [SEP]\n\nIn this new sentence, the relationship between the entities remains the same, i.e., Component-Whole(e2,e1), where the museum is a part of the mansion."
+    },
+    {
+        "id": 4520,
+        "text": "[CLS] The relative proportion of the <e1>vancomycin</e1> release from the bone <e2>cement</e2> was lower, although its initial quantity was four times higher [SEP]",
+        "label": 17,
+        "relation_name": "Entity-Origin(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>vancomycin</e1> was initially embedded in the <e2>cement</e2> matrix at a higher concentration [SEP]\n\nIn this new sentence, the relationship Entity-Origin(e1,e2) is preserved, indicating that the vancomycin originates from the cement."
+    },
+    {
+        "id": 4637,
+        "text": "[CLS] <e1>Birds</e1> with eyes on the sides of their <e2>heads</e2> have a wide visual field, while birds with eyes on the front of their heads, such as owls, have binocular vision [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>heads</e2> of the ancient statues were often adorned with intricate carvings, while the <e1>Birds</e1> depicted on them were often shown in flight [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where \"heads\" is a component of the statues and \"Birds\" is the whole entity being depicted on the statues."
+    },
+    {
+        "id": 4690,
+        "text": "[CLS] As the bus climbed steadily throughrich terraced fields of grain towards the Qilian Shan, layersof mountains enfolded like a <e1>weyr</e1> of <e2>dragons</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] In the heart of the mystical realm, a lone <e2>dragon</e2> settled into its nest within a sprawling <e1>weyr</e1> [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the dragon (e2) is a member of the weyr (e1), which is a collection of dragons."
+    },
+    {
+        "id": 4703,
+        "text": "[CLS] The <e1>envelope</e1> contained a single <e2>sheet</e2> of paper, describing an attempt to set the record for the world's longest running chain letter [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>envelope</e1> was carefully opened to reveal a single <e2>sheet</e2> of paper inside [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the sheet (e2) is contained within the envelope (e1)."
+    },
+    {
+        "id": 4719,
+        "text": "[CLS] His administration is moderate, but it contains a <e1>faction</e1> of <e2>extremists</e2>. [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The political party has a <e1>faction</e1> that harbors a few <e2>extremists</e2>. [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the extremists (e2) are part of the faction (e1)."
+    },
+    {
+        "id": 4733,
+        "text": "[CLS] The <e1>liver</e1> synthesizes angiotensinogen, a <e2>hormone</e2> that is responsible for raising the blood pressure when activated by renin [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>liver</e1> manufactures a <e2>hormone</e2> that plays a crucial role in regulating various bodily functions when produced by the liver [SEP]\n\nIn this new sentence, the relationship between the entities is still Product-Producer(e2,e1), where the liver (e1) is the producer of the hormone (e2)."
+    },
+    {
+        "id": 4834,
+        "text": "[CLS] The <e1>bungalow</e1> has a full <e2>bar</e2> and offers a wide selection of draft and bottled beer and wine [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The luxurious resort features a private <e1>bungalow</e1> that includes a fully-stocked <e2>bar</e2> for guests to enjoy [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), meaning the bar (e2) is a component of the bungalow (e1)."
+    },
+    {
+        "id": 4835,
+        "text": "[CLS] A woman diagnosed with breast cancer today joins a huge <e1>sisterhood</e1> of cancer <e2>survivors</e2> ready to help her along the way to recovery [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] A breast cancer <e2>survivors</e2> support group welcomes a new <e1>sisterhood</e1> of volunteers who are eager to lend a helping hand [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"survivors\" (e2) is a member of the \"sisterhood\" (e1)."
+    },
+    {
+        "id": 4875,
+        "text": "[CLS] A <e1>rock</e1> in the road caused an <e2>accident</e2> by breaking the rear wheel on the wagon [SEP]",
+        "label": 8,
+        "relation_name": "Cause-Effect(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] A <e1>rock</e1> on the track caused a derailment, leading to a severe <e2>accident</e2> [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Cause-Effect(e1,e2), where the rock (e1) causes the accident (e2)."
+    },
+    {
+        "id": 4941,
+        "text": "[CLS] The <e1>monitor</e1> comprises the display device, <e2>circuitry</e2>, and an enclosure [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>monitor</e1> is made up of various components, including the <e2>circuitry</e2>, which is essential for its functioning [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Component-Whole(e2,e1), where the circuitry (e2) is a component of the monitor (e1)."
+    },
+    {
+        "id": 4956,
+        "text": "[CLS] <e1>Fish</e1> <e2>gills</e2> are multifunctional organs [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] <e1>Fish</e1> rely on their <e2>gills</e2> to breathe [SEP]\n\nIn this sentence, the relationship is still Component-Whole(e2,e1), where \"gills\" is a component of the whole \"fish\"."
+    },
+    {
+        "id": 5032,
+        "text": "[CLS] He has simply taken the hook of the <e1>fishes</e1> <e2>mouth</e2> because the point of the hook did not stick out [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>mouth</e2> of the <e1>fishes</e1> is a vital part where the food enters [SEP]\n\nIn this sentence, the relationship Component-Whole(e2,e1) is preserved, where \"mouth\" is a component of \"fishes\"."
+    },
+    {
+        "id": 5034,
+        "text": "[CLS] A pious <e1>lady</e1> having built a <e2>church</e2> under the invocation of the Blessed Virgin, on the high road to Bethlehem, Longinus refused her request that his pupil should undertake the charge of it [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The skilled <e1>lady</e1> designed a beautiful <e2>church</e2> that became a famous landmark in the city [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e2,e1), where the church (e2) is the product of the lady (e1)."
+    },
+    {
+        "id": 5039,
+        "text": "[CLS] The article appears on the <e1>backpage</e1> of the <e2>newspaper</e2>, in the \"Endzone\" section, and makes Viola the first known NJCU athlete to ever appear on a cover of The NCAA News [SEP]",
+        "label": 2,
+        "relation_name": "Component-Whole(e1,e2)",
+        "new_generation_response": "assistant\n\n[CLS] The advertisement is printed on the <e1>backpage</e1> of the <e2>newspaper</e2> that is distributed freely in the local community [SEP]"
+    },
+    {
+        "id": 5054,
+        "text": "[CLS] Jazz represented a break from Western musical traditions, where the <e1>composer</e1> wrote a <e2>piece</e2> of music on paper and the musicians then tried their best to play exactly what was in the score [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] In the classical music era, the <e2>piece</e2> of music was carefully crafted by the skilled <e1>composer</e1> who spent years perfecting the melody [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Product-Producer(e2,e1), where the \"piece\" (e2) is the product of the \"composer\" (e1)."
+    },
+    {
+        "id": 5076,
+        "text": "[CLS] The <e1>bathroom</e1> comprises bath tub with electric shower, <e2>wash basin</e2> and WC [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The luxurious <e1>bathroom</e1> is equipped with a stylish <e2>wash basin</e2> and other modern fixtures [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the wash basin (e2) is a component of the bathroom (e1)."
+    },
+    {
+        "id": 5084,
+        "text": "[CLS] The <e1>suitcase</e1> was full of smart new <e2>clothes</e2> [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>suitcase</e1> was packed with the latest fashion <e2>clothes</e2> [SEP]\n\nIn this sentence, the relationship is still Content-Container(e2,e1), where the \"clothes\" (e2) are contained within the \"suitcase\" (e1)."
+    },
+    {
+        "id": 5099,
+        "text": "[CLS] One <e1>faction</e1> of netherwing <e2>dragons</e2>, named the Netherwing, were attacked by the Dragonmaw orcs of Shadowmoon Valley and many were enslaved by Zuluhed, including the female Karynaku (mate of Neltharaku) who was leader of the brood [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>dragons</e2> in the fantasy novel were part of a larger mythical world, where one <e1>faction</e1> of creatures possessed magical powers [SEP]\n\nIn this new sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"dragons\" (e2) is a member of the larger group \"faction\" (e1) of creatures."
+    },
+    {
+        "id": 5129,
+        "text": "[CLS] The <e1>apartment</e1> comprises of two <e2>bedrooms</e2> with fitted wardrobes, two bathrooms with tub, a spacious kitchen and lounge/dining room.. [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>apartment</e1> is a cozy space that features two <e2>bedrooms</e2> with large windows, perfect for a small family. [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), meaning the bedrooms (e2) are a part of the apartment (e1)."
+    },
+    {
+        "id": 5131,
+        "text": "[CLS] Here is another <e1>work</e1> from the pen of a vital American <e2>composer</e2> [SEP]",
+        "label": 16,
+        "relation_name": "Product-Producer(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is the new sentence:\n\n [CLS] The <e1>work</e1> of a <e2>composer</e2> is highly regarded for its innovative style [SEP]\n\nIn this sentence, the relationship between the entities remains the same: Product-Producer(e1,e2), where \"work\" (e1) is the product of the \"composer\" (e2)."
+    },
+    {
+        "id": 5132,
+        "text": "[CLS] After a short playing session they walked off on the trail of a <e1>couple</e1> of lone female <e2>Impalas</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The safari guide explained that the <e2>Impalas</e2> usually travel in small groups, often led by a single dominant <e1>couple</e1> [SEP]\n\nIn this sentence, the relationship \"Member-Collection(e2,e1)\" is preserved, where the Impalas (e2) are part of a collection led by a couple (e1)."
+    },
+    {
+        "id": 5136,
+        "text": "[CLS] My <e1>wife</e1> quickly prepared scrambled eggs and black <e2>coffee</e2> and took them back to bed with her copy of \"Miss Pettigrew lives for a Day\" [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The aroma of freshly brewed black <e2>coffee</e2> filled the air as my <e1>wife</e1> expertly roasted the beans [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e2,e1), where the coffee (e2) is the product and the wife (e1) is the producer."
+    },
+    {
+        "id": 5165,
+        "text": "[CLS] The morning <e1>session</e1> of the symposium comprises <e2>contributions</e2> from former group members and ends with a reunion lunch for the attendees [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The academic <e1>session</e1> is enriched by the diverse <e2>contributions</e2> from the guest speakers, making it a valuable experience for all participants [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Component-Whole(e2,e1), where \"contributions\" (e2) are a part of the \"session\" (e1)."
+    },
+    {
+        "id": 5171,
+        "text": "[CLS] The <e1>award</e1> comprises a <e2>trophy</e2> and a certificate and is being run by The British Cartographic Society with the support of Stanfords Map Shop [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>award</e1> features a prestigious <e2>trophy</e2> as its centerpiece, which is carefully crafted by skilled artisans [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Component-Whole(e2,e1), where the trophy is a component of the award."
+    },
+    {
+        "id": 5180,
+        "text": "[CLS] The <e1>windshield</e1> encloses a parachute <e2>housing</e2> containing a parachute assembly [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>windshield</e1> is secured by a frame that serves as a protective <e2>housing</e2> [SEP]\n\nIn this sentence, the relationship between the entities is still Content-Container(e2,e1), where the \"housing\" (e2) contains or encloses the \"windshield\" (e1)."
+    },
+    {
+        "id": 5344,
+        "text": "[CLS] Ching survives by latching on to a prostitute, played by Maggie Cheung, while Fung works his way in a <e1>circle</e1> of <e2>robbers</e2> [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] In the city's underworld, Fung is a skilled <e2>robbers</e2> who has earned a place in a notorious <e1>circle</e1> [SEP]\n\nIn this new sentence, the relationship \"Member-Collection(e2,e1)\" is preserved, where \"robbers\" (e2) is a member of the \"circle\" (e1)."
+    },
+    {
+        "id": 5354,
+        "text": "[CLS] This <e1>apartment</e1> has a recently redone <e2>kitchen</e2> and bathroom and gets lots of light [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>kitchen</e2> is a key feature of this <e1>apartment</e1> that has been beautifully renovated [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the kitchen (e2) is a part of the apartment (e1)."
+    },
+    {
+        "id": 5361,
+        "text": "[CLS] It shows a female <e1>doctor</e1> with a <e2>veil</e2> standing beside a female patient in bed, also wearing the veil [SEP]",
+        "label": 3,
+        "relation_name": "Instrument-Agency(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>veil</e2> is worn by a female <e1>doctor</e1> during a surgical procedure [SEP]\n\nIn this sentence, the relationship between the entities is still Instrument-Agency(e2,e1), where the veil (e2) is used by the doctor (e1) as an instrument or tool."
+    },
+    {
+        "id": 5466,
+        "text": "[CLS] I found a <e1>wallet</e1> once with 30 <e2>quid</e2> in it, I handed in the wallet but took the money [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] My friend discovered a <e1>wallet</e1> with 30 <e2>quid</e2> inside, she was thrilled to have found some cash [SEP]\n\nIn this new sentence, the relationship between the entities is still Content-Container(e2,e1), where the quid (e2) is contained within the wallet (e1)."
+    },
+    {
+        "id": 5503,
+        "text": "[CLS] This <e1>issue</e1> has been sent to the <e2>printer</e2> [SEP]",
+        "label": 9,
+        "relation_name": "Entity-Destination(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e1>issue</e1> is currently being forwarded to the <e2>printer</e2> [SEP]\n\nIn this new sentence, the relationship Entity-Destination(e1,e2) is preserved, where the word \"issue\" is still the entity being sent or forwarded, and the word \"printer\" is still the destination."
+    },
+    {
+        "id": 5519,
+        "text": "[CLS] Like the Bosch, this <e1>dishwasher</e1> has a <e2>filter</e2> that must be manually emptied and does not include a built-in food disposal [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] Regular maintenance of the <e1>dishwasher</e1> requires checking and cleaning the <e2>filter</e2> to ensure optimal performance [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the filter (e2) is a component of the dishwasher (e1)."
+    },
+    {
+        "id": 5536,
+        "text": "[CLS] The <e1>campus</e1> comprises the most noteworthy <e2>buildings</e2> including the Rector Tower, the Central Library and the University Olympic Stadium used for the 1968 Olympic Games and the 1986 soccer World Cup [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>campus</e1> is home to several notable landmarks, including the historic <e2>buildings</e2> that have been beautifully restored to maintain their original charm [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where the \"buildings\" (e2) are a part of the larger \"campus\" (e1)."
+    },
+    {
+        "id": 5580,
+        "text": "[CLS] The <e1>exhibition</e1> brings together rare Chinese <e2>ceramics</e2> and paintings [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The museum's collection of ancient artifacts features exquisite <e2>ceramics</e2> that are a vital part of the <e1>exhibition</e1> [SEP]\n\nIn this new sentence, the relationship between the entities remains the same, with \"ceramics\" (e2) being a component of the \"exhibition\" (e1)."
+    },
+    {
+        "id": 5589,
+        "text": "[CLS] <e1>Oscillation</e1> of the lever caused by the <e2>swinging</e2> of the pendulum [SEP]",
+        "label": 7,
+        "relation_name": "Cause-Effect(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] <e1>Oscillation</e1> of the guitar string was a direct result of the <e2>swinging</e2> motion of the musician's arm [SEP]\n\nIn this new sentence, the relationship between the entities is still Cause-Effect(e2,e1), where the swinging motion of the musician's arm (e2) causes the oscillation of the guitar string (e1)."
+    },
+    {
+        "id": 5697,
+        "text": "[CLS] A <e1>player</e1> attaches a <e2>flashlight</e2> to a rifle which is later discarded [SEP]",
+        "label": 3,
+        "relation_name": "Instrument-Agency(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] A <e1>player</e1> uses a <e2>flashlight</e2> to navigate through a dark cave [SEP]\n\nIn this sentence, the relationship between the entities is still Instrument-Agency(e2,e1), where the flashlight (e2) is the instrument used by the player (e1) to navigate through the cave."
+    },
+    {
+        "id": 5700,
+        "text": "[CLS] The plan for the day was for our group to join a <e1>convoy</e1> of <e2>buses</e2>, vans and coasters on a 3-hour drive across the bare Egyptian desert to the distant city of Abu Simbel [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The tour operator arranged for our group to board a <e2>buses</e2> that was part of a large <e1>convoy</e1> of vehicles heading to the music festival [SEP]\n\nIn this new sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"buses\" is a member of the \"convoy\"."
+    },
+    {
+        "id": 5702,
+        "text": "[CLS] The <e1>meeting</e1> was opened by the <e2>welcome speech</e2> of the Mayor of Komotini, Mr. Dimitrios. Kotsakis [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>meeting</e1> was initiated with the <e2>welcome speech</e2> of the keynote speaker. [SEP]\n\nIn this new sentence, the relationship between the entities remains the same, i.e., Component-Whole(e2,e1), where the \"welcome speech\" (e2) is a component of the \"meeting\" (e1)."
+    },
+    {
+        "id": 5705,
+        "text": "[CLS] Such an uneasy state of affairs existed until the fifth century, when the empire's Rhine barrier was breached, allowing a vast, mixed <e1>horde</e1> of <e2>barbarians</e2> to stream into Italy, thereby laying the groundwork for the kingdoms that would eventually come to dominate the European continent [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The museum's curator carefully selected a few artifacts from the vast <e2>barbarians</e2> exhibit to display in a special showcase, highlighting the brutal tactics of a single <e1>horde</e1> that had ravaged the countryside centuries ago [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"barbarians\" (e2) is a collection that contains a \"horde\" (e1) as a member."
+    },
+    {
+        "id": 5820,
+        "text": "[CLS] Your <e1>upload</e1> has been added to the <e2>system</e2> [SEP]",
+        "label": 9,
+        "relation_name": "Entity-Destination(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The new <e1>upload</e1> will be sent directly to the <e2>system</e2> [SEP]\n\nIn this sentence, the relationship Entity-Destination(e1,e2) is preserved, where \"upload\" is the entity being sent (e1) and \"system\" is the destination (e2)."
+    },
+    {
+        "id": 5831,
+        "text": "[CLS] China has tested Barack Obama early in his presidency, with a <e1>flotilla</e1> of naval <e2>vessels</e2> surrounding and harassing a US spy ship in the South China Sea [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The harbor was filled with a <e1>flotilla</e1> of various <e2>vessels</e2> from different countries participating in the annual maritime festival [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"vessels\" (e2) is a collection of which \"flotilla\" (e1) is a member."
+    },
+    {
+        "id": 5841,
+        "text": "[CLS] Like a <e1>battalion</e1> of medieval <e2>archers</e2>, these plasma cells let fly their antibodies, which travel to their targets on the outer surface of harmful bacteria [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] In the heat of battle, a skilled <e2>archers</e2> was a valuable asset to a well-trained <e1>battalion</e1> [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where an archer is a member of a battalion."
+    },
+    {
+        "id": 5862,
+        "text": "[CLS] Surviving a plane crash over Micronesia as a baby that killed my adoptive parents, I was initially raised by a <e1>whoop</e1> of wild <e2>gorillas</e2>, then later by savage pygmies who idolised me as someone with special powers and christened me \"Mighty White Man\", shortened recently to Dean Wightman [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] After years of studying primate behavior, I finally encountered a <e1>whoop</e1> of wild <e2>gorillas</e2> in the heart of the jungle, and was amazed to see how the gorillas interacted with each other within their tight-knit group [SEP]\n\nIn this new sentence, the relationship between the entities is still Member-Collection(e2,e1), where the gorillas (e2) are part of a whoop (e1)."
+    },
+    {
+        "id": 5880,
+        "text": "[CLS] Meurkens is one of those rare musicians who makes you listen to his instrument - the harmonica - as a <e1>virtuoso</e1> <e2>instrument</e2> [SEP]",
+        "label": 3,
+        "relation_name": "Instrument-Agency(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The conductor's skilled hands guided the <e2>instrument</e2> to produce a sound that only a true <e1>virtuoso</e1> could achieve [SEP]\n\nIn this sentence, the relationship Instrument-Agency(e2,e1) is preserved, where the instrument (e2) is being played by the virtuoso (e1), maintaining the direction of the relationship."
+    },
+    {
+        "id": 5907,
+        "text": "[CLS] As it did in 2004, the <e1>event</e1> combined the annual neural prosthesis <e2>workshop</e2> - now in its 36th year - and the DBS consortium [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\n[CLS] The <e2>workshop</e2> is a crucial part of the annual <e1>event</e1> that brings together experts in the field of neural prosthesis [SEP]\n\nIn this new sentence, the relationship between the entities \"workshop\" (e2) and \"event\" (e1) remains the same, i.e., Component-Whole(e2,e1), indicating that the workshop is a component or a part of the larger event."
+    },
+    {
+        "id": 5917,
+        "text": "[CLS] This speed bag <e1>plaform</e1> is made of heavy duty powder coated <e2>steel</e2> that secures easily to a wood stud, brick or concrete [SEP]",
+        "label": 17,
+        "relation_name": "Entity-Origin(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>plaform</e1> of this industrial shelving unit is constructed from high-quality, rust-resistant <e2>steel</e2> to ensure durability [SEP]\n\nIn this new sentence, the relationship Entity-Origin(e1,e2) is preserved, where the \"platform\" originates from or is made of \"steel\"."
+    },
+    {
+        "id": 5934,
+        "text": "[CLS] The <e1>author</e1> of this <e2>book</e2> is believed to be Nehemiah himself [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>author</e1> is credited with writing the famous <e2>book</e2> [SEP]\n\nIn this sentence, the relationship is still Product-Producer(e2,e1), where the <e2>book</e2> is the product and the <e1>author</e1> is the producer."
+    },
+    {
+        "id": 5935,
+        "text": "[CLS] He noted that, before printing, key phrases had been deleted that had earlier been approved by the <e1>draft</e1>'s several <e2>scientist-authors</e2> [SEP]",
+        "label": 16,
+        "relation_name": "Product-Producer(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The publisher revealed that the <e1>draft</e1> was carefully crafted by the <e2>scientist-authors</e2> to ensure its accuracy [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer, where the \"draft\" (e1) is the product and the \"scientist-authors\" (e2) are the producers."
+    },
+    {
+        "id": 5938,
+        "text": "[CLS] <e1>Conversation</e1> was centered more around <e2>investment</e2> in the consumer area rather than FB specific [SEP]",
+        "label": 13,
+        "relation_name": "Message-Topic(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] <e1>Conversation</e1> was focused more on discussing the benefits of <e2>investment</e2> in the tech industry [SEP]\n\nIn this new sentence, the relationship between the entities is still Message-Topic(e1,e2), where \"Conversation\" is the message and \"investment\" is the topic."
+    },
+    {
+        "id": 5942,
+        "text": "[CLS] The <e1>flat</e1> has a big <e2>balcony</e2>, a bathtub and there's also a lift if you don't want to walk up 2 flights of steps to the second floor [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>flat</e1> is a cozy apartment that features a spacious <e2>balcony</e2> with a great city view [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), meaning the balcony (e2) is a part of the flat (e1)."
+    },
+    {
+        "id": 5967,
+        "text": "[CLS] The reddish purple bracts of the flower roll back and split to expose a <e1>hand</e1> of <e2>bananas</e2>, usually at the rate of one per day [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] At the fruit stand, a single <e1>hand</e1> is carefully arranged to hold a bunch of fresh <e2>bananas</e2> [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Member-Collection(e2,e1), where a single \"hand\" is a member of a collection of \"bananas\"."
+    },
+    {
+        "id": 5990,
+        "text": "[CLS] The <e1>scientist</e1>'s <e2>theories</e2> about the mutants being extinct were proven false when Hades and his surviving clan members stalked and brutally killed Wilson [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e1>scientist</e1>'s groundbreaking research led to the development of innovative <e2>theories</e2> that transformed the field of genetics [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer (e2,e1), where the scientist (e1) is the producer of the theories (e2)."
+    },
+    {
+        "id": 6038,
+        "text": "[CLS] The <e1>central nervous system</e1> comprises the <e2>brain</e2> and the spinal chord [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>central nervous system</e1> is responsible for controlling the functions of the <e2>brain</e2> [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the brain (e2) is a component of the central nervous system (e1)."
+    },
+    {
+        "id": 6047,
+        "text": "[CLS] This time, however, another bird joined the <e1>eyrar</e1> of black <e2>swans</e2>, as Dubai-owned subsidiary Dubai World. Oliver Russ. Argonaut Capital Partners [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The rare sighting of a white <e2>swans</e2> was a welcome addition to the <e1>eyrar</e1> of birds at the wildlife sanctuary. [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the swans (e2) are a part of the eyrar (e1) of birds."
+    },
+    {
+        "id": 6086,
+        "text": "[CLS] The 50g is hands-down, the absolute best <e1>calculator</e1> for <e2>engineers</e2>, surveyors, and hackers [SEP]",
+        "label": 4,
+        "relation_name": "Instrument-Agency(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] For any complex mathematical problem, the <e1>calculator</e1> is an indispensable tool for <e2>engineers</e2> [SEP]\n\nIn this sentence, the relationship between the entities is still Instrument-Agency(e1,e2), where the calculator (e1) is an instrument used by engineers (e2)."
+    },
+    {
+        "id": 6109,
+        "text": "[CLS] The <e1>reporters</e1> on this project have constructed one of the most comprehensive <e2>explanations</e2> of how the price of this vital infrastructure has spiraled out of control [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e1>reporters</e1> have written a detailed article that provides a thorough <e2>explanations</e2> of the recent economic downturn [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e2,e1), where the reporters (e1) are the producers of the explanations (e2)."
+    },
+    {
+        "id": 6114,
+        "text": "[CLS] The Rabbit wine <e1>opener</e1> even automatically releases the cork from the <e2>spiral</e2> [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>spiral</e2> staircase is a fundamental part of the <e1>opener</e1> of the historic building [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the spiral (e2) is a part of the opener (e1)."
+    },
+    {
+        "id": 6121,
+        "text": "[CLS] Once more he is facing off against the malicious Cobra, who has released a <e1>division</e1> of irresistible <e2>infantrymen</e2> with fierce battle talents [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The army general carefully deployed a <e1>division</e1> of highly trained <e2>infantrymen</e2> to secure the border [SEP]\n\nIn this sentence, the relationship between the entities is still Member-Collection(e2,e1), where the infantrymen (e2) are part of the division (e1)."
+    },
+    {
+        "id": 6134,
+        "text": "[CLS] The <e1>backpack</e1> contained a <e2>social security number</e2> and other miscellaneous items [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>backpack</e1> was used to store a <e2>social security number</e2> and other important documents [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the social security number (e2) is contained within the backpack (e1)."
+    },
+    {
+        "id": 6235,
+        "text": "[CLS] A <e1>suitcase</e1> with a <e2>bomb</e2> in it is carried around [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] A <e1>suitcase</e1> is used to store a <e2>bomb</e2> safely [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the bomb (e2) is contained within the suitcase (e1)."
+    },
+    {
+        "id": 6323,
+        "text": "[CLS] The <e1>implant</e1> contains <e2>nanoparticles</e2> which are designed to test for different substances, including metabolites such as glucose and oxygen that are associated with tumor growth [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>implant</e1> is composed of <e2>nanoparticles</e2> that help to monitor the body's response to various treatments [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where the nanoparticles (e2) are a component of the implant (e1)."
+    },
+    {
+        "id": 6344,
+        "text": "[CLS] The contents of the <e1>workshop</e1> included a <e2>discussion</e2> on various documents in respect of exports, imports and documents relating to letters of credit [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>discussion</e2> was a key part of the <e1>workshop</e1> on international trade agreements [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the discussion (e2) is a component of the workshop (e1)."
+    },
+    {
+        "id": 6359,
+        "text": "[CLS] The <e1>kitchen</e1> contains various commercial equipment such as <e2>stoves</e2>, griddles, deep fryer, and an oven [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>kitchen</e1> is equipped with a variety of appliances, including a <e2>stove</e2> that is essential for meal preparation [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Component-Whole(stove, kitchen), where the stove is a component of the kitchen."
+    },
+    {
+        "id": 6381,
+        "text": "[CLS] The <e1>country</e1> <e2>gentleman</e2>, lodging at the Hotel de Mayence, Rue Saint-Honore, near the Place Vendome, one morning received a visit from a confidential agent of the Ministry, who was an expert in 'winding up' business [SEP]",
+        "label": 18,
+        "relation_name": "Entity-Origin(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e1>country</e1> <e2>gentleman</e2>, who had spent his childhood in the rolling hills of the countryside, still maintained a deep connection to his rural <e1>country</e1> roots, which was evident in his love for the simple life, as noted by the <e2>gentleman</e2> farmer who supplied him with fresh produce [SEP]\n\nIn this new sentence, the relationship Entity-Origin(e2,e1) is preserved, where the \"gentleman\" (e2) originates from or has a connection to the \"country\" (e1)."
+    },
+    {
+        "id": 6415,
+        "text": "[CLS] The <e1>company</e1> uses a policy <e2>assertion</e2> to convey a condition under which they offer a Web service [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>company</e1> relies on a <e2>assertion</e2> as a key product to establish its market presence [SEP]\n\nIn this new sentence, the relationship between the entities is still Product-Producer(e2,e1), where the \"assertion\" (e2) is a product of the \"company\" (e1)."
+    },
+    {
+        "id": 6435,
+        "text": "[CLS] The remaining <e1>contents</e1> of the package included four ounces of <e2>plastique</e2> filled with tiny metallic slivers [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>plastique</e2> was carefully packed inside the <e1>contents</e1> of the suspicious luggage [SEP]\n\nIn this new sentence, the relationship \"Content-Container\" is preserved, with the <e2>plastique</e2> being the content and the <e1>contents</e1> being the container."
+    },
+    {
+        "id": 6446,
+        "text": "[CLS] Orpheus falls in love with the <e1>country</e1> <e2>girl</e2> for no apparent reason save her name and beauty [SEP]",
+        "label": 18,
+        "relation_name": "Entity-Origin(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>girl</e2> has always been proud of her roots in the <e1>country</e1> where she grew up [SEP]\n\nIn this sentence, the relationship Entity-Origin(e2,e1) is preserved, where the \"girl\" (e2) originates from the \"country\" (e1)."
+    },
+    {
+        "id": 6449,
+        "text": "[CLS] The <e1>box</e1> holds the <e2>answer</e2> to how you got trapped [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>box</e1> contains the <e2>answer</e2> you've been searching for [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the \"answer\" (e2) is still contained within the \"box\" (e1)."
+    },
+    {
+        "id": 6454,
+        "text": "[CLS] The <e1>monitor</e1> provides a quarterly <e2>report</e2> to the Chapter (or NEC) [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>monitor</e1> is responsible for generating the monthly <e2>report</e2> [SEP]\n\nIn this new sentence, the relationship between the entities is still Product-Producer(e2,e1), where the \"report\" (e2) is the product produced by the \"monitor\" (e1)."
+    },
+    {
+        "id": 6455,
+        "text": "[CLS] The <e1>discoverer</e1> writes a short <e2>citation</e2> explaining the reasons for assigning the name [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>discoverer</e1> is often credited with a <e2>citation</e2> that acknowledges their groundbreaking work [SEP]\n\nIn this new sentence, the relationship between the entities is still Product-Producer(e2,e1), where the \"citation\" (e2) is the product of the \"discoverer\" (e1)."
+    },
+    {
+        "id": 6478,
+        "text": "[CLS] You own a <e1>house</e1> that contains a <e2>granny flat</e2> [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e2>granny flat</e2> is a part of the <e1>house</e1> that has been recently renovated [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the granny flat is a component of the house."
+    },
+    {
+        "id": 6489,
+        "text": "[CLS] The <e1>box</e1> contained 126 <e2>recipes</e2>, mostly written in pen in neatly rounded script [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>box</e1> was filled with 126 <e2>recipes</e2> that were carefully organized and categorized [SEP]\n\nIn this new sentence, the relationship Content-Container(e2,e1) is preserved, where the \"recipes\" (e2) are contained within the \"box\" (e1)."
+    },
+    {
+        "id": 6545,
+        "text": "[CLS] The <e1>corbel</e1> was carved with a contorted <e2>face</e2> [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The ancient statue had a contorted <e2>face</e2> that was part of a larger stone <e1>corbel</e1> [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where the \"face\" is a component of the larger \"corbel\"."
+    },
+    {
+        "id": 6611,
+        "text": "[CLS] The <e1>contents</e1> of the questionnaire included the <e2>gender</e2> and age of the patient, his/her knowledge of the procedure undertaken and the person obtaining consent [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>contents</e1> of the medical record included the <e2>gender</e2> of the patient, along with other demographic information [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where \"gender\" is a component of the \"contents\" of the medical record."
+    },
+    {
+        "id": 6620,
+        "text": "[CLS] First, the contents of the <e1>proposal</e1> included a detailed <e2>cost analysis</e2>, accurate marketing analysis and a preliminary project execution plan [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The company's financial report highlighted a thorough <e2>cost analysis</e2> as a crucial part of the overall <e1>proposal</e1> for the new investment project [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the \"cost analysis\" is a component of the larger \"proposal\"."
+    },
+    {
+        "id": 6625,
+        "text": "[CLS] The <e1>recommendations</e1> contained the following <e2>key points</e2> and highlights [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>recommendations</e1> were summarized into the following <e2>key points</e2> [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where \"key points\" (e2) are a component of the \"recommendations\" (e1)."
+    },
+    {
+        "id": 6627,
+        "text": "[CLS] The <e1>envelope</e1> contained an important intelligence <e2>discovery</e2> of the war [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>envelope</e1> was used to send a confidential <e2>discovery</e2> to the headquarters [SEP]\n\nIn this new sentence, the relationship between the entities is still Content-Container(e2,e1), where the \"discovery\" (e2) is contained within the \"envelope\" (e1)."
+    },
+    {
+        "id": 6628,
+        "text": "[CLS] The <e1>library</e1> contained <e2>books</e2> of guidance on the processes [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>library</e1> was filled with shelves that held many <e2>books</e2> [SEP]\n\nIn this new sentence, the relationship between the entities is still Member-Collection(e2,e1), where \"books\" (e2) are part of the collection in the \"library\" (e1)."
+    },
+    {
+        "id": 6639,
+        "text": "[CLS] The <e1>kitchen</e1> holds patient <e2>drinks</e2> and snacks [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>kitchen</e1> is where you can find the <e2>drinks</e2> and snacks [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the \"drinks\" (e2) are contained within the \"kitchen\" (e1)."
+    },
+    {
+        "id": 6640,
+        "text": "[CLS] The <e1>box</e1> contained the jumbled <e2>skeletal remains</e2> of what appeared to be sheep, as well as a variety of other mammals [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>box</e1> was used to store the <e2>skeletal remains</e2> of a historical discovery, along with other ancient artifacts [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the skeletal remains (e2) are contained within the box (e1)."
+    },
+    {
+        "id": 6698,
+        "text": "[CLS] The <e1>crypt</e1> contained the <e2>tomb</e2> of St Paul but the altar had hidden it [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>crypt</e1> was the final resting place that held the sacred <e2>tomb</e2> [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the \"tomb\" (e2) is contained within the \"crypt\" (e1)."
+    },
+    {
+        "id": 6716,
+        "text": "[CLS] The <e1>software</e1> uses the wrong comment <e2>marks</e2> for PHP files [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The company that developed the <e1>software</e1> also designed the <e2>marks</e2> for coding standards [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e2,e1), where \"marks\" (e2) is the product of the \"software\" (e1) company."
+    },
+    {
+        "id": 6721,
+        "text": "[CLS] Another <e1>drinking</e1> <e2>accident</e2> happened in the Gallup area the other day, which is plagued by drinking and driving accidents [SEP]",
+        "label": 8,
+        "relation_name": "Cause-Effect(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>drinking</e1> problem in the college campus led to another <e2>accident</e2> involving a student who lost control of his bike [SEP]\n\nIn this new sentence, the relationship between the entities is still Cause-Effect(e1,e2), where \"drinking\" (e1) is the cause and \"accident\" (e2) is the effect."
+    },
+    {
+        "id": 6769,
+        "text": "[CLS] The <e1>contents</e1> of the bag included numerous <e2>flyers</e2> from other conference sponsors and exhibitors and some useful stationery supplies [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>contents</e1> of the desk drawer were filled with <e2>flyers</e2> from various companies and some useful office materials [SEP]\n\nIn this new sentence, the relationship between the entities is still Content-Container(e2,e1), where the \"flyers\" (e2) are contained within the \"contents\" (e1) of the desk drawer."
+    },
+    {
+        "id": 6785,
+        "text": "[CLS] The <e1>room</e1> contains <e2>radioactive materials</e2> [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>room</e1> is filled with <e2>radioactive materials</e2> [SEP]\n\nIn this new sentence, the relationship Content-Container(e2,e1) is preserved, where the \"radioactive materials\" (e2) are contained within the \"room\" (e1)."
+    },
+    {
+        "id": 6786,
+        "text": "[CLS] <e1>Trees</e1> grow <e2>seeds</e2> [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] <e1>Trees</e1> are produced from <e2>seeds</e2> [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e2,e1), where \"seeds\" (e2) produce \"trees\" (e1)."
+    },
+    {
+        "id": 6795,
+        "text": "[CLS] Since I was a teacher, the <e1>boxes</e1> contained <e2>books</e2> I was bringing for the students to improve their English [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] As a librarian, I carefully placed the <e2>books</e2> into the <e1>boxes</e1> to store them on the shelves [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the books (e2) are contained within the boxes (e1)."
+    },
+    {
+        "id": 6796,
+        "text": "[CLS] The <e1>box</e1> holds our <e2>pool equipment</e2> perfectly [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e1>box</e1> is exactly what we need to store our <e2>pool equipment</e2> [SEP]\n\nIn this new sentence, the relationship Content-Container(e2,e1) is preserved, where the \"pool equipment\" (e2) is still contained within the \"box\" (e1)."
+    },
+    {
+        "id": 6814,
+        "text": "[CLS] <e1>Factory class</e1> that manufactures component <e2>objects</e2> for the farmyard [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>objects</e2> are created by a skilled <e1>Factory class</e1> that specializes in precision engineering [SEP]\n\nIn this new sentence, the relationship between the entities remains the same: Product-Producer(e2,e1), where the \"objects\" (e2) are produced by the \"Factory class\" (e1)."
+    },
+    {
+        "id": 6823,
+        "text": "[CLS] PHY 319 is presently taught in three 50-minute lectures per week in which the <e1>instructor</e1> makes a chalkboard <e2>presentation</e2> [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e2>presentation</e2> is carefully crafted by the <e1>instructor</e1> to engage the students [SEP]\n\nIn this sentence, the relationship between the entities is still Product-Producer(e2,e1), where the presentation (e2) is the product of the instructor (e1)."
+    },
+    {
+        "id": 6841,
+        "text": "[CLS] Eight rooms surround a central square <e1>room</e1> that contains the mortal <e2>remains</e2> of Bibi Pari [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The ancient temple houses a sacred <e1>room</e1> that preserves the fragile <e2>remains</e2> of a long-lost civilization [SEP]\n\nIn this new sentence, the relationship Content-Container(e2,e1) is maintained, where the \"remains\" (e2) are contained within the \"room\" (e1)."
+    },
+    {
+        "id": 6881,
+        "text": "[CLS] The <e1>bowl</e1> contained <e2>apples</e2>, pears, and oranges [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>bowl</e1> was filled with <e2>apples</e2> and other fruits [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the apples (e2) are contained within the bowl (e1)."
+    },
+    {
+        "id": 6914,
+        "text": "[CLS] In one day, the Red Crescent treated more than 50 injuries - mainly broken bones caused by <e1>panic</e1> from <e2>aftershocks</e2> [SEP]",
+        "label": 7,
+        "relation_name": "Cause-Effect(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The sudden appearance of <e2>aftershocks</e2> triggered widespread <e1>panic</e1> among the residents of the coastal town [SEP]\n\nIn this sentence, the relationship between the entities is still Cause-Effect(e2,e1), where the aftershocks (e2) cause the panic (e1)."
+    },
+    {
+        "id": 6920,
+        "text": "[CLS] The <e1>implementor</e1> makes the <e2>decision</e2>, not the protocol [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>decision</e1> is made by the <e2>implementor</e2> [SEP]\n\nIn this sentence, the relationship remains the same: Product-Producer(e2,e1), where the \"implementor\" (e2) is the producer of the \"decision\" (e1)."
+    },
+    {
+        "id": 6930,
+        "text": "[CLS] The <e1>morning session</e1> contains a <e2>tutorial</e2> that aims to address the basic issues necessary for a better understanding of this complicated topic [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>degree program</e1> contains a <e2>tutorial</e2> that provides foundational knowledge for students to excel in their chosen field [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the tutorial (e2) is a part of the degree program (e1)."
+    },
+    {
+        "id": 6958,
+        "text": "[CLS] The <e1>kitchen</e1> contains basic items such as <e2>salt</e2>, pepper and olive oil [SEP]",
+        "label": 12,
+        "relation_name": "Content-Container(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>kitchen</e1> is where you'll typically find staples like <e2>salt</e2> [SEP]\n\nIn this sentence, the relationship Content-Container(e2,e1) is preserved, where the kitchen (e1) contains salt (e2)."
+    },
+    {
+        "id": 6971,
+        "text": "[CLS] There were the years of constant fatigue and shortness of breath, the heart attack at age 11, the <e1>collapse</e1> from <e2>exhaustion</e2> on her high school graduation night [SEP]",
+        "label": 7,
+        "relation_name": "Cause-Effect(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] After months of intense training, the athlete's <e2>exhaustion</e2> led to a sudden <e1>collapse</e1> during the marathon [SEP]\n\nIn this sentence, the relationship between the entities is still Cause-Effect(e2,e1), where the exhaustion (e2) causes the collapse (e1)."
+    },
+    {
+        "id": 6981,
+        "text": "[CLS] The <e1>collection</e1> contained <e2>books</e2>, magazines, journals, and newspapers [SEP]",
+        "label": 6,
+        "relation_name": "Member-Collection(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e1>collection</e1> of the library included a rare <e2>book</e2> [SEP]\n\nIn this sentence, the relationship \"Member-Collection(e2,e1)\" is preserved, where the book (e2) is a member of the collection (e1)."
+    },
+    {
+        "id": 7032,
+        "text": "[CLS] The <e1>kitchen</e1> contained a large <e2>stove</e2>, a sink, a small table with chairs, and an old sofa that had seen many children and grandchildren tear at its skin [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>kitchen</e1> was renovated to accommodate a modern <e2>stove</e2> that became the central cooking unit [SEP]\n\nIn this sentence, the relationship between the entities is still Component-Whole(e2,e1), where the stove (e2) is a component of the kitchen (e1)."
+    },
+    {
+        "id": 7066,
+        "text": "[CLS] A <e1>pulsar</e1> powers the supernova <e2>remnant</e2> by confirming the existence of the point-like source and discovering a cloud of high-energy electrons around the central object [SEP]",
+        "label": 4,
+        "relation_name": "Instrument-Agency(e1,e2)",
+        "new_generation_response": "assistantassistant\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS] The <e1>pulsar</e1> drives the expansion of the <e2>supernova remnant</e2> by injecting a stream of energetic particles into the surrounding interstellar medium [SEP]\n\nIn this new sentence, the relationship between the entities is still Instrument-Agency(e1,e2), where the pulsar (e1) is the instrument that powers the agency of the supernova remnant (e2)."
+    },
+    {
+        "id": 7090,
+        "text": "[CLS] The <e1>kitchen</e1> contained a <e2>well</e2> at the northern end and a well and two holding areas for live fish on the southern end [SEP]",
+        "label": 1,
+        "relation_name": "Component-Whole(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>kitchen</e1> was equipped with a <e2>well</e2> that supplied water to the entire cooking area [SEP]\n\nIn this new sentence, the relationship between the entities is still Component-Whole(e2,e1), where the well (e2) is a component of the kitchen (e1)."
+    },
+    {
+        "id": 7096,
+        "text": "[CLS] <e1>Grapefruit</e1> <e2>juice</e2> causes more of these drugs to enter the blood [SEP]",
+        "label": 18,
+        "relation_name": "Entity-Origin(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] <e1>Grapefruit</e1> <e2>juice</e2> is extracted from the pulp of the <e1>Grapefruit</e1> and then bottled as <e2>juice</e2> [SEP]\n\nIn this new sentence, the relationship Entity-Origin(juice, Grapefruit) is maintained, indicating that juice originates from Grapefruit."
+    },
+    {
+        "id": 7108,
+        "text": "[CLS] Unlike earlier machines, their <e1>typewriter</e1> permits the <e2>typist</e2> to see what is being typed and has other features that make it the first really practical typing machine [SEP]",
+        "label": 4,
+        "relation_name": "Instrument-Agency(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The skilled <e1>typist</e1> uses her trusty <e2>typewriter</e2> to produce error-free documents with ease [SEP]\n\nIn this sentence, the relationship between the entities is still Instrument-Agency(e1,e2), where the typist (e1) uses the typewriter (e2) as an instrument to perform her work."
+    },
+    {
+        "id": 7151,
+        "text": "[CLS] Also, very rarely, hypnotherapy leads to the development of 'false <e1>memories</e1>' fabricated by the unconscious <e2>mind</e2>; these are called confabulations [SEP]",
+        "label": 16,
+        "relation_name": "Product-Producer(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] In some cases, the <e1>memories</e1> created through suggestive questioning are actually produced by the imaginative <e2>mind</e2> rather than actual events [SEP]\n\nIn this sentence, the relationship between \"memories\" (e1) and \"mind\" (e2) is still Product-Producer, where the mind (e2) produces or creates the memories (e1)."
+    },
+    {
+        "id": 7166,
+        "text": "[CLS] The <e1>air</e1> in the <e2>jar</e2> started circulating to the rest of the room [SEP]",
+        "label": 11,
+        "relation_name": "Content-Container(e1,e2)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>air</e1> in the <e2>jar</e2> was released slowly as the lid was opened [SEP]\n\nIn this sentence, the relationship between the entities is still Content-Container(e1,e2), where \"air\" is the content and \"jar\" is the container."
+    },
+    {
+        "id": 7168,
+        "text": "[CLS] The <e1>legislature</e1> created the <e2>ombudsman</e2> to intervene when children or their parents are subjected to unauthorized or unreasonable agency decisions [SEP]",
+        "label": 15,
+        "relation_name": "Product-Producer(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The <e1>legislature</e1> established the office of the <e2>ombudsman</e2> to oversee the implementation of laws affecting minors [SEP]\n\nIn this sentence, the relationship remains Product-Producer(e2,e1), where the ombudsman (e2) is the product of the legislature (e1)."
+    },
+    {
+        "id": 7174,
+        "text": "[CLS] Mr C notes <e1>worsening</e1> of seizures and cognition with sleep <e2>deprivation</e2> and stress [SEP]",
+        "label": 7,
+        "relation_name": "Cause-Effect(e2,e1)",
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The patient reported <e1>worsening</e1> of symptoms when she experienced <e2>sleep deprivation</e2> and anxiety [SEP]\n\nIn this new sentence, the relationship between the entities is still Cause-Effect(e2,e1), where sleep deprivation (e2) is the cause of worsening (e1) symptoms."
+    }
+]
