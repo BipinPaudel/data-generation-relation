@@ -14,7 +14,29 @@ def read_json(filename):
     return obj
     
     
-def read_relation_data(filename='data/train.csv'):
+def read_relation_data(dataset_type='water', filename='data/train.csv'):
+    if dataset_type == 'water':
+        sentence_filename = 'data/water/train_sentence.json'
+        sentences = relation_id_dict = read_json(sentence_filename)
+        sentence_label_filename = 'data/water/train_label_id.json'
+        sentences_labels = read_json(sentence_label_filename)
+        relation2id_filename = 'data/water/relation2id.json'
+        sentence_relation2id = read_json(relation2id_filename)
+        id_relation_dict = {int(value): key for key,value in sentence_relation2id.items()}
+        dataset_list = []
+        
+        for i, (text, label_id) in enumerate(zip(sentences, sentences_labels)):
+            data = {
+                "id": i,
+                "text": text,
+                "label": label_id,
+                "relation_name": id_relation_dict[label_id]
+            }
+            dataset_list.append(data)
+        return dataset_list
+        
+        
+        
     train_df = read_csv(filename)
     relation_id_dict = read_json('data/relation2id.json')
     print(train_df)
@@ -27,3 +49,7 @@ def read_relation_data(filename='data/train.csv'):
 def write_json_lists_to_file(filename, relations) -> None:
     with open(filename, 'w', encoding='utf-8') as f:
         json.dump(relations, f, ensure_ascii=False, indent=4)
+    
+def write_list_to_file(filename, lst):
+    with open(filename, 'w') as json_file:
+        json.dump(lst, json_file)
