@@ -14,13 +14,13 @@ def read_json(filename):
     return obj
     
     
-def read_relation_data(dataset_type='water', filename='data/train.csv'):
-    if dataset_type == 'water':
-        sentence_filename = 'data/water/train_sentence.json'
+def read_relation_data(dataset='water', data_type='train', filename='data/train.csv'):
+    if dataset == 'water':
+        sentence_filename = f'data/water/{data_type}/{data_type}_sentence.json'
         sentences = relation_id_dict = read_json(sentence_filename)
-        sentence_label_filename = 'data/water/train_label_id.json'
+        sentence_label_filename = f'data/water/{data_type}/{data_type}_label_id.json'
         sentences_labels = read_json(sentence_label_filename)
-        relation2id_filename = 'data/water/relation2id.json'
+        relation2id_filename = f'data/water/{data_type}/relation2id.json'
         sentence_relation2id = read_json(relation2id_filename)
         id_relation_dict = {int(value): key for key,value in sentence_relation2id.items()}
         dataset_list = []

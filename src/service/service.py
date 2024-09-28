@@ -7,12 +7,12 @@ from tqdm import tqdm
 from data.relation import read_json
 from src.utils.utils import sanity_check
 
-def run_experiment(cfg, experiment, dataset):
+def run_experiment(cfg, experiment, dataset, data_type):
     if experiment == Experiment.REPHRASE.value:
-        run_rephrase_experiment(cfg, dataset)
+        run_rephrase_experiment(cfg, dataset, data_type)
         
     elif experiment == Experiment.NEW_GENERATION.value:
-        run_new_generation_experiment(cfg, dataset)
+        run_new_generation_experiment(cfg, dataset, data_type)
         
     elif experiment == Experiment.PSEUDO_LABEL_GENERATION.value:
         run_pseudo_label_experiment(cfg, dataset)
@@ -21,14 +21,14 @@ def run_experiment(cfg, experiment, dataset):
         fix_new_gen_remaining(cfg, dataset)
         
 
-def run_rephrase_experiment(cfg, dataset):
-    dataset_list = read_relation_data(dataset_type=dataset)
+def run_rephrase_experiment(cfg, dataset, data_type):
+    dataset_list = read_relation_data(dataset=dataset, data_type=data_type)
     prompt_obj = get_prompt_obj(dataset)
     prompts = []
     for data in dataset_list:
         prompt = prompt_obj.rephrase_generation(data['text'], data['relation_name'])
         prompts.append(prompt)
-    max_workers = 2
+    max_workers = 4
     model = get_model(cfg.gen_model)
     
     results = model.predict_multi(prompts, max_workers=max_workers)
@@ -42,17 +42,17 @@ def run_rephrase_experiment(cfg, dataset):
             data = dataset_list[i]
             data['rephrase_response'] = r
             dataset_list[i]  = data
-        filename = f"data/results/{dataset}_rephrased_relation.jsonl"
+        filename = f"data/results/{dataset}/{dataset}_rephrased_relation.jsonl"
         write_json_lists_to_file(filename, dataset_list)
 
-def run_new_generation_experiment(cfg, dataset):
-    dataset_list = read_relation_data(dataset_type=dataset)
+def run_new_generation_experiment(cfg, dataset, data_type):
+    dataset_list = read_relation_data(dataset=dataset, data_type=data_type)
     prompt_obj = get_prompt_obj(dataset)
     prompts = []
     for data in dataset_list:
         prompt = prompt_obj.new_sentence_generation(data['text'], data['relation_name'])
         prompts.append(prompt)
-    max_workers = 2
+    max_workers = 4
     model = get_model(cfg.gen_model)
     
     results = model.predict_multi(prompts, max_workers=max_workers)
@@ -68,7 +68,7 @@ def run_new_generation_experiment(cfg, dataset):
             data['new_generation_response'] = r
             dataset_list[i]  = data
 
-        filename = f"data/results/{dataset}_new_generation_relation.jsonl"
+        filename = f"data/results/{dataset}/{dataset}_new_generation_relation.jsonl"
         write_json_lists_to_file(filename, dataset_list)
         
 def run_pseudo_label_experiment(cfg, dataset):
