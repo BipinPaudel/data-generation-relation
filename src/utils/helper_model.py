@@ -4,17 +4,23 @@ from simcse import SimCSE
 
 class SimcseModel:
 
-    def __init__(self,relation_dict_whole) -> None:
+    def __init__(self,relation_dict_whole, dataset) -> None:
         self.mod_pmpt_train = None
         self.mod_sent_train = None
         self.label_idx = None
         self.model = None
+        self.dataset = dataset
         self.relation_dict_whole = relation_dict_whole
         self.generate_sim_cse_model()
 
     def generate_sim_cse_model(self, ):
-        data = read_json('/home/n/ngautam/researchscripts/MetaSRE/data/SemEval/train_sentence.json')
-        data2 = read_json('/home/n/ngautam/researchscripts/MetaSRE/data/SemEval/train_label_id.json')
+        if self.dataset == 'semeval':
+            data = read_json('/home/n/ngautam/researchscripts/MetaSRE/data/SemEval/train_sentence.json')
+            data2 = read_json('/home/n/ngautam/researchscripts/MetaSRE/data/SemEval/train_label_id.json')
+        elif self.dataset == 'tacred':
+            data = read_json('data/tacred/train_sentence.json')
+            data2 = read_json('data/tacred/train_label_id.json')
+            
         
         mod_sent_train = []
         mod_pmpt_train = []

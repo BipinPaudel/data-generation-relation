@@ -16,7 +16,7 @@ def run_experiment(cfg, experiment, dataset, data_type):
         run_new_generation_experiment(cfg, dataset, data_type)
         
     elif experiment == Experiment.PSEUDO_LABEL_GENERATION.value:
-        run_pseudo_label_experiment(cfg, dataset)
+        run_pseudo_label_experiment(cfg, dataset, data_type)
         
     elif experiment == Experiment.FIX_NEW_GEN_REMAINING.value: # Temporary remove
         fix_new_gen_remaining(cfg, dataset)
@@ -75,12 +75,13 @@ def run_new_generation_experiment(cfg, dataset, data_type):
         filename = f"data/results/{dataset}/{dataset}_new_generation_relation.jsonl"
         write_json_lists_to_file(filename, dataset_list)
         
-def run_pseudo_label_experiment(cfg, dataset):
-    dataset_list = read_relation_data(filename='data/test.csv')
+def run_pseudo_label_experiment(cfg, dataset, datatype):
+    dataset_list, id_relation_dict = read_relation_data(dataset=dataset, data_type=datatype)
     prompts = []
+    predefined_relations = list(id_relation_dict.values())
     prompt_obj = get_prompt_obj(dataset)
     for data in dataset_list:
-        prompt = prompt_obj.generate_pseudo_label(data['text'],  PredefinedRelations.RELATIONS)
+        prompt = prompt_obj.generate_pseudo_label(data['text'],  predefined_relations)
         prompts.append(prompt)
     max_workers = 4
     model = get_model(cfg.gen_model)
@@ -97,7 +98,7 @@ def run_pseudo_label_experiment(cfg, dataset):
             data = dataset_list[i]
             data['pseudo_label_prediction'] = r
             dataset_list[i]  = data
-        filename = f"data/results/{dataset}_psuedo_label_prediction_relation.jsonl"
+        filename = f"data/results/{dataset}_{datatype}_psuedo_label_prediction_relation.jsonl"
         write_json_lists_to_file(filename, dataset_list)
     
     
@@ -142,17 +143,17 @@ def fix_new_gen_remaining(cfg, dataset):
 def run_few_shot_pseudo_label_experiment(cfg, dataset, data_type):
     
     
-    dataset_list, id_relation_dict = read_relation_data_from_final_file()
-    sent_model = SimcseModel(id_relation_dict)
+    dataset_list, id_relation_dict = read_relation_data_from_final_file(dataset=dataset, datatype=data_type)
+    sent_model = SimcseModel(id_relation_dict, dataset=dataset)
     
 
-    
+    predefined_relations = list(id_relation_dict.values())
     prompt_obj = get_prompt_obj(dataset)
     prompts = []
     for ds in dataset_list:
         ex = sent_model.get_sim_examples(ds['text']) #This comes from sim eval prompt
 
-        prompt = prompt_obj.generate_few_shot_pseudo_label(ds['text'], PredefinedRelations.RELATIONS, id_relation_dict, ex)
+        prompt = prompt_obj.generate_few_shot_pseudo_label(ds['text'], predefined_relations, id_relation_dict, ex)
 
         prompts.append(prompt)
 

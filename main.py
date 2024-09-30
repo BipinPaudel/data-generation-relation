@@ -5,14 +5,14 @@ from src.service import run_experiment
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process inputs")
-    parser.add_argument('--experiment', type=str, default=[Experiment.FEW_SHOT_PSEUDO_LABEL_GENERATION.value], help='The type of experiment')
-    parser.add_argument('--dataset', type=str, default='water', help='type of dataset')
+    parser.add_argument('--experiment', type=str, default=[Experiment.PSEUDO_LABEL_GENERATION.value], help='The type of experiment')
+    parser.add_argument('--dataset', type=str, default='tacred', help='type of dataset')
     parser.add_argument('--data_type', type=str, default='test', help='type of dataset')
     args = parser.parse_args()
     
     env = "configs/reddit_llama3.1_70b.yaml"
     cfg = read_config_from_yaml(env)
-    data_type = ['train', 'test']
+    data_type = ['test']
     for exp in args.experiment:
         for dtype in data_type:
             run_experiment(cfg, exp, args.dataset, dtype)
