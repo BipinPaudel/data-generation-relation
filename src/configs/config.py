@@ -8,6 +8,7 @@ class Experiment(Enum):
     NEW_GENERATION = 'new_generation'
     PSEUDO_LABEL_GENERATION = 'psuedo_label_generation'
     FIX_NEW_GEN_REMAINING = 'fix_new_gen_remaining'
+    FEW_SHOT_PSEUDO_LABEL_GENERATION = 'few_shot_psuedo_label_generation'
 
 class PredefinedRelations:
     RELATIONS = [

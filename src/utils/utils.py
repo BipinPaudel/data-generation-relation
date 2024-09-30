@@ -21,8 +21,6 @@ def sanity_check(json_list, key='rephrase_response'):
     return error_ids
 
 
-
-
 def compare_two(original, rephrased):
     e1_original = re.search(r'<e1>(.*?)</e1>', original).group(1)
     e2_original = re.search(r'<e2>(.*?)</e2>', original).group(1)
@@ -38,3 +36,25 @@ def compare_two(original, rephrased):
         return False, '', '', '', ''
     
     return (e1_original.strip().lower() == e1_rephrased.strip().lower() and e2_original.strip().lower() == e2_rephrased.strip().lower(), e1_original, e1_rephrased, e2_original, e2_rephrased)
+
+def sent_emb_entity(text, rel, relation_dict_whole):
+    pattern = r'<e1>(.*?)<\/e1>.*?<e2>(.*?)<\/e2>'
+    matches = re.search(pattern, text)
+    if matches:
+        e1_entity = matches.group(1).lower()
+        e2_entity = matches.group(2).lower()
+        # Remove e1 and e2 parts from the text
+        modified_text = text.replace("<e1>","").replace("</e1>","").replace("<e2>","").replace("</e2>","").lower()
+        relation = relation_dict_whole.get(rel)
+        check = True if "(e1, e2)" in relation else False 
+        if check:
+            new_text = f"Context: {modified_text}. Given, the context, the relation between e1={e1_entity} and e2={e2_entity}"
+            ret_text = f"The relation between {e1_entity} and {e2_entity} for the context: {modified_text}"
+            return ret_text, new_text
+        else:
+            new_text = f"Context: {modified_text}. Given, the context, the relation between e2={e2_entity} and e1={e1_entity}"
+            ret_text = f"The relation between {e2_entity} and {e1_entity} for the context: {modified_text}"
+            return ret_text, new_text
+
+    return text, text
+

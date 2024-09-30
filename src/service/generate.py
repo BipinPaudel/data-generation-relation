@@ -1,17 +1,18 @@
 import os
 from openai import OpenAI
 import pandas as pd 
-
+client = OpenAI(api_key = "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")
 import time
 import re
-
+model_id = 'gpt-3.5-turbo-0125'
 # model_id = 'gpt-4-1106-preview'
 
 # from generate_llama import LLAMA2
 
 class Generate_Psuedo_Labels:
-    def __init__(self, dataset= None, BATCH_SIZE=None, sent_model=None, sent_train=None, label_idx=None, mod_sent_train=None, mod_pmpt_train=None, b_labels=None, temp=0.0):
+    def __init__(self, dataset= None, labelpath=None,  BATCH_SIZE=None, sent_model=None, sent_train=None, label_idx=None, mod_sent_train=None, mod_pmpt_train=None, b_labels=None, temp=0.0):
         self.dataset = dataset
+        self.labelpath = labelpath
         self.batch = BATCH_SIZE
         self.model = sent_model
         self.train = sent_train
@@ -19,27 +20,27 @@ class Generate_Psuedo_Labels:
         self.mod_sent_train = mod_sent_train
         self.mod_pmpt_train = mod_pmpt_train
         self.b_labels = b_labels
-        # self.relation_dict = {
-        #     1: 'Component-Whole(e2,e1)',
-        #     2: 'Component-Whole(e1,e2)',
-        #     3: 'Instrument-Agency(e2,e1)',
-        #     4: 'Instrument-Agency(e1,e2)',
-        #     5: 'Member-Collection(e2,e1)',
-        #     6: 'Member-Collection(e1,e2)',
-        #     7: 'Cause-Effect(e2,e1)',
-        #     8: 'Cause-Effect(e1,e2)',
-        #     9: 'Entity-Destination(e2,e1)',
-        #     10: 'Entity-Destination(e1,e2)' ,
-        #     11: 'Content-Container(e2,e1)' ,
-        #     12: 'Content-Container(e1,e2)' ,
-        #     13: 'Message-Topic(e2,e1)' ,
-        #     14: 'Message-Topic(e1,e2)' ,
-        #     15: 'Product-Producer(e2,e1)' ,
-        #     16: 'Product-Producer(e1,e2)' ,
-        #     17: 'Entity-Origin(e2,e1)' ,
-        #     18: 'Entity-Origin(e1,e2)' ,
-        #     0: 'Other'
-        # }
+        self.relation_dict_whole = {
+            1: 'Component-Whole(e2,e1)',
+            2: 'Component-Whole(e1,e2)',
+            3: 'Instrument-Agency(e2,e1)',
+            4: 'Instrument-Agency(e1,e2)',
+            5: 'Member-Collection(e2,e1)',
+            6: 'Member-Collection(e1,e2)',
+            7: 'Cause-Effect(e2,e1)',
+            8: 'Cause-Effect(e1,e2)',
+            9: 'Entity-Destination(e2,e1)',
+            10: 'Entity-Destination(e1,e2)' ,
+            11: 'Content-Container(e2,e1)' ,
+            12: 'Content-Container(e1,e2)' ,
+            13: 'Message-Topic(e2,e1)' ,
+            14: 'Message-Topic(e1,e2)' ,
+            15: 'Product-Producer(e2,e1)' ,
+            16: 'Product-Producer(e1,e2)' ,
+            17: 'Entity-Origin(e2,e1)' ,
+            18: 'Entity-Origin(e1,e2)' ,
+            0: 'Other'
+        }
 
         self.relation_dict = {
             "Component-Whole(e2, e1)": 1,
@@ -112,7 +113,7 @@ class Generate_Psuedo_Labels:
 
 
     def get_sim_examples(self,text):
-        shot = 2
+        shot = 16
         results = self.model.search(text, threshold=0.0, top_k=shot+5)
 
         if results != []:
@@ -150,38 +151,22 @@ class Generate_Psuedo_Labels:
         ret_text, new_text = self.sent_emb_entity(text, label)
         ex = self.get_sim_examples(ret_text)
 
-     
-        DEFAULT_SYSTEM_PROMPT = f'''
-        Task: I will predict the relationship between two entities, e1 and e2, given the context. The set of pre-defined relationships is as follows:
-        Component-Whole(e2, e1) = 1
-        Component-Whole(e1, e2) = 2
-        Instrument-Agency(e2, e1) = 3
-        Instrument-Agency(e1, e2) = 4
-        Member-Collection(e1, e2) = 5
-        Member-Collection(e2, e1) = 6
-        Cause-Effect(e2, e1) = 7
-        Cause-Effect(e1, e2) = 8
-        Entity-Destination(e1, e2) = 9
-        Entity-Destination(e2, e1) = 10
-        Content-Container(e1, e2) = 11
-        Content-Container(e2, e1) = 12
-        Message-Topic(e1, e2) = 13
-        Message-Topic(e2, e1) = 14
-        Product-Producer(e2, e1) = 15
-        Product-Producer(e1, e2) = 16
-        Entity-Origin(e1, e2) = 17
-        Entity-Origin(e2, e1) = 18
-        No-Relation = 0
-        If the relation between e1 and e2 doesn't match any of the pre-defined relations, output 0.
+        # new_text = text.replace("[CLS]", "").replace("[SEP]", "")
+        
+        system_content = f'''You are an expert in natural language processing, specializing in understanding 
+        relationships between entities in text. Your task is to identify and output the relationship 
+        between two entities enclosed within the tags <e1> and <e2>'''
 
-        Your response should include:
-        Classified Relation: One of the relation numbers listed above based on the given context.
-        Confidence Level (0-100%): Your confidence about the prediction as a percentage, represented as Confidence: <percentage>%.
-        Example response format:
-        (Relation: Entity-Destination(e1, e2) = 9, Confidence: 80%)
+        header = f'''Analyze the given test sentence carefully and determine how the entities inside the tags e1 and e2 are related.'''
 
-        Learn from the following examples and follow the response format:
-        '''
+        footer = "Please output the relationship between entities in the format below:\n <relation> </relation>\n "\
+            f"Select only one option from the predefined relations list given in the list below: \n{self.relation_dict}\n" \
+            "The relationship in the list denote the flow of relation from entity e1 to e2 or e2 to e1."\
+            "Also, output the confidence score (0-1) indicating your certainty about the relationship inside the <confidence> tag."\
+            "Use the following demonstrations as examples:"
+
+        #  "Example response format: <relation>causes</relation>\n<confidence>0.9</confidence>"\
+        DEFAULT_SYSTEM_PROMPT =  header + footer
 
         # DEFAULT_SYSTEM_PROMPT += f'''
         # The relation between entity e1 and entity e2 in the given context : {text} is 
@@ -189,64 +174,65 @@ class Generate_Psuedo_Labels:
 
         if ex != None or ex != []:
             for example in ex:
-                rel = self.relation_dict.get(example[1])
+                rel = self.relation_dict_whole.get(example[1])
 
                 DEFAULT_SYSTEM_PROMPT += f'''
-                {example[0]} is 
-                (Relation: {rel}={example[1]}, Confidence: 80%)
+                Example Sentence: {example[0]} is 
+                <relation>{rel}</relation>\n<confidence>0.8</confidence>
                 '''
-
-        DEFAULT_SYSTEM_PROMPT+= f'''
-        {new_text} is '''
-
+        DEFAULT_SYSTEM_PROMPT += f"Test Sentence:\n{new_text}\n is" 
 
         prompt = DEFAULT_SYSTEM_PROMPT 
-
         conversation = []
+        conversation.append({'role': 'system', 'content': system_content})
         conversation.append({'role': 'user', 'content': prompt})
         conversation = self.ChatGPT_conversation(conversation) 
 
         return conversation[-1]['content'].strip()
 
 
-    def data_generate(self, outfile, type):
+    def data_generate(self, outfile, type): 
+        import json 
+        texts = json.load(open(self.dataset, "r"))
+        labels = json.load(open(self.labelpath,"r"))
+
+        data = [
+        {
+            "index": i,
+            "text": item,
+            "label": labels[i]
+        }
+            for i, item in enumerate(texts)
+        ]
+
+        with open(outfile, 'w') as file:
+            json.dump(data, file, indent=4)
+
+        with open(outfile, 'r') as file:
+            data = json.load(file)
+
+ 
+        for entry in data:
+            if "predicted_label" not in entry:
+                text = entry["text"]
+                label = entry["label"]
+
+                response = self.gpt_3_predict(text, label)
+                print(response)
+
+                if '<relation>' in response:
+                    part1, part2 = response.split("</relation>")
+                    part1 = part1.replace("<relation>", "")
+                    part2 = part2.replace("<confidence>", "").replace("</confidence>", "").strip()
+                    part2 = float(part2)*100
+
+                    entry["label_text"] = self.relation_dict_whole[label]
+                    entry["predicted_label"] = part1
+                    entry["predicted_confidence"] = part2
+
+                    with open(outfile, 'w') as file:
+                        json.dump(data, file, indent=4)
         
-        df = pd.read_csv(self.dataset)
-        texts = df['text']
-        labels = df['label']
-
-
-        relations = []
-        percentages = []
-        # Iterate through each text, pass to the function, and extract the relation and confidence
-        for i,text in enumerate(texts):
-            label = labels[i]
-            response = self.gpt_3_predict(text, label)
-            print(response)
-            # match = re.search(r"Relation:\s*([\w\-()]+)\s*=\s*(\d+),\s*Confidence:\s*(\d+)%", response)
-
-            match = re.search(r"\s*([\w\-()]+)\s*=\s*(\d+),\s*Confidence:\s*(\d+)%", response)
-        
-            if match:
-                relation = match.group(1)  
-                relation_number = int(match.group(2))
-                confidence = int(match.group(3)) 
-
-                relations.append(relation_number)
-                percentages.append(confidence)
-            else:
-                relations.append(0)
-                percentages.append(0)
-
-            # print(relations, percentages)
-
-
-        df['relation_temp'+str(type)] = relations
-        df['percentage_temp'+str(type)] = percentages
-
-        df.to_csv(outfile, index=False)
-
-
 from simcse import SimCSE
 import json
 
@@ -271,18 +257,16 @@ def sent_emb_entity(text, rel):
 
 
 if __name__ == "__main__":
-  
-
     sent_model = SimCSE("princeton-nlp/sup-simcse-bert-base-uncased")
     f = open('/home/n/ngautam/researchscripts/MetaSRE/data/SemEval/train_sentence.json')
     data = json.load(f)
 
     f2 = open('/home/n/ngautam/researchscripts/MetaSRE/data/SemEval/train_label_id.json')
     data2 = json.load(f2)
-
-    sent_train = []
+    
     mod_sent_train = []
     mod_pmpt_train = []
+    sent_train = []
 
     label_idx = []
     for d in data2:
@@ -294,35 +278,14 @@ if __name__ == "__main__":
         ret_text, tex = sent_emb_entity(mod, label_idx[index])
         mod_sent_train.append(ret_text)
         mod_pmpt_train.append(tex)
+
     
     sent_model.build_index(mod_sent_train)
 
+    filepath = "/home/n/ngautam/researchscripts/#CustomAUMST/data/test_sentence.json"
+    labelpath = "/home/n/ngautam/researchscripts/#CustomAUMST/data/test_label_id.json"
+    outfile = "/home/n/ngautam/researchscripts/#CustomAUMST/AUM-ST/semeval/test_15shot_label.json"
 
-    filepath = "/home/n/ngautam/researchscripts/#CustomAUMST/data/train.csv"
-    outfile = "/home/n/ngautam/researchscripts/#CustomAUMST/data/train_annotated_oneshot.csv"
-
-
-    # dataset, BATCH_SIZE, sent_model, sent_train, label_idx, mod_sent_train, mod_pmpt_train, b_labels.item())
-
-    gen = Generate_Psuedo_Labels(dataset=filepath, temp=0.7, sent_model=sent_model)
-    gen.data_generate(outfile, 2)
-
-    gen = Generate_Psuedo_Labels(dataset=outfile, temp=0.5, sent_model= sent_model)
+    gen = Generate_Psuedo_Labels(dataset=filepath, labelpath= labelpath, temp=0.5, sent_model=sent_model,
+     mod_sent_train=mod_sent_train, mod_pmpt_train=mod_pmpt_train, sent_train=sent_train, label_idx=label_idx)
     gen.data_generate(outfile, 3)
-
-    # gen = Generate_Psuedo_Labels(dataset=outfile)
-    # gen.data_generate(outfile, 1)
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
