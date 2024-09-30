@@ -4735,217 +4735,253 @@
         "id": 676,
         "text": "[CLS] Well I still have a sore spot on my <e1>cheek</e1> <e2>bone</e2> and left joint [SEP]",
         "label": 1,
-        "relation_name": "Component-Whole(e2,e1)"
+        "relation_name": "Component-Whole(e2,e1)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Component-Whole(e2,e1)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 677,
         "text": "[CLS] A solid round <e1>bar</e1>, 32\" long, is constructed from ductile <e2>steel</e2> (Syt=60 ksi, G=11.5 x 106 psi) [SEP]",
         "label": 0,
-        "relation_name": "Other"
+        "relation_name": "Other",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Entity-Origin(e2,e1)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 678,
         "text": "[CLS] In the days before the Democratic Reform, the <e1>manor</e1> had included twenty-two <e2>smallholdings</e2>, six lots of grassland and farmland covering some 8600 Mu (1414.45 acres) [SEP]",
         "label": 1,
-        "relation_name": "Component-Whole(e2,e1)"
+        "relation_name": "Component-Whole(e2,e1)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Component-Whole(e2,e1)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 679,
         "text": "[CLS] The author <e1>index</e1> was generated using the LaTeX authorindex <e2>package</e2> [SEP]",
         "label": 0,
-        "relation_name": "Other"
+        "relation_name": "Other",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Instrument-Agency(e2,e1)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 680,
         "text": "[CLS] In the last couple of years I have been working with my <e1>fear</e1> from <e2>darkness</e2> [SEP]",
         "label": 7,
-        "relation_name": "Cause-Effect(e2,e1)"
+        "relation_name": "Cause-Effect(e2,e1)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Cause-Effect(e2,e1)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 681,
         "text": "[CLS] Patriarch Cerularius eventually wrote a <e1>tract</e1> against the western <e2>liturgical practices</e2> [SEP]",
         "label": 13,
-        "relation_name": "Message-Topic(e1,e2)"
+        "relation_name": "Message-Topic(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Product-Producer(e1,e2)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 682,
         "text": "[CLS] There was weeping and wailing and gnashing of teeth in the <e1>camp</e1> of the <e2>outsiders</e2> now [SEP]",
         "label": 6,
-        "relation_name": "Member-Collection(e2,e1)"
+        "relation_name": "Member-Collection(e2,e1)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Component-Whole(e2, e1)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 683,
         "text": "[CLS] He noticed a speck of blood on the <e1>man</e1>'s <e2>thumb</e2> and what he thought were several corresponding drops on the driver's door of the truck [SEP]",
         "label": 1,
-        "relation_name": "Component-Whole(e2,e1)"
+        "relation_name": "Component-Whole(e2,e1)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Other</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 684,
         "text": "[CLS] A <e1>data</e1> <e2>warehouse</e2> is a place where data is stored for archival purposes [SEP]",
         "label": 11,
-        "relation_name": "Content-Container(e1,e2)"
+        "relation_name": "Content-Container(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Content-Container(e1,e2)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 685,
         "text": "[CLS] The <e1>ghost-ship</e1> <e2>fleet</e2> anchored idle off Singabore is an interesting proxy for the collapse in world trade [SEP]",
         "label": 5,
-        "relation_name": "Member-Collection(e1,e2)"
+        "relation_name": "Member-Collection(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Member-Collection(e1,e2)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 686,
         "text": "[CLS] The city of Chicago lost 725000 residents between 1950 and 2000, yet 82 percent of the suburban <e1>growth</e1> was from outside the metropolitan <e2>area</e2> [SEP]",
         "label": 0,
-        "relation_name": "Other"
+        "relation_name": "Other",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Entity-Origin(e1,e2)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 687,
         "text": "[CLS] The <e1>name</e1> Sedna is from an Inuit <e2>goddess</e2> of the ocean [SEP]",
         "label": 17,
-        "relation_name": "Entity-Origin(e1,e2)"
+        "relation_name": "Entity-Origin(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Other</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 688,
         "text": "[CLS] The <e1>electronic equipment</e1> was in a <e2>cabinet</e2> on the surface and connected to a 3.65-long, 7.9-cm-diameter thermosyphon with one end buried in the ground [SEP]",
         "label": 11,
-        "relation_name": "Content-Container(e1,e2)"
+        "relation_name": "Content-Container(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Content-Container(e1,e2)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 689,
         "text": "[CLS] A large <e1>tsunami</e1> triggered by the <e2>earthquake</e2> spread outward from off the Sumatran coast [SEP]",
         "label": 7,
-        "relation_name": "Cause-Effect(e2,e1)"
+        "relation_name": "Cause-Effect(e2,e1)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Cause-Effect(e2,e1)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 690,
         "text": "[CLS] Gatrell illuminates the <e1>debate</e1> over <e2>public execution</e2> that raged in polite society [SEP]",
         "label": 13,
-        "relation_name": "Message-Topic(e1,e2)"
+        "relation_name": "Message-Topic(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Message-Topic(e1,e2)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 691,
         "text": "[CLS] But even as she fumbled impatiently for the <e1>switch</e1> of the electric <e2>light</e2>, she knew that the voice had not come from the bed on the further side of the room [SEP]",
         "label": 2,
-        "relation_name": "Component-Whole(e1,e2)"
+        "relation_name": "Component-Whole(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Component-Whole(e1,e2)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 692,
         "text": "[CLS] The <e1>tape recorder</e1> was in a <e2>cabinet</e2> outside the cab of the engine [SEP]",
         "label": 11,
-        "relation_name": "Content-Container(e1,e2)"
+        "relation_name": "Content-Container(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Content-Container(e1,e2)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 693,
         "text": "[CLS] TV total started as a <e1>comedy format</e1> mainly showing and commenting on funny and embarrassing <e2>sequences</e2> from other TV programs [SEP]",
         "label": 0,
-        "relation_name": "Other"
+        "relation_name": "Other",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Component-Whole(e2,e1)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 694,
         "text": "[CLS] The <e1>pizza</e1> was inside a <e2>trash bag</e2> and taped shut [SEP]",
         "label": 11,
-        "relation_name": "Content-Container(e1,e2)"
+        "relation_name": "Content-Container(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Content-Container(e1,e2)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 695,
         "text": "[CLS] The synthesist is thus carrying out a role which is analogous to that of a <e1>player</e1> in an <e2>orchestra</e2> [SEP]",
         "label": 5,
-        "relation_name": "Member-Collection(e1,e2)"
+        "relation_name": "Member-Collection(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Other</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 696,
         "text": "[CLS] Construction <e1>worker</e1> carrying a wooden <e2>plank</e2> on his shoulder [SEP]",
         "label": 0,
-        "relation_name": "Other"
+        "relation_name": "Other",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Instrument-Agency(e2,e1)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 697,
         "text": "[CLS] The neuroscientists have implanted <e1>electrodes</e1> into patient's <e2>brain</e2> [SEP]",
         "label": 9,
-        "relation_name": "Entity-Destination(e1,e2)"
+        "relation_name": "Entity-Destination(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Entity-Destination(e1,e2)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 698,
         "text": "[CLS] <e1>Mail</e1> was delivered from the <e2>city</e2> once each week [SEP]",
         "label": 17,
-        "relation_name": "Entity-Origin(e1,e2)"
+        "relation_name": "Entity-Origin(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Entity-Origin(e1,e2)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 699,
         "text": "[CLS] The new pencil and graphite drawing is the <e1>painter</e1>'s first <e2>self-portrait</e2> in 35 years and took six years to complete [SEP]",
         "label": 15,
-        "relation_name": "Product-Producer(e2,e1)"
+        "relation_name": "Product-Producer(e2,e1)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Product-Producer(e2,e1)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 700,
         "text": "[CLS] Despite this defeat, Armstrong continued to work and plan toward the realization of his dream, the preservation of his beloved <e1>grove</e1> of <e2>redwoods</e2> [SEP]",
         "label": 6,
-        "relation_name": "Member-Collection(e2,e1)"
+        "relation_name": "Member-Collection(e2,e1)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Member-Collection(e2,e1)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 701,
         "text": "[CLS] The brick is aligned with the <e1>hinge</e1> of the repaired <e2>book</e2> [SEP]",
         "label": 2,
-        "relation_name": "Component-Whole(e1,e2)"
+        "relation_name": "Component-Whole(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Component-Whole(e1,e2)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 702,
         "text": "[CLS] Picture 192 shows a completed <e1>dowel</e1> with a small <e2>groove</e2> running along its entire length [SEP]",
         "label": 1,
-        "relation_name": "Component-Whole(e2,e1)"
+        "relation_name": "Component-Whole(e2,e1)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Component-Whole(e2,e1)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 703,
         "text": "[CLS] Cooking and fermenting the <e1>grain</e1> produced a tasty nutritious <e2>drink</e2> which stored well [SEP]",
         "label": 18,
-        "relation_name": "Entity-Origin(e2,e1)"
+        "relation_name": "Entity-Origin(e2,e1)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Entity-Origin(e2,e1)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 704,
         "text": "[CLS] Lopez and Espinoza took plea <e1>agreements</e1> that resulted in <e2>diversion</e2> -- the completion of requirements such as community service and a fine during a probation period that ended with a clean slate and no conviction [SEP]",
         "label": 8,
-        "relation_name": "Cause-Effect(e1,e2)"
+        "relation_name": "Cause-Effect(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Component-Whole(e1,e2)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 705,
         "text": "[CLS] Examples of problems which have been addressed by <e1>atmospheric chemistry</e1> include <e2>acid rain</e2>, photochemical smog and global warming [SEP]",
         "label": 0,
-        "relation_name": "Other"
+        "relation_name": "Other",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Member-Collection(e2, e1)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 706,
         "text": "[CLS] He'd brought a <e1>suitcase</e1> full of <e2>books</e2> with him and set it out on the sidewalk in front of the library, out of the way of pedestrians, but in plain view of potential customer [SEP]",
         "label": 12,
-        "relation_name": "Content-Container(e2,e1)"
+        "relation_name": "Content-Container(e2,e1)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Content-Container(e2,e1)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 707,
         "text": "[CLS] Cutler ended up with a bleeding stomach <e1>ulcer</e1> caused by the <e2>stress</e2> and hard work supervising their tours twenty-four hours a day [SEP]",
         "label": 7,
-        "relation_name": "Cause-Effect(e2,e1)"
+        "relation_name": "Cause-Effect(e2,e1)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Cause-Effect(e2,e1)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 708,
         "text": "[CLS] The <e1>mother</e1> left her native <e2>land</e2> about the same time and they were married in that city [SEP]",
         "label": 17,
-        "relation_name": "Entity-Origin(e1,e2)"
+        "relation_name": "Entity-Origin(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Entity-Origin(e1,e2)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 709,
         "text": "[CLS] Critical audience <e1>studies</e1> are migrating into intellectual <e2>inquiry</e2> focused on participation developing the stress on processes of interactive engagement [SEP]",
         "label": 9,
-        "relation_name": "Entity-Destination(e1,e2)"
+        "relation_name": "Entity-Destination(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Entity-Destination(e1,e2)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 710,
         "text": "[CLS] You have been asked to make <e1>notes</e1> about a <e2>telephone call</e2> left by a colleague in the German office of the bank [SEP]",
         "label": 13,
-        "relation_name": "Message-Topic(e1,e2)"
+        "relation_name": "Message-Topic(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Message-Topic(e1,e2)</relation>\n<confidence>0.9</confidence>"
     },
     {
         "id": 711,
         "text": "[CLS] The <e1>baboons</e1> have formed themselves into raiding <e2>parties</e2> and frequently descend on the village [SEP]",
         "label": 5,
-        "relation_name": "Member-Collection(e1,e2)"
+        "relation_name": "Member-Collection(e1,e2)",
+        "few_shot_pseudo_label_prediction": "assistant\n\n<relation>Member-Collection(e1,e2)</relation>\n<confidence>0.8</confidence>"
     },
     {
         "id": 712,
