@@ -20,6 +20,10 @@ class SimcseModel:
         elif self.dataset == 'tacred':
             data = read_json('data/tacred/train_sentence.json')
             data2 = read_json('data/tacred/train_label_id.json')
+        elif self.dataset == 'water':
+            data = read_json('data/water/train/train_sentence.json')
+            data2 = read_json('data/water/train/train_label_id.json')
+            
             
         
         mod_sent_train = []
