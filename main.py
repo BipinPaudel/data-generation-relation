@@ -6,7 +6,7 @@ from src.service import run_experiment
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process inputs")
     parser.add_argument('--experiment', type=str, default=[Experiment.NEW_GENERATION.value], help='The type of experiment')
-    parser.add_argument('--dataset', type=str, default='water', help='type of dataset')
+    parser.add_argument('--dataset', type=str, default='tacred', help='type of dataset')
     parser.add_argument('--data_type', type=str, default='train', help='type of dataset')
     args = parser.parse_args()
     

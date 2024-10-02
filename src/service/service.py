@@ -52,6 +52,7 @@ def run_rephrase_experiment(cfg, dataset, data_type):
 def run_new_generation_experiment(cfg, dataset, data_type):
     dataset_list, id_relation_dict = read_relation_data(dataset=dataset, data_type=data_type)
     prompt_obj = get_prompt_obj(dataset)
+    dataset_list = [js for js in dataset_list if js['id'] >= 1456]
     prompts = []
     for data in dataset_list:
         prompt = prompt_obj.new_sentence_generation(data['text'], data['relation_name'])
@@ -72,7 +73,7 @@ def run_new_generation_experiment(cfg, dataset, data_type):
             data['new_generation_response'] = r
             dataset_list[i]  = data
 
-        filename = f"data/results/{dataset}/{dataset}_new_generation_relation.jsonl"
+        filename = f"data/results/{dataset}/{dataset}_new_generation_relation2.jsonl"
         write_json_lists_to_file(filename, dataset_list)
         
 def run_pseudo_label_experiment(cfg, dataset, datatype):
