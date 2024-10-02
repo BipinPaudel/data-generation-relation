@@ -1159,7 +1159,7 @@
         "text": "to assess the mode of transmission of <e2>shigella infection</e2> in rural bangladesh, questionnaire and culture surveys were conducted in baris (neighborhoods) where persons with <e1>diarrhea</e1> associated with shigella infection and index controls with non-shigella diarrhea lived.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship \"associated with\" is: \n[SEP] In a study on waterborne diseases, researchers found that <e1>diarrhea</e1> is often associated with <e2>shigella infection</e2> in areas with poor sanitation."
+        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship \"associated with\" is: \n[CLS] In a study on waterborne diseases, researchers found that <e1>diarrhea</e1> is often associated with <e2>shigella infection</e2> in areas with poor sanitation.[SEP]"
     },
     {
         "id": 166,

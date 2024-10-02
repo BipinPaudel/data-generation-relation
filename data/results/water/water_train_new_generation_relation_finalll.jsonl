@@ -53,7 +53,7 @@
         "text": "<e2>diarrhea</e2> has been associated with <e1>tegaserod</e1> in clinical trials (an incidence of about 10% versus 5% with placebo, usually occurring in the first week of treatment), but the drug is otherwise well tolerated.",
         "label": 20,
         "relation_name": "affects",
-        "new_generation_response": "assistant\n\n[CLS] Tegaserod affects <e2>diarrhea</e2> in some patients, particularly during the initial stages of treatment. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>tegaserod</e1> affects <e2>diarrhea</e2> in some patients, particularly during the initial stages of treatment. [SEP]"
     },
     {
         "id": 8,
@@ -319,7 +319,7 @@
         "text": "risk factors for <e2>intestinal parasitic infection</e2>s were <e1>diarrhea</e1> and the habit of regularly eating uncooked food.",
         "label": 3,
         "relation_name": "predisposes",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea predisposes <e2>intestinal parasitic infection</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> predisposes <e2>intestinal parasitic infection</e2>. [SEP]"
     },
     {
         "id": 46,
@@ -389,7 +389,7 @@
         "text": "mc-lr (mc-lr), a representative <e2>toxin</e2> released by <e1>cyanobacteria</e1>, poses an increasing and serious threat to water safety.",
         "label": 14,
         "relation_name": "produces",
-        "new_generation_response": "assistant\n\n[CLS] Cyanobacteria produces <e2>toxin</e2> that can be harmful to humans and animals if ingested in large quantities. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>cyanobacteria</e1> produces <e2>toxin</e2> that can be harmful to humans and animals if ingested in large quantities. [SEP]"
     },
     {
         "id": 56,
@@ -410,7 +410,7 @@
         "text": "the percent of days with moderate/severe abdominal pain and psychological distress were significantly higher, and constipation- and <e1>diarrhea</e1>-dominant bowel pattern subtypes were prevalent in <e2>white american</e2>s as compared with asian americans.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] The prevalence of <e1>diarrhea</e1> and constipation were significantly higher in white Americans as compared to Asian Americans, indicating that diarrhea is a process of white American. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The prevalence of <e1>diarrhea</e1> and constipation were significantly higher in <e2>white american</e2>s as compared to Asian Americans, indicating that diarrhea is a process of white American. [SEP]"
     },
     {
         "id": 59,
@@ -522,7 +522,7 @@
         "text": "[diet and loperamide are better than <e1>norfloxacin</e1> in tourist <e2>diarrhea</e2>].",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistantassistant\n\n[CLS] [SEP] [diet and loperamide are better than <e1>norfloxacin</e1> in treating <e2>diarrhea</e2> in travelers]."
+        "new_generation_response": "assistantassistant\n\n[CLS] [SEP] [diet and loperamide are better than <e1><e1>norfloxacin</e1></e1> in treating <e2><e2>diarrhea</e2></e2> in travelers]."
     },
     {
         "id": 75,
@@ -928,7 +928,7 @@
         "text": "bacteria of the genus <e1>providencia</e1> are opportunistic pathogens of clinical significance due to their association with <e2>diarrhea</e2> and urinary tract infections.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] The bacteria of the genus Providencia are opportunistic pathogens of clinical significance due to their association with <e2>diarrhea</e2> and urinary tract infections. [SEP] \n\nHere is a new sentence with a different context while preserving the specified relationship:\n\n[CLS] The researchers found that bacteria of the genus Providencia are often associated with diarrhea in patients with compromised immune systems. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The bacteria of the genus <e1>providencia</e1> are opportunistic pathogens of clinical significance due to their association with <e2>diarrhea</e2> and urinary tract infections. [SEP] \n\nHere is a new sentence with a different context while preserving the specified relationship:\n\n[CLS] The researchers found that bacteria of the genus Providencia are often associated with diarrhea in patients with compromised immune systems. [SEP]"
     },
     {
         "id": 133,
@@ -1131,7 +1131,7 @@
         "text": "prognostic factors in <e2>hospitalized child</e2>ren with persistent <e1>diarrhea</e1>: implications for diet therapy.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship \"process of\" is: [SEP] \n\nThe <e1>diarrhea</e1> is a common process of <e2>hospitalized child</e2>ren who are malnourished."
+        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship \"process of\" is: [SEP] \n\nThe <e1><e1>diarrhea</e1></e1> is a common process of <e2><e2>hospitalized child</e2></e2>ren who are malnourished."
     },
     {
         "id": 162,
@@ -1159,7 +1159,7 @@
         "text": "to assess the mode of transmission of <e2>shigella infection</e2> in rural bangladesh, questionnaire and culture surveys were conducted in baris (neighborhoods) where persons with <e1>diarrhea</e1> associated with shigella infection and index controls with non-shigella diarrhea lived.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship \"associated with\" is: \n[SEP] In a study on waterborne diseases, researchers found that <e1>diarrhea</e1> is often associated with <e2>shigella infection</e2> in areas with poor sanitation."
+        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship \"associated with\" is: \n[CLS] In a study on waterborne diseases, researchers found that <e1>diarrhea</e1> is often associated with <e2>shigella infection</e2> in areas with poor sanitation.[SEP]"
     },
     {
         "id": 166,
@@ -1194,7 +1194,7 @@
         "text": "action of an algicide from a <e2>cyanobacterium</e2>, <e1>oscillatoria laetevirens</e1>, on photosystem ii.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] The species Oscillatoria laetevirens is a <e2>cyanobacterium</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The species <e1>oscillatoria laetevirens</e1> is a <e2>cyanobacterium</e2>. [SEP]"
     },
     {
         "id": 171,
@@ -1502,7 +1502,7 @@
         "text": "this study aimed to evaluate the positivity rate of toxigenic c. difficile in the <e2>pediatric population</e2> with <e1>diarrhea</e1>.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] The new sentence is: Diarrhea is a process of the <e2>pediatric population</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The new sentence is: <e1>diarrhea</e1> is a process of the <e2>pediatric population</e2>. [SEP]"
     },
     {
         "id": 215,
@@ -1565,7 +1565,7 @@
         "text": "although <e1>diarrhea</e1> can be an incidental finding in many <e2>sheep diseases</e2>, particularly in their terminal stages, only on those conditions are commented on in which diarrhea is the predominant feature of the clinical syndrome.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a common symptom associated with many <e2>sheep diseases</e2>, particularly those that affect the gastrointestinal system. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a common symptom associated with many <e2>sheep diseases</e2>, particularly those that affect the gastrointestinal system. [SEP]"
     },
     {
         "id": 224,
@@ -1600,7 +1600,7 @@
         "text": "postoperative <e1>diarrhea</e1> was an early warning sign of ischaemic <e2>colonic disease</e2> in five of nine patients.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a symptom of <e2>colonic disease</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a symptom of <e2>colonic disease</e2>. [SEP]"
     },
     {
         "id": 229,
@@ -1670,7 +1670,7 @@
         "text": "here we tested whether anti-<e2>diarrhea</e2>l interventions, budesonide and <e1>colesevelam</e1>, can reduce neratinib-induced diarrhea and intestinal pathology.",
         "label": 8,
         "relation_name": "prevents",
-        "new_generation_response": "assistant\n\n[CLS] Colesevelam prevents the onset of <e2>diarrhea</e2> in patients undergoing chemotherapy. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>colesevelam</e1> prevents the onset of <e2>diarrhea</e2> in patients undergoing chemotherapy. [SEP]"
     },
     {
         "id": 239,
@@ -1705,7 +1705,7 @@
         "text": "<e2>enterotoxigenic escherichia coli</e2> associated <e1>diarrhea</e1>: the clinical pattern in khmer children.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistantassistant\n\n[CLS] Diarrhea [e1]<e1>diarrhea</e1>[/e1] is commonly associated with [e2]<e2>enterotoxigenic escherichia coli</e2>[/e2] in children with weakened immune systems. [SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>diarrhea</e1> [e1]diarrhea[/e1] is commonly associated with [e2]<e2>enterotoxigenic escherichia coli</e2>[/e2] in children with weakened immune systems. [SEP]"
     },
     {
         "id": 244,
@@ -1803,7 +1803,7 @@
         "text": "alkalescens-dispar group of organisms in normal <e2>preschool child</e2>ren and in preschool children with <e1>diarrhea</e1>.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a process of <e2>preschool child</e2> development. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a process of <e2>preschool child</e2> development. [SEP]"
     },
     {
         "id": 258,
@@ -1950,7 +1950,7 @@
         "text": "in proof of concept studies, propionate neither improved nor worsened morbidity and mortality parameters in models of endotoxemia and infections induced by <e2>gram-negative bacteria</e2> (<e1>escherichia coli</e1>, klebsiella pneumoniae), gram-positive bacteria (staphylococcus aureus, streptococcus pneumoniae) and candida albicans.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] In the context of microbiology, Escherichia coli is a <e2>gram-negative bacteria</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] In the context of microbiology, <e1>escherichia coli</e1> is a <e2>gram-negative bacteria</e2>. [SEP]"
     },
     {
         "id": 279,
@@ -2020,14 +2020,14 @@
         "text": "in primary colonocytes and in caco-2 colonocytic cells, activation of znr/<e1>gpr39</e1> enhanced cl- transport, a critical factor in <e2>diarrhea</e2>, by upregulating k+/cl- cotransporter (kcc1) activity.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] In patients with irritable bowel syndrome, the expression of GPR39 was found to be associated with increased symptoms of <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] In patients with irritable bowel syndrome, the expression of <e1>gpr39</e1> was found to be associated with increased symptoms of <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 289,
         "text": "spirochetes were isolated from the feces of 11 <e2>homosexual male</e2>s who had <e1>diarrhea</e1>.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a process of <e2>homosexual male</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a process of <e2>homosexual male</e2>. [SEP]"
     },
     {
         "id": 290,
@@ -2104,7 +2104,7 @@
         "text": "individual cells of cytophaga sp. strain u67 glided in helical patterns on the surface of sheaths deposited by the <e2>cyanobacterium</e2> <e1>oscillatoria princeps</e1>.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] The species Oscillatoria princeps is a <e2>cyanobacterium</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The species <e1>oscillatoria princeps</e1> is a <e2>cyanobacterium</e2>. [SEP]"
     },
     {
         "id": 301,
@@ -2118,7 +2118,7 @@
         "text": "it is concluded that <e1>loperamide hydrochloride</e1> was more effective in the treatment of ileostomy <e2>diarrhea</e2> than codeine phosphate.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Loperamide hydrochloride [SEP] is commonly prescribed to treat <e2>diarrhea</e2> [SEP] in patients with inflammatory bowel disease."
+        "new_generation_response": "assistant\n\n[CLS] <e1>loperamide hydrochloride</e1> [SEP] is commonly prescribed to treat <e2>diarrhea</e2> [SEP] in patients with inflammatory bowel disease."
     },
     {
         "id": 303,
@@ -2153,7 +2153,7 @@
         "text": "background: bowel problems such as constipation, <e1>diarrhea</e1> and faecal incontinence (fi) are prevalent conditions among <e2>nursing home resident</e2>s and little is known about nursing management.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a common process of <e2>nursing home resident</e2>s. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a common process of <e2>nursing home resident</e2>s. [SEP]"
     },
     {
         "id": 308,
@@ -2174,14 +2174,14 @@
         "text": "objective: <e1>diarrhea</e1> is frequently observed among <e2>critically ill children</e2> (cic) admitted for intensive care.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a common process of <e2>critically ill children</e2> undergoing chemotherapy. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a common process of <e2>critically ill children</e2> undergoing chemotherapy. [SEP]"
     },
     {
         "id": 311,
         "text": "the photoactivated adenylate cyclase (pac) from the photosynthetic <e2>cyanobacterium</e2> <e1>oscillatoria acuminata</e1> (oapac) detects light through a flavin chromophore within the n-terminal bluf domain.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] The species Oscillatoria acuminata is a <e2>cyanobacterium</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The species <e1>oscillatoria acuminata</e1> is a <e2>cyanobacterium</e2>. [SEP]"
     },
     {
         "id": 312,
@@ -2335,7 +2335,7 @@
         "text": "ahr-10037 was inferior to <e1>indomethacin</e1> in suppressing castor oil-induced <e2>diarrhea</e2> in rats.",
         "label": 13,
         "relation_name": "disrupts",
-        "new_generation_response": "assistant\n\n[CLS] Indomethacin disrupts the normal functioning of the gut, leading to severe <e2>diarrhea</e2> in patients. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>indomethacin</e1> disrupts the normal functioning of the gut, leading to severe <e2>diarrhea</e2> in patients. [SEP]"
     },
     {
         "id": 334,
@@ -2370,7 +2370,7 @@
         "text": "during a july 2010 cruise near the hawaiian islands in the oligotrophic north pacific subtropical gyre, a specific morphology of trichodesmium puff-form colonies were examined under epifluorescent microscopy and found to harbor a colonial endobiont, morphologically identified as the heterocystous diazotrophic <e2>cyanobacterium</e2> <e1>calothrix</e1>.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] In the context of marine biology, the species Calothrix is a <e2>cyanobacterium</e2> that plays a crucial role in the nitrogen cycle of oceanic ecosystems. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] In the context of marine biology, the species <e1>calothrix</e1> is a <e2>cyanobacterium</e2> that plays a crucial role in the nitrogen cycle of oceanic ecosystems. [SEP]"
     },
     {
         "id": 339,
@@ -2475,7 +2475,7 @@
         "text": "since splash parks have been associated with outbreaks of <e2>infectious disease</e2>s, a quantitative microbial risk assessment was performed using <e1>legionella</e1> pneumophila as a target pathogen to quantify the risk of infection for exposure due to inhalation and campylobacter jejuni for ingestion.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Legionnaires' disease is a <e2>infectious disease</e2> caused by the bacterium Legionella pneumophila. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] Legionnaires' disease is a <e2>infectious disease</e2> caused by the bacterium <e1>legionella</e1> pneumophila. [SEP]"
     },
     {
         "id": 354,
@@ -2643,7 +2643,7 @@
         "text": "anatoxin-a, homoanatoxin-a, and dihydroanatoxin-a are potent <e1>cyanobacteria</e1>l <e2>neurotoxins</e2>.",
         "label": 5,
         "relation_name": "location of",
-        "new_generation_response": "assistant\n\n[CLS] Cyanobacteria are the location of <e2>neurotoxins</e2> in freshwater lakes. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>cyanobacteria</e1> are the location of <e2>neurotoxins</e2> in freshwater lakes. [SEP]"
     },
     {
         "id": 378,
@@ -2776,7 +2776,7 @@
         "text": "pcc 6803 (hereafter <e1>synechocystis</e1>) is a model <e2>cyanobacterium</e2> and has been used extensively for studies concerned with photosynthesis and environmental adaptation.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistantassistant\n\n[CLS] Synechocystis [SEP] is a <e2>cyanobacterium</e2> [SEP] that has been widely used as a model organism in scientific research."
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>synechocystis</e1> [SEP] is a <e2>cyanobacterium</e2> [SEP] that has been widely used as a model organism in scientific research."
     },
     {
         "id": 397,
@@ -2790,7 +2790,7 @@
         "text": "since splash parks have been associated with outbreaks of <e2>infectious disease</e2>s, a quantitative microbial risk assessment was performed using legionella pneumophila as a target pathogen to quantify the risk of infection for exposure due to inhalation and <e1>campylobacter</e1> jejuni for ingestion.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Campylobacter is a type of <e2>infectious disease</e2> that can be spread through contaminated food and water, and it is essential to take precautions to prevent its transmission. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>campylobacter</e1> is a type of <e2>infectious disease</e2> that can be spread through contaminated food and water, and it is essential to take precautions to prevent its transmission. [SEP]"
     },
     {
         "id": 399,
@@ -2860,7 +2860,7 @@
         "text": "salt deficit can be acute such as after hemorrhage or massive <e1>diarrhea</e1>, or more chronic as observed in <e2>addison's disease</e2>, failure of renal sodium chloride transporters, drug-related effects, or distal nephron disease.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is often associated with Addison's disease in patients with a history of gastrointestinal disorders. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is often associated with <e2>addison's disease</e2> in patients with a history of gastrointestinal disorders. [SEP]"
     },
     {
         "id": 409,
@@ -2881,7 +2881,7 @@
         "text": "pcr primers to amplify 16s <e2>rrna gene</e2>s from <e1>cyanobacteria</e1>.",
         "label": 5,
         "relation_name": "location of",
-        "new_generation_response": "assistant\n\n[CLS] The 16S rRNA gene is a location of <e1>cyanobacteria</e1>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The 16S <e2>rrna gene</e2> is a location of <e1>cyanobacteria</e1>. [SEP]"
     },
     {
         "id": 412,
@@ -3007,7 +3007,7 @@
         "text": "aspirin-mediated <e1>prostaglandin inhibition</e1> has been suggested in symptomatic relief of <e2>diarrhea</e2>.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistantassistant\n\n[CLS] Prostaglandin inhibition [SEP] treats [SEP] <e2>diarrhea</e2> [SEP]."
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>prostaglandin inhibition</e1> [SEP] treats [SEP] <e2>diarrhea</e2> [SEP]."
     },
     {
         "id": 430,
@@ -3042,7 +3042,7 @@
         "text": "differences in the intestinal microbiome associated with <e2>diarrhea</e2> during <e1>lenvatinib</e1> treatment for hepatocellular carcinoma.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistantassistant\n\n[CLS] Lenvatinib [e1] treats [e2] <e2>diarrhea</e2> [SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>lenvatinib</e1> [e1] treats [e2] <e2>diarrhea</e2> [SEP]"
     },
     {
         "id": 435,
@@ -3294,7 +3294,7 @@
         "text": "<e2>diarrhea</e2> could be controlled with orally administered <e1>dexamethasone</e1>, which prevented the lps-stimulated induction of nos ii (rnase protection analysis and western blot).",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Dexamethasone [e1] treats [/e1] Diarrhea [e2] effectively in most patients, resulting in significant improvements in their quality of life. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>dexamethasone</e1> [e1] treats [/e1] <e2>diarrhea</e2> [e2] effectively in most patients, resulting in significant improvements in their quality of life. [SEP]"
     },
     {
         "id": 471,
@@ -3364,7 +3364,7 @@
         "text": "the most common side effects that the patient may experience are some mild and transient <e2>diarrhea</e2> and cramps upon initiation of <e1>misoprostol</e1> therapy and these can be minimized by taking misoprostol with meals and avoiding magnesium-containing antacids.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Misoprostol is often prescribed to treat mild and transient <e2>diarrhea</e2> in patients, and it is essential to take the medication with meals and avoid magnesium-containing antacids to minimize its gastrointestinal side effects. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>misoprostol</e1> is often prescribed to treat mild and transient <e2>diarrhea</e2> in patients, and it is essential to take the medication with meals and avoid magnesium-containing antacids to minimize its gastrointestinal side effects. [SEP]"
     },
     {
         "id": 481,
@@ -3399,7 +3399,7 @@
         "text": "persistent <e1>diarrhea</e1>, strongly associated with <e2>hiv infection</e2> in kinshasa, zaire.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] persistent <e1>diarrhea</e1>, a common symptom associated with HIV infection in many African countries. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] persistent <e1>diarrhea</e1>, a common symptom associated with <e2>hiv infection</e2> in many African countries. [SEP]"
     },
     {
         "id": 486,
@@ -3413,7 +3413,7 @@
         "text": "bicyclomycin has been used to treat <e2>diarrhea</e2> in humans and bacterial diarrhea in calves and pigs and is marketed by fujisawa (osaka, japan) under the trade name <e1>bicozamycin</e1>.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Bicozamycin treats Diarrhea. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>bicozamycin</e1> treats <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 488,
@@ -3434,7 +3434,7 @@
         "text": "global climate change is predicted to alter precipitation and temperature patterns across the world, affecting a range of <e2>infectious disease</e2>s and particularly foodborne infections such as <e1>campylobacter</e1>",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Campylobacter is a type of <e2>infectious disease</e2> that can be spread through contaminated food and water, highlighting the need for proper hygiene practices to prevent its transmission. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>campylobacter</e1> is a type of <e2>infectious disease</e2> that can be spread through contaminated food and water, highlighting the need for proper hygiene practices to prevent its transmission. [SEP]"
     },
     {
         "id": 491,
@@ -3455,7 +3455,7 @@
         "text": "<e2>diarrhea</e2> is accompanied by <e1>intestinal dysbiosis</e1>.",
         "label": 15,
         "relation_name": "coexists with",
-        "new_generation_response": "assistant\n\n[CLS] Intestinal dysbiosis [e1] coexists with [e2] <e2>diarrhea</e2> [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>intestinal dysbiosis</e1> [e1] coexists with [e2] <e2>diarrhea</e2> [SEP]"
     },
     {
         "id": 494,
@@ -3560,7 +3560,7 @@
         "text": "with the aim of preventing biodeterioration or esthetic damage to such surfaces, we evaluated and compared the effects of illuminating biofilms formed by <e1>gloeothece membranacea</e1> (<e2>cyanobacteria</e2>) and chlorella sorokiniana (chlorophyta) using exclusively white or green light.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] The study focused on the characteristics of Gloeothece membranacea, which is a <e2>cyanobacteria</e2>, to understand its role in aquatic ecosystems. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The study focused on the characteristics of <e1>gloeothece membranacea</e1>, which is a <e2>cyanobacteria</e2>, to understand its role in aquatic ecosystems. [SEP]"
     },
     {
         "id": 509,
@@ -3700,7 +3700,7 @@
         "text": "four small subunits (14, 13, 10, and 8 kda) of the photosystem i reaction-center complex were isolated from a thermophilic <e2>cyanobacterium</e2> <e1>synechococcus elongatus</e1>.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] The species Synechococcus elongatus is a <e2>cyanobacterium</e2> that has been extensively studied for its ability to thrive in extreme environments. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The species <e1>synechococcus elongatus</e1> is a <e2>cyanobacterium</e2> that has been extensively studied for its ability to thrive in extreme environments. [SEP]"
     },
     {
         "id": 529,
@@ -3924,7 +3924,7 @@
         "text": "we found fever (rr = 1.21, 95% ci 0.66 to 2.22), cough (1.13, 95% ci 0.98 to 1.30) and <e1>diarrhea</e1> (rr = 1.14, 95% ci 0.93 to 1.40) as insignificant risk factors for <e2>covid-19</e2> severity.",
         "label": 3,
         "relation_name": "predisposes",
-        "new_generation_response": "assistant\n\n[CLS] Studies have shown that <e1>diarrhea</e1> predisposes individuals to a higher risk of contracting COVID-19. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] Studies have shown that <e1>diarrhea</e1> predisposes individuals to a higher risk of contracting <e2>covid-19</e2>. [SEP]"
     },
     {
         "id": 561,
@@ -3966,7 +3966,7 @@
         "text": "[study report: management of <e2>diarrhea</e2> with <e1>smectite</e1>.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistantassistant\n\n[CLS] [SEP] study report: management of <e2>diarrhea</e2> with <e1>smectite</e1> can be rephrased as:\n\n[CLS] [SEP] clinical trials show that <e1>smectite</e1> is effective in treating <e2>diarrhea</e2> in children.\n\nIn this new sentence, the relationship between the entities remains the same, with <e1>smectite</e1> treating <e2>diarrhea</e2>."
+        "new_generation_response": "assistantassistant\n\n[CLS] [SEP] study report: management of <e2><e2>diarrhea</e2></e2> with <e1><e1>smectite</e1></e1> can be rephrased as:\n\n[CLS] [SEP] clinical trials show that <e1>smectite</e1> is effective in treating <e2>diarrhea</e2> in children.\n\nIn this new sentence, the relationship between the entities remains the same, with <e1>smectite</e1> treating <e2>diarrhea</e2>."
     },
     {
         "id": 567,
@@ -4232,7 +4232,7 @@
         "text": "isolation of a symbiotic <e2>cyanobacterium</e2>, <e1>nostoc cycadae</e1>, and its nitrogen metabolism.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] The nitrogen-fixing <e2>cyanobacterium</e2>, Nostoc cycadae, is a cyanobacterium. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The nitrogen-fixing <e2>cyanobacterium</e2>, <e1>nostoc cycadae</e1>, is a cyanobacterium. [SEP]"
     },
     {
         "id": 605,
@@ -4372,7 +4372,7 @@
         "text": "[successful <e1>diet therapy</e1> in radiation-induced <e2>diarrhea</e2>].",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistantassistant\n\n[CLS] [SEP] Successful <e1>diet therapy</e1> treats <e2>diarrhea</e2> caused by chemotherapy. [SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] [SEP] Successful <e1><e1>diet therapy</e1></e1> treats <e2><e2>diarrhea</e2></e2> caused by chemotherapy. [SEP]"
     },
     {
         "id": 625,
@@ -4400,7 +4400,7 @@
         "text": "antispasmodics including alverine citrate, mebeverine, <e1>otilonium bromide</e1>, and pinaverium bromide are used for relieving <e2>diarrhea</e2>l symptoms and abdominal pain.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Otilonium bromide is often prescribed to treat <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>otilonium bromide</e1> is often prescribed to treat <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 629,
@@ -4449,14 +4449,14 @@
         "text": "the mutant resembles <e2>wiskott-aldrich syndrome</e2> in man, which is characterized by thrombocytopenia, eczema, <e1>diarrhea</e1>, and immunodeficiency.",
         "label": 15,
         "relation_name": "coexists with",
-        "new_generation_response": "assistant\n\n[CLS] In patients with Wiskott-Aldrich syndrome, <e1>diarrhea</e1> coexists with eczema, thrombocytopenia, and immunodeficiency. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] In patients with <e2>wiskott-aldrich syndrome</e2>, <e1>diarrhea</e1> coexists with eczema, thrombocytopenia, and immunodeficiency. [SEP]"
     },
     {
         "id": 636,
         "text": "clostridium difficile-related disease: evaluation and prevalence among <e2>inpatient</e2>s with <e1>diarrhea</e1> in two freestanding rehabilitation hospitals.",
         "label": 9,
         "relation_name": "occurs",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea occurs among <e2>inpatient</e2>s with compromised immune systems. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> occurs among <e2>inpatient</e2>s with compromised immune systems. [SEP]"
     },
     {
         "id": 637,
@@ -4540,14 +4540,14 @@
         "text": "hemolytic uremic syndrome and <e1>diarrhea</e1> associated with <e2>escherichia coli o157</e2>:h7 in a day care center.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] The outbreak of hemolytic uremic syndrome was associated with the presence of Escherichia coli O157:H7 in the contaminated water supply, which was linked to severe cases of <e1>diarrhea</e1>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The outbreak of hemolytic uremic syndrome was associated with the presence of <e2>escherichia coli o157</e2>:H7 in the contaminated water supply, which was linked to severe cases of <e1>diarrhea</e1>. [SEP]"
     },
     {
         "id": 649,
         "text": "enterotoxigenic escherichia coli expressing k88 <e1>fimbrial adhesins</e1> often cause <e2>diarrhea</e2> in young pigs.",
         "label": 22,
         "relation_name": "cause",
-        "new_generation_response": "assistant\n\n[CLS] Fimbrial adhesins often cause <e2>diarrhea</e2> in young children with weakened immune systems. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>fimbrial adhesins</e1> often cause <e2>diarrhea</e2> in young children with weakened immune systems. [SEP]"
     },
     {
         "id": 650,
@@ -4575,7 +4575,7 @@
         "text": "however, in lung cancer patients administered a low dose of cpt-11, <e1>ugt1a1</e1>*6/*28 variants were not significantly associated with severe neutropenia or delayed <e2>diarrhea</e2>.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] In patients with Gilbert's syndrome, UGT1A1*6/*28 variants were associated with reduced bilirubin levels and less severe <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] In patients with Gilbert's syndrome, <e1>ugt1a1</e1>*6/*28 variants were associated with reduced bilirubin levels and less severe <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 654,
@@ -4645,7 +4645,7 @@
         "text": "the incidence of <e2>gastrointestinal diseases</e2> such as <e1>diarrhea</e1>, cholera, typhoid, dysentery, viral hepatitis (a and e virus) can be substantially reduced by providing clean water and food to the population.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a gastrointestinal disease that can be caused by consuming contaminated food or water. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a gastrointestinal disease that can be caused by consuming contaminated food or water. [SEP]"
     },
     {
         "id": 664,
@@ -4666,7 +4666,7 @@
         "text": "differential absorption of d-xylose and 3-o-methyl-d-glucose, and unmediated intestinal permeation of <e1>lactulose</e1> and l-rhamnose has been investigated in 14 patients with <e2>diarrhea</e2> following tropical exposure and in 16 healthy control subjects.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Lactulose treats <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>lactulose</e1> treats <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 667,
@@ -4729,7 +4729,7 @@
         "text": "stool viral load (n = 94) was associated with <e2>diarrhea</e2>, and urine viral load (n = 111) was associated with <e1>abnormal urinalysis result</e1>s.",
         "label": 15,
         "relation_name": "coexists with",
-        "new_generation_response": "assistant\n\n[CLS] Abnormal urinalysis result coexists with <e2>diarrhea</e2> in patients undergoing chemotherapy. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>abnormal urinalysis result</e1> coexists with <e2>diarrhea</e2> in patients undergoing chemotherapy. [SEP]"
     },
     {
         "id": 676,
@@ -4799,7 +4799,7 @@
         "text": "in a comparative trial, bicalutamide (<e1>casodex</e1>) was more effective than flutamide (each in combination with an lhrh analogue) in terms of time to treatment failure and produced a significantly lower incidence of <e2>diarrhea</e2>.",
         "label": 22,
         "relation_name": "cause",
-        "new_generation_response": "assistant\n\n[CLS] The side effects of Casodex (e1) cause (e2) <e2>diarrhea</e2> in some patients. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The side effects of <e1>casodex</e1> (e1) cause (e2) <e2>diarrhea</e2> in some patients. [SEP]"
     },
     {
         "id": 686,
@@ -4848,7 +4848,7 @@
         "text": "<e2>subacute intestinal obstruction</e2> as a cause of <e1>diarrhea</e1>.",
         "label": 6,
         "relation_name": "manifestation of",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a manifestation of <e2>subacute intestinal obstruction</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a manifestation of <e2>subacute intestinal obstruction</e2>. [SEP]"
     },
     {
         "id": 693,
@@ -4925,7 +4925,7 @@
         "text": "[cpt-11-induced <e2>diarrhea</e2> treated with <e1>indisetron hydrochloride</e1>--a case report].",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] [SEP] The patient was prescribed <e1>indisetron hydrochloride</e1> to alleviate the symptoms of severe <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] [SEP] The patient was prescribed <e1><e1>indisetron hydrochloride</e1></e1> to alleviate the symptoms of severe <e2><e2>diarrhea</e2></e2>. [SEP]"
     },
     {
         "id": 704,
@@ -5177,14 +5177,14 @@
         "text": "thermophilic filamentous heterocyst-containing <e1>mastigocladus</e1> were dominant <e2>cyanobacteria</e2> in porcelana hot spring and geyser, and calothrix in cahuelmo, followed by the filamentous non-heterocyst leptolyngbya and oscillatoria.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistantassistant\n\n[CLS] Mastigocladus is a <e2>cyanobacteria</e2> that thrives in hot environments, such as geothermal vents and hot springs, where it forms symbiotic relationships with other microorganisms. [SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>mastigocladus</e1> is a <e2>cyanobacteria</e2> that thrives in hot environments, such as geothermal vents and hot springs, where it forms symbiotic relationships with other microorganisms. [SEP]"
     },
     {
         "id": 740,
         "text": "however, subsequent to infection with enteric pathogens such as <e1>salmonella typhimurium</e1>, the gal1r is rapidly upregulated in colonocytes where it contributes to the excess fluid production associated with <e2>diarrhea</e2>.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] The Centers for Disease Control and Prevention (CDC) has reported that outbreaks of foodborne illness are often associated with Salmonella Typhimurium, which can cause severe <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The Centers for Disease Control and Prevention (CDC) has reported that outbreaks of foodborne illness are often associated with <e1>salmonella typhimurium</e1>, which can cause severe <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 741,
@@ -5212,7 +5212,7 @@
         "text": "immunological characterization of nitrogenase in the filamentous non-heterocystous <e2>cyanobacterium</e2> <e1>oscillatoria limosa</e1>.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] The species Oscillatoria limosa is a <e2>cyanobacterium</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The species <e1>oscillatoria limosa</e1> is a <e2>cyanobacterium</e2>. [SEP]"
     },
     {
         "id": 745,
@@ -5240,7 +5240,7 @@
         "text": "acidic <e1>diarrhea</e1> induced by lactose feeding to three hypolactasic patients caused reductions in the numbers of e. coli in the stool but increases in <e2>enterobacter species</e2>.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] The new antibiotic treatment was found to be associated with a significant decrease in the growth of Enterobacter species in patients suffering from <e1>diarrhea</e1>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The new antibiotic treatment was found to be associated with a significant decrease in the growth of <e2>enterobacter species</e2> in patients suffering from <e1>diarrhea</e1>. [SEP]"
     },
     {
         "id": 749,
@@ -5296,7 +5296,7 @@
         "text": "a low minimum cobalt quota ensures that other nutrients, notably <e1>iron</e1>, will be exhausted before cobalt can be fully depleted, helping to explain the persistence of cobalt-dependent metabolism in marine <e2>cyanobacteria</e2>.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Iron supplements are often used to treat <e2>cyanobacteria</e2> infections in aquariums. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>iron</e1> supplements are often used to treat <e2>cyanobacteria</e2> infections in aquariums. [SEP]"
     },
     {
         "id": 757,
@@ -5310,7 +5310,7 @@
         "text": "[pancreatic involvement, ascites and <e1>diarrhea</e1> in <e2>idiopathic hypereosinophilic syndrome</e2>].",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] [SEP] Diarrhea is a common symptom associated with <e2>idiopathic hypereosinophilic syndrome</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] [SEP] <e1>diarrhea</e1> is a common symptom associated with <e2>idiopathic hypereosinophilic syndrome</e2>. [SEP]"
     },
     {
         "id": 759,
@@ -5485,7 +5485,7 @@
         "text": "ethnopharmacological relevance: <e1>ge-gen-tang</e1> (ggt) is a traditional chinese medicinal formula composed of puerariae radix (pueraria lobata ohwi), ephedrae herba (ephedra sinica stapf), cinnamomi ramulus (cinnamomum cassia blume), paeoniae radix (paeonia lactiflora pallas), glycyrrhizae radix preparata (glycyrrhiza uralensis fischer), zingiberis rhizoma (zingiber officinale roscoe), and zizyphi fructus (ziziphus jujuba mill. var. inermis rehder) and is widely used to ameoliorate the symptoms of gastrointestinal (gi) disorders related to <e2>diarrhea</e2> and intestinal mucosal immunity and for anti-cold, antipyretic and analgesic in eastern asia.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] Ge-Gen-Tang (GGT) is a traditional Chinese medicinal formula that has been shown to be associated with <e2>diarrhea</e2> in patients with irritable bowel syndrome (IBS), and its effectiveness in alleviating symptoms is attributed to its anti-inflammatory and antimicrobial properties. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>ge-gen-tang</e1> (GGT) is a traditional Chinese medicinal formula that has been shown to be associated with <e2>diarrhea</e2> in patients with irritable bowel syndrome (IBS), and its effectiveness in alleviating symptoms is attributed to its anti-inflammatory and antimicrobial properties. [SEP]"
     },
     {
         "id": 784,
@@ -5513,7 +5513,7 @@
         "text": "group b, unicellular <e2>cyanobacterium</e2> <e1>crocosphaera</e1>, and group c cyanothece-like phylotypes were not often detected (6.9% and 2.3%, respectively), but where present, could reach high concentrations.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Crocosphaera is a <e2>cyanobacterium</e2> that has been found to form symbiotic relationships with certain species of fungi, providing them with essential nutrients. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>crocosphaera</e1> is a <e2>cyanobacterium</e2> that has been found to form symbiotic relationships with certain species of fungi, providing them with essential nutrients. [SEP]"
     },
     {
         "id": 788,
@@ -5807,7 +5807,7 @@
         "text": "in the absence of dietary zn2+ we observed similar fluid accumulation in wt and znr/<e1>gpr39</e1> ko mice, indicating that zn2+ and znr/gpr39 are both required for a beneficial effect of zn2+ in <e2>diarrhea</e2>.",
         "label": 20,
         "relation_name": "affects",
-        "new_generation_response": "assistant\n\n[CLS] In patients with gastrointestinal disorders, the activation of GPR39 affects the severity of <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] In patients with gastrointestinal disorders, the activation of <e1>gpr39</e1> affects the severity of <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 830,
@@ -5821,7 +5821,7 @@
         "text": "<e1>chlorpromazine</e1> reverses <e2>diarrhea</e2> in piglets caused by enterotoxigenic escherichia coli.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistantassistant\n\n[CLS] Chlorpromazine [e1]<e1>chlorpromazine</e1>[/e1] is used to [e2]<e2>diarrhea</e2>[/e2] in patients with irritable bowel syndrome. [SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>chlorpromazine</e1> [e1]chlorpromazine[/e1] is used to [e2]<e2>diarrhea</e2>[/e2] in patients with irritable bowel syndrome. [SEP]"
     },
     {
         "id": 832,
@@ -5926,7 +5926,7 @@
         "text": "in this study, 1 l cultures of the n2 -fixing <e2>cyanobacterium</e2> <e1>anabaena siamensis</e1> grown diazotrophically in the wavetm bioreactor exhibited increased phosphate consumption and 37-70% higher co2 fixation rates than those grown in conventional bubbled suspension (bs) batch cultures.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] The species Anabaena siamensis is a <e2>cyanobacterium</e2> that has been found to form symbiotic relationships with certain plants, providing them with fixed nitrogen in exchange for carbohydrates. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The species <e1>anabaena siamensis</e1> is a <e2>cyanobacterium</e2> that has been found to form symbiotic relationships with certain plants, providing them with fixed nitrogen in exchange for carbohydrates. [SEP]"
     },
     {
         "id": 847,
@@ -6024,7 +6024,7 @@
         "text": "in overall, there were improvements in activities of daily living (adl) updrs (wmd -3.12, 95% ci -5.88 to -0.36) and schwab and england (wmd 4.43, 95% ci 0.05 to 8.81) for <e1>coenzyme q10</e1> at 1200 mg/d for 16 months versus placebo.in safety outcomes, only the risk ratios (rr) of pharyngitis (rr 1.04, 95% ci 0.18 to 5.89) and <e2>diarrhea</e2> (rr 1.39, 95% ci 0.62 to 3.16) are mild elevated between coenzyme q10 therapy and placebo and there were no differences in the number of withdrawals due to adverse effects (rr 0.61, 95% ci 0.23 to 1.62).",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Coenzyme Q10 [SEP] treats [SEP] Diarrhea [SEP] \n\nHere is a new sentence with the same entities and relationship:\n\nCoenzyme Q10 has been shown to be effective in reducing the severity of <e2>diarrhea</e2> in patients with irritable bowel syndrome."
+        "new_generation_response": "assistant\n\n[CLS] <e1>coenzyme q10</e1> [SEP] treats [SEP] <e2>diarrhea</e2> [SEP] \n\nHere is a new sentence with the same entities and relationship:\n\nCoenzyme Q10 has been shown to be effective in reducing the severity of diarrhea in patients with irritable bowel syndrome."
     },
     {
         "id": 861,
@@ -6045,7 +6045,7 @@
         "text": "nitrogenase activity of the <e2>cyanobacterium</e2> was reduced by 38% after 48 h by treatment with 100 ppm <e1>carbofuran</e1> with no observed change in heterocyst frequency.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Carbofuran treats <e2>cyanobacterium</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>carbofuran</e1> treats <e2>cyanobacterium</e2>. [SEP]"
     },
     {
         "id": 864,
@@ -6129,7 +6129,7 @@
         "text": "unlabelled: somatostatin increases absorption of <e1>electrolytes</e1> and inhibits <e2>diarrhea</e2> in patients with endocrine tumors and short bowel syndrome.",
         "label": 13,
         "relation_name": "disrupts",
-        "new_generation_response": "assistant\n\n[CLS] Electrolytes disrupts <e2>diarrhea</e2> in patients with gastrointestinal disorders. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>electrolytes</e1> disrupts <e2>diarrhea</e2> in patients with gastrointestinal disorders. [SEP]"
     },
     {
         "id": 876,
@@ -6248,7 +6248,7 @@
         "text": "control of preweaning <e2>diarrhea</e2> in piglets by <e1>acupuncture</e1> and chinese medicine.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Acupuncture and chinese medicine have been found to effectively treats <e2>diarrhea</e2> in piglets during the preweaning period. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>acupuncture</e1> and chinese medicine have been found to effectively treats <e2>diarrhea</e2> in piglets during the preweaning period. [SEP]"
     },
     {
         "id": 893,
@@ -6283,7 +6283,7 @@
         "text": "madangolide and laingolide a, two novel macrolides from <e1>lyngbya bouillonii</e1> (<e2>cyanobacteria</e2>)",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Lyngbya bouillonii is a <e2>cyanobacteria</e2> [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>lyngbya bouillonii</e1> is a <e2>cyanobacteria</e2> [SEP]"
     },
     {
         "id": 898,
@@ -6465,7 +6465,7 @@
         "text": "physiological and chemical characterization of <e2>cyanobacteria</e2>l <e1>metallothionein</e1>s.",
         "label": 10,
         "relation_name": "part of",
-        "new_generation_response": "assistant\n\n[CLS] Metallothionein is part of <e2>cyanobacteria</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>metallothionein</e1> is part of <e2>cyanobacteria</e2>. [SEP]"
     },
     {
         "id": 924,
@@ -6486,7 +6486,7 @@
         "text": "recently, a bypass route via succinic semialdehyde (ssa), which utilizes 2-oxoglutarate decarboxylase (ogda) and succinic semialdehyde dehydrogenase (ssad) to convert 2-oxoglutarate (2-og) into <e1>succinate</e1>, was identified, thus completing the tca cycle in most <e2>cyanobacteria</e2>.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Succinate treats Cyanobacteria [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>succinate</e1> treats <e2>cyanobacteria</e2> [SEP]"
     },
     {
         "id": 927,
@@ -6507,7 +6507,7 @@
         "text": "using ovalbumin (ova)-sensitized murine model, it was demonstrated that probiotics ameliorated allergic symptoms, including reducing ova specific-ige, and -<e1>igg1</e1> levels in the serum, th2 cytokines release in spleen, and occurrence of <e2>diarrhea</e2>.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] In patients with inflammatory bowel disease, elevated levels of IgG1 were associated with increased incidence of <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] In patients with inflammatory bowel disease, elevated levels of <e1>igg1</e1> were associated with increased incidence of <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 930,
@@ -6542,7 +6542,7 @@
         "text": "<e1>diarrhea</e1> occurs in 4%-34% of all patients and prostaglandin analogues are contraindicated in <e2>pregnant women</e2>.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a common process of <e2>pregnant women</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a common process of <e2>pregnant women</e2>. [SEP]"
     },
     {
         "id": 935,
@@ -6570,7 +6570,7 @@
         "text": "gut bacterial <e2>dysbiosis</e2> has emerged as a leading cause of post-weaning <e1>diarrhea</e1>.",
         "label": 6,
         "relation_name": "manifestation of",
-        "new_generation_response": "assistant\n\n[CLS] The new sentence with the same entities and their relationship is: [SEP] \n\ngut bacterial <e2>dysbiosis</e2> is a manifestation of post-weaning <e1>diarrhea</e1>."
+        "new_generation_response": "assistant\n\n[CLS] The new sentence with the same entities and their relationship is: [SEP] \n\ngut bacterial <e2><e2>dysbiosis</e2></e2> is a manifestation of post-weaning <e1><e1>diarrhea</e1></e1>."
     },
     {
         "id": 939,
@@ -6605,7 +6605,7 @@
         "text": "<e1>diarrhea</e1> in pediatric <e2>recipient</e2>s of solid organ or bone marrow transplants.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a common process of complications in pediatric <e2>recipient</e2> of chemotherapy. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a common process of complications in pediatric <e2>recipient</e2> of chemotherapy. [SEP]"
     },
     {
         "id": 944,
@@ -6640,7 +6640,7 @@
         "text": "these results demonstrate that poly-3-hydroxybutyrate-co-4-hydroxybutyrate can be produced in <e2>cyanobacteria</e2> and confirm that <e1>succinic semialdehyde</e1> is an important tca cycle metabolite in cyanobacteria.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Succinic semialdehyde [E1] treats [E2] <e2>cyanobacteria</e2> [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>succinic semialdehyde</e1> [E1] treats [E2] <e2>cyanobacteria</e2> [SEP]"
     },
     {
         "id": 949,
@@ -6675,7 +6675,7 @@
         "text": "<e2>diarrhea</e2> due to <e1>fiber</e1> overload.",
         "label": 22,
         "relation_name": "cause",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea [e2] is often caused by an excessive intake of [e1] <e1>fiber</e1> [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e2>diarrhea</e2> [e2] is often caused by an excessive intake of [e1] <e1>fiber</e1> [SEP]"
     },
     {
         "id": 954,
@@ -6878,7 +6878,7 @@
         "text": "the <e2>author</e2>s report the case of a new diagnosis of advanced hiv-1 infection with a blood cd4 cell count of 0.003*10(9)/l (2%), presenting with weight loss, night sweats, <e1>diarrhea</e1> and anorexia.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship \"process of\" is: [SEP] The <e1>diarrhea</e1> is a process of the <e2>author</e2>'s research on gastrointestinal diseases."
+        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship \"process of\" is: [SEP] The <e1><e1>diarrhea</e1></e1> is a process of the <e2><e2>author</e2></e2>'s research on gastrointestinal diseases."
     },
     {
         "id": 983,
@@ -6941,7 +6941,7 @@
         "text": "a specific association with the <e2>cyanobacterium</e2> <e1>anabaena oscillarioides</e1> was established by positive bacterial (pseudomonad) chemotaxis to anabaena oscillarioides heterocysts.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Anabaena oscillarioides is a <e2>cyanobacterium</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>anabaena oscillarioides</e1> is a <e2>cyanobacterium</e2>. [SEP]"
     },
     {
         "id": 992,
@@ -6997,7 +6997,7 @@
         "text": "<e1>phthalylsulfathiazole</e1> in the treatment of <e2>diarrhea</e2> in children.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Phthalylsulfathiazole [SEP] is often used to treats [SEP] <e2>diarrhea</e2> [SEP] in pediatric patients."
+        "new_generation_response": "assistant\n\n[CLS] <e1>phthalylsulfathiazole</e1> [SEP] is often used to treats [SEP] <e2>diarrhea</e2> [SEP] in pediatric patients."
     },
     {
         "id": 1000,
@@ -7053,7 +7053,7 @@
         "text": "enteric <e2>salmonella infection</e2> is accompanied by inflammation and <e1>diarrhea</e1>, and yet little is known about its effects on intestinal epithelial physiology.",
         "label": 15,
         "relation_name": "coexists with",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea [e1] often coexists with [e2] <e2>salmonella infection</e2> [SEP] in individuals with compromised immune systems."
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> [e1] often coexists with [e2] <e2>salmonella infection</e2> [SEP] in individuals with compromised immune systems."
     },
     {
         "id": 1008,
@@ -7081,14 +7081,14 @@
         "text": "the most commonly reported adverse events were headache, cough, dizziness, asthenia, cramps, <e2>diarrhea</e2>, and nausea, but not all of these events were related to <e1>ramipril</e1> treatment.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistantassistant\n\n[CLS] Ramipril [e1] is often prescribed to treat conditions such as high blood pressure, which can lead to symptoms like <e2>diarrhea</e2> [e2]. [SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>ramipril</e1> [e1] is often prescribed to treat conditions such as high blood pressure, which can lead to symptoms like <e2>diarrhea</e2> [e2]. [SEP]"
     },
     {
         "id": 1012,
         "text": "<e1>pellagra</e1> is a photosensitivity syndrome characterized by three \\d's\\\": <e2>diarrhea</e2>",
         "label": 22,
         "relation_name": "cause",
-        "new_generation_response": "assistant\n\n[CLS] Pellagra [SEP] is a disease that can cause Diarrhea [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>pellagra</e1> [SEP] is a disease that can cause <e2>diarrhea</e2> [SEP]"
     },
     {
         "id": 1013,
@@ -7109,7 +7109,7 @@
         "text": "in contrast, <e1>bismuth subsalicylate</e1> (bss) in liquid form reduced the incidence of <e2>diarrhea</e2> in students from the united states living in mexico and in tablet form in volunteers challenged by enterotoxigenic escherichia coli.",
         "label": 8,
         "relation_name": "prevents",
-        "new_generation_response": "assistant\n\n[CLS] Bismuth subsalicylate prevents Diarrhea [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>bismuth subsalicylate</e1> prevents <e2>diarrhea</e2> [SEP]"
     },
     {
         "id": 1016,
@@ -7186,7 +7186,7 @@
         "text": "the most common presenting <e2>symptoms</e2> were <e1>diarrhea</e1>, fever, abdominal pain, and weight loss.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a symptom. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a symptom. [SEP]"
     },
     {
         "id": 1027,
@@ -7214,7 +7214,7 @@
         "text": "the incidence of <e1>diarrhea</e1> and the prevalence of bacterial enteropathogens, viruses, and parasites in feces of subjects with and without diarrhea were evaluated in 204 <e2>finns</e2> traveling round the world (from finland to china, malaysia, australia, fiji, chile, and brazil and back to finland).",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] The process of <e1>diarrhea</e1> was studied in 204 Finns traveling round the world. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The process of <e1>diarrhea</e1> was studied in 204 <e2>finns</e2> traveling round the world. [SEP]"
     },
     {
         "id": 1031,
@@ -7263,7 +7263,7 @@
         "text": "epidemiological studies have implicated enteroaggregative escherichia coli (eaec) strains in acute and persistent <e1>diarrhea</e1> in children, in food-borne diarrhea outbreaks, and in <e2>traveler's diarrhea</e2>, and this group is recognized as an emerging pathotype of enteric disease.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] The new sentence is: Diarrhea is associated with <e2>traveler's <e1>diarrhea</e1></e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The new sentence is: <e1>diarrhea</e1> is associated with <e2>traveler's diarrhea</e2>. [SEP]"
     },
     {
         "id": 1038,
@@ -7298,7 +7298,7 @@
         "text": "allelochemicals in pistia stratiotes linn. have a strong anti-<e1>cyanobacteria</e1> effect on <e2>microcystis aeruginosa</e2>.",
         "label": 0,
         "relation_name": "interacts with",
-        "new_generation_response": "assistant\n\n[CLS] Cyanobacteria interacts with Microcystis aeruginosa in the process of forming harmful algal blooms. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>cyanobacteria</e1> interacts with <e2>microcystis aeruginosa</e2> in the process of forming harmful algal blooms. [SEP]"
     },
     {
         "id": 1043,
@@ -7382,7 +7382,7 @@
         "text": "no cyanobacterial nifh sequences were found from the mat collected in november when <e1>microcoleus chthonoplastes</e1> was the dominant <e2>cyanobacterium</e2>, but sequences closely related to the cyanobacterium lyngbya lagerheimeii were found during summer, when a lyngbya strain was dominant.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Microcoleus chthonoplastes is a <e2>cyanobacterium</e2> that has been found to form symbiotic relationships with other microorganisms in certain ecosystems. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>microcoleus chthonoplastes</e1> is a <e2>cyanobacterium</e2> that has been found to form symbiotic relationships with other microorganisms in certain ecosystems. [SEP]"
     },
     {
         "id": 1055,
@@ -7431,14 +7431,14 @@
         "text": "[contribution to the treatment of <e2>diarrhea</e2>s with <e1>mexaform</e1>].",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Mexaform [SEP] is often prescribed to effectively treats <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>mexaform</e1> [SEP] is often prescribed to effectively treats <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 1062,
         "text": "plasma analysis of <e1>chloroquine</e1> and proguanil from serial samples revealed a significantly lower proguanil cmax (146 ng/ml vs. 196 ng/ml, p = 0.05), and longer tmax (3.1 h vs. 2.6 h, p = 0.05) in the <e2>diarrhea</e2> cohorts.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Chloroquine treats <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>chloroquine</e1> treats <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 1063,
@@ -7494,7 +7494,7 @@
         "text": "[<e1>diarrhea</e1> in urban <e2>agricultural workers</e2> in nouakchott in mauritania].",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistantassistant\n\n[CLS] Diarrhea [SEP] is a common process of [e1>diarrhea</e1> in <e2>agricultural workers</e2> who work in unsanitary conditions [SEP]."
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>diarrhea</e1> [SEP] is a common process of [e1>diarrhea</e1> in <e2><e2>agricultural workers</e2></e2> who work in unsanitary conditions [SEP]."
     },
     {
         "id": 1071,
@@ -7606,7 +7606,7 @@
         "text": "conclusions: the results indicate that in southern germany in addition to eimeria spp., <e1>giardia spp.</e1> seems to play a contributing role in <e2>diarrhea</e2> in older calves, whereas cryptosporidium spp. and rotavirus are mostly relevant in young calves.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] In veterinary medicine, Giardia spp. treats <e2>diarrhea</e2> in animals by reducing the severity of symptoms and promoting intestinal health. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] In veterinary medicine, <e1>giardia spp.</e1> treats <e2>diarrhea</e2> in animals by reducing the severity of symptoms and promoting intestinal health. [SEP]"
     },
     {
         "id": 1087,
@@ -7732,7 +7732,7 @@
         "text": "<e1>clostridium butyricum</e1> (c. butyricum) reduces the incidence of <e2>diarrhea</e2> in digestive diseases, including inflammatory bowel disease.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] Clostridium butyricum [SEP] has been found to be associated with a reduced risk of <e2>diarrhea</e2> in patients undergoing chemotherapy."
+        "new_generation_response": "assistant\n\n[CLS] <e1>clostridium butyricum</e1> [SEP] has been found to be associated with a reduced risk of <e2>diarrhea</e2> in patients undergoing chemotherapy."
     },
     {
         "id": 1105,
@@ -7802,7 +7802,7 @@
         "text": "this study is to tackle the challenge posed by the \\naturalized\\\" <e1>escherichia coli</e1> population against the worldwide practice of e. coli-based <e2>water</e2> quality monitoring.\"",
         "label": 5,
         "relation_name": "location of",
-        "new_generation_response": "assistant\n\n[CLS] The new waste<e2>water</e2> treatment plant is the location of Escherichia coli in the water supply system. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The new waste<e2>water</e2> treatment plant is the location of <e1>escherichia coli</e1> in the water supply system. [SEP]"
     },
     {
         "id": 1115,
@@ -7865,7 +7865,7 @@
         "text": "differentiation of free-living anabaena and <e1>nostoc</e1> <e2>cyanobacteria</e2> on the basis of fatty acid composition.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] The genus Nostoc is a <e2>cyanobacteria</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The genus <e1>nostoc</e1> is a <e2>cyanobacteria</e2>. [SEP]"
     },
     {
         "id": 1124,
@@ -7942,7 +7942,7 @@
         "text": "side effects include headache, nausea, fatigue, <e1>diarrhea</e1>, <e2>neuropathy</e2>, and lowered levels of both red and white blood cells.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a <e2>neuropathy</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a <e2>neuropathy</e2>. [SEP]"
     },
     {
         "id": 1135,
@@ -8040,7 +8040,7 @@
         "text": "gallic acid, the major component of ea fraction, blocked the binding of <e1>ltb</e1> to g(m1), resulting in the suppression of lt-induced <e2>diarrhea</e2>.",
         "label": 13,
         "relation_name": "disrupts",
-        "new_generation_response": "assistant\n\n[CLS] The presence of LTB disrupts the normal functioning of the gut, leading to severe <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The presence of <e1>ltb</e1> disrupts the normal functioning of the gut, leading to severe <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 1149,
@@ -8215,7 +8215,7 @@
         "text": "spirulina is a microscopic and filamentous <e2>cyanobacterium</e2> that contains essential <e1>amino acids, essential</e1> fatty acids, vitamins, minerals and anti-oxidative components.",
         "label": 10,
         "relation_name": "part of",
-        "new_generation_response": "assistant\n\n[CLS] Amino acids, essential are part of <e2>cyanobacterium</e2>, which is a crucial component of the ocean's ecosystem. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>amino acids, essential</e1> are part of <e2>cyanobacterium</e2>, which is a crucial component of the ocean's ecosystem. [SEP]"
     },
     {
         "id": 1174,
@@ -8229,14 +8229,14 @@
         "text": "agents for which some efficacy has been shown for treatment of pi-associated <e2>diarrhea</e2> include <e1>oat bran</e1>, psyllium, loperamide, calcium carbonate, sp-303, and pancrelipase.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Oat bran treats <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>oat bran</e1> treats <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 1176,
         "text": "broxyquinoline and <e1>brobenzoxaldine</e1> with belladonna in childhood <e2>diarrhea</e2>s.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistantassistant\n\n[CLS] Brobenzoxaldine [SEP] is often used to treat <e2>diarrhea</e2> in pediatric patients."
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>brobenzoxaldine</e1> [SEP] is often used to treat <e2>diarrhea</e2> in pediatric patients."
     },
     {
         "id": 1177,
@@ -8278,7 +8278,7 @@
         "text": "cyanopeptoline cb071: a cyclic depsipeptide isolated from the freshwater <e2>cyanobacterium</e2> <e1>aphanocapsa sp.</e1>",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Aphanocapsa sp. is a <e2>cyanobacterium</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>aphanocapsa sp.</e1> is a <e2>cyanobacterium</e2>. [SEP]"
     },
     {
         "id": 1183,
@@ -8313,7 +8313,7 @@
         "text": "results indicate that celecoxib enhances the antitumor effect of <e1>cpt-11</e1> and reduces the severity of late <e2>diarrhea</e2> in a dose-dependent manner.",
         "label": 8,
         "relation_name": "prevents",
-        "new_generation_response": "assistant\n\n[CLS] The study suggests that CPT-11 prevents the occurrence of severe <e2>diarrhea</e2> in patients undergoing chemotherapy. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The study suggests that <e1>cpt-11</e1> prevents the occurrence of severe <e2>diarrhea</e2> in patients undergoing chemotherapy. [SEP]"
     },
     {
         "id": 1188,
@@ -8628,7 +8628,7 @@
         "text": "in our bioassays, dom leached from 4 g leaf l-1 resulted in over 40% inhibition of photosynthetic yield for the <e2>cyanobacterium</e2>, <e1>cylindrospermopsis raciborskii</e1>, for eight of the nine plants tested.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Cylindrospermopsis raciborskii is a <e2>cyanobacterium</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>cylindrospermopsis raciborskii</e1> is a <e2>cyanobacterium</e2>. [SEP]"
     },
     {
         "id": 1233,
@@ -9146,7 +9146,7 @@
         "text": "previous research suggested that <e1>andrographolide</e1> (andro) attenuated the intestinal injury in colitis or <e2>diarrhea</e2> in mice.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Andrographolide (andro) has been shown to effectively treat <e2>diarrhea</e2> in patients with irritable bowel syndrome. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>andrographolide</e1> (andro) has been shown to effectively treat <e2>diarrhea</e2> in patients with irritable bowel syndrome. [SEP]"
     },
     {
         "id": 1307,
@@ -9188,7 +9188,7 @@
         "text": "conclusion: <e1>omalizumab</e1> was safe and showed a tendency to improve mastocytosis-related symptoms, in particular <e2>diarrhea</e2>, dizziness, flush, and anaphylactic reactions, including the afirmm score and secondary endpoints; however, the difference was not significant.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistantassistant\n\n[CLS] Omalizumab treats Diarrhea. [SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>omalizumab</e1> treats <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 1313,
@@ -9328,7 +9328,7 @@
         "text": "we attributed the spiking mortality histogram to <e1>starvation</e1> coupled with <e2>diarrhea</e2>.",
         "label": 15,
         "relation_name": "coexists with",
-        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship \"coexists with\" is: [SEP] The doctor warned that the patient's condition of <e1>starvation</e1> coexists with <e2>diarrhea</e2>, making treatment more challenging."
+        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship \"coexists with\" is: [SEP] The doctor warned that the patient's condition of <e1><e1>starvation</e1></e1> coexists with <e2><e2>diarrhea</e2></e2>, making treatment more challenging."
     },
     {
         "id": 1333,
@@ -9356,7 +9356,7 @@
         "text": "[is <e1>propranolol</e1> suitable for the treatment of bile acid-induced <e2>diarrhea</e2>?].",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] [SEP] Is <e1>propranolol</e1> effective in treating <e2>diarrhea</e2> caused by bile acid imbalance? [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] [SEP] Is <e1><e1>propranolol</e1></e1> effective in treating <e2><e2>diarrhea</e2></e2> caused by bile acid imbalance? [SEP]"
     },
     {
         "id": 1337,
@@ -9517,7 +9517,7 @@
         "text": "<e2>clinicians</e2> have long recognized intractable <e1>diarrhea</e1> as an occasional feature of neuroblastoma, ganglioneuroblastoma or ganglioneuroma.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a process of <e2>clinicians</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a process of <e2>clinicians</e2>. [SEP]"
     },
     {
         "id": 1360,
@@ -9657,7 +9657,7 @@
         "text": "finally, serum <e1>vitamin b12</e1> was not associated with ascaris intensity but was lowered with increasing frequency of <e2>diarrhea</e2>.",
         "label": 20,
         "relation_name": "affects",
-        "new_generation_response": "assistant\n\n[CLS] The study found that vitamin B12 affects the severity of <e2>diarrhea</e2> in patients with gastrointestinal disorders. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The study found that <e1>vitamin b12</e1> affects the severity of <e2>diarrhea</e2> in patients with gastrointestinal disorders. [SEP]"
     },
     {
         "id": 1380,
@@ -9853,7 +9853,7 @@
         "text": "this paper focuses on such exometabolites obtained from the culture of the marine filamentous <e2>cyanobacterium</e2> <e1>geitlerinema</e1> sp. strain, their purification and subsequent analyses.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] The genus Geitlerinema is a <e2>cyanobacterium</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The genus <e1>geitlerinema</e1> is a <e2>cyanobacterium</e2>. [SEP]"
     },
     {
         "id": 1408,
@@ -9874,7 +9874,7 @@
         "text": "[preventive and therapeutic effect of <e1>ethacridine lactate</e1> in unspecific <e2>diarrhea</e2>s].",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistantassistant\n\n[CLS] [SEP] The doctor prescribed <e1>ethacridine lactate</e1> to effectively treat the patient's severe case of <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] [SEP] The doctor prescribed <e1><e1>ethacridine lactate</e1></e1> to effectively treat the patient's severe case of <e2><e2>diarrhea</e2></e2>. [SEP]"
     },
     {
         "id": 1411,
@@ -9902,7 +9902,7 @@
         "text": "a survey on the prevalence of <e1>diarrhea</e1> in a <e2>portuguese population</e2> of police working dogs.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] A study on the process of <e1>diarrhea</e1> in a Portuguese population of police working dogs. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] A study on the process of <e1>diarrhea</e1> in a <e2>portuguese population</e2> of police working dogs. [SEP]"
     },
     {
         "id": 1415,
@@ -10077,7 +10077,7 @@
         "text": "intractable <e2>diarrhea</e2> of infancy due to <e1>lymphangiectasis</e1>.",
         "label": 22,
         "relation_name": "cause",
-        "new_generation_response": "assistant\n\n[CLS] Lymphangiectasis [SEP] is a rare condition that can cause intractable <e2>diarrhea</e2> in infancy. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>lymphangiectasis</e1> [SEP] is a rare condition that can cause intractable <e2>diarrhea</e2> in infancy. [SEP]"
     },
     {
         "id": 1440,
@@ -10112,14 +10112,14 @@
         "text": "oral rehydration therapy: efficacy of sodium citrate equals to <e1>sodium bicarbonate</e1> for correction of acidosis in <e2>diarrhea</e2>.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] Sodium bicarbonate is often associated with <e2>diarrhea</e2> in patients undergoing enteral nutrition. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>sodium bicarbonate</e1> is often associated with <e2>diarrhea</e2> in patients undergoing enteral nutrition. [SEP]"
     },
     {
         "id": 1445,
         "text": "<e1>broxyquinoline</e1> and brobenzoxalidine suspension (intestopan-ai 307) in childhood <e2>diarrhea</e2>.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistantassistant\n\n[CLS] Broxyquinoline [SEP] is often used to treat brobenzoxalidine-resistant cases of <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>broxyquinoline</e1> [SEP] is often used to treat brobenzoxalidine-resistant cases of <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 1446,
@@ -10469,7 +10469,7 @@
         "text": "antiamoebic and antigiardial activity of <e1>clerodane diterpenes</e1> from mexican salvia species used for the treatment of <e2>diarrhea</e2>.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Clerodane diterpenes [SEP] treats [SEP] <e2>diarrhea</e2> [CLS]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>clerodane diterpenes</e1> [SEP] treats [SEP] <e2>diarrhea</e2> [CLS]"
     },
     {
         "id": 1496,
@@ -10651,7 +10651,7 @@
         "text": "<e1>clostridium perfringens</e1> was significantly associated with foal <e2>diarrhea</e2> (odds ratio (or) = 3.0), being isolated from 57% of 421 animals with diarrhea but from only 27% of 223 healthy foals.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] Clostridium perfringens [SEP] was significantly associated with [SEP] <e2>diarrhea</e2> [SEP] in patients with compromised immune systems, highlighting the need for proper hygiene and sanitation practices. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>clostridium perfringens</e1> [SEP] was significantly associated with [SEP] <e2>diarrhea</e2> [SEP] in patients with compromised immune systems, highlighting the need for proper hygiene and sanitation practices. [SEP]"
     },
     {
         "id": 1522,
@@ -10931,7 +10931,7 @@
         "text": "the results of correlation and rda indicated that the abundance and community diversity of bacterioplankton were significantly correlated with the abundance of phytoplankton, and the group of bacteroidetes had obvious correlation with <e1>microcystis sp.</e1> and other <e2>cyanobacteria</e2>, which might have some links with the harmful algal blooms in lake erhai.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Microcystis sp. is a <e2>cyanobacteria</e2> that has been linked to the production of toxins which can cause harmful algal blooms in freshwater lakes, posing a significant threat to aquatic ecosystems and human health. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>microcystis sp.</e1> is a <e2>cyanobacteria</e2> that has been linked to the production of toxins which can cause harmful algal blooms in freshwater lakes, posing a significant threat to aquatic ecosystems and human health. [SEP]"
     },
     {
         "id": 1562,
@@ -11036,7 +11036,7 @@
         "text": "we compare the efficacy of octreotide and <e1>lanreotide</e1> in reducing <e2>diarrhea</e2> and flushing.",
         "label": 8,
         "relation_name": "prevents",
-        "new_generation_response": "assistantassistant\n\n[CLS] Lanreotide prevents <e2>diarrhea</e2> in patients with carcinoid syndrome. [SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>lanreotide</e1> prevents <e2>diarrhea</e2> in patients with carcinoid syndrome. [SEP]"
     },
     {
         "id": 1577,
@@ -11232,7 +11232,7 @@
         "text": "they are: (1) increase in fluid and ions load which may exceed the maximum capacity of intestinal reabsorption; this is the \\volumogenic\\\" <e1>diarrhea</e1> observed in <e2>zollinger-ellison syndrome</e2>; (2) accelerated gastrointestinal transit",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is associated with Zollinger-Ellison syndrome in patients who experience severe gastrointestinal symptoms. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is associated with <e2>zollinger-ellison syndrome</e2> in patients who experience severe gastrointestinal symptoms. [SEP]"
     },
     {
         "id": 1605,
@@ -11288,7 +11288,7 @@
         "text": "these are the highest values of the contents of <e1>stearidonic acid</e1> and omega3 fas in genetically engineered <e2>cyanobacteria</e2> reported thus far.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistantassistant\n\n[CLS] Stearidonic acid treats <e2>cyanobacteria</e2>. [SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>stearidonic acid</e1> treats <e2>cyanobacteria</e2>. [SEP]"
     },
     {
         "id": 1613,
@@ -11316,14 +11316,14 @@
         "text": "conclusion: these results confirm that <e1>muc4</e1>+ pigs have a higher prevalence of etec-f4 <e2>diarrhea</e2> following exposure, and that pigs fed zno, irrespective of muc4 status, have reduced etec-f4 diarrhea.",
         "label": 13,
         "relation_name": "disrupts",
-        "new_generation_response": "assistant\n\n[CLS] The study found that Muc4 disrupts the normal functioning of the gut, leading to a higher incidence of ETEC-F4 <e2>diarrhea</e2> in pigs. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The study found that <e1>muc4</e1> disrupts the normal functioning of the gut, leading to a higher incidence of ETEC-F4 <e2>diarrhea</e2> in pigs. [SEP]"
     },
     {
         "id": 1617,
         "text": "<e1>diarrhea</e1> in <e2>australian aborigine</e2>s.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a common process of Australian Aborigine's digestive system. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a common process of <e2>australian aborigine</e2>'s digestive system. [SEP]"
     },
     {
         "id": 1618,
@@ -11351,7 +11351,7 @@
         "text": "two-piece <e2>tmrna</e2> in <e1>cyanobacteria</e1> and its structural analysis.",
         "label": 5,
         "relation_name": "location of",
-        "new_generation_response": "assistant\n\n[CLS] The tmRNA in <e1>cyanobacteria</e1> is crucial for its survival in extreme environments, and its structural analysis reveals unique features. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The <e2>tmrna</e2> in <e1>cyanobacteria</e1> is crucial for its survival in extreme environments, and its structural analysis reveals unique features. [SEP]"
     },
     {
         "id": 1622,
@@ -11470,7 +11470,7 @@
         "text": "<e1>ondansetron</e1> for <e2>diarrhea</e2> associated with neuroendocrine tumors.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistantassistant\n\n[CLS] Ondansetron treats <e2>diarrhea</e2> associated with chemotherapy. [SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>ondansetron</e1> treats <e2>diarrhea</e2> associated with chemotherapy. [SEP]"
     },
     {
         "id": 1639,
@@ -11512,7 +11512,7 @@
         "text": "it was ascertained that the newborn from <e2>mothers</e2> with lower serum values of ca of 2.5 mmol/l, p of 1.8 mmol/l and mg of 0.70 mmol/l suffer from <e1>diarrhea</e1>, endotoxic shock, tetany etc. during the neonatal period.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a process of <e2>mothers</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a process of <e2>mothers</e2>. [SEP]"
     },
     {
         "id": 1645,
@@ -11603,7 +11603,7 @@
         "text": "effect of low lactose milk \\eiwit melk\\\" (e.m.) on <e2>low birth weight infant</e2>s with <e1>diarrhea</e1>.\"",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a common process of <e2>low birth weight infant</e2>s. [SEP]\n\nIn this new sentence, the entities and their relationship are preserved:\n\n* Entity e1: <e1>diarrhea</e1>\n* Entity e2: low birth weight infants\n* Relationship: process of (direction: e1 → e2)\n\nThe sentence maintains the same relationship direction, where diarrhea is a process that affects low birth weight infants."
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a common process of <e2>low birth weight infant</e2>s. [SEP]\n\nIn this new sentence, the entities and their relationship are preserved:\n\n* Entity e1: diarrhea\n* Entity e2: low birth weight infants\n* Relationship: process of (direction: e1 → e2)\n\nThe sentence maintains the same relationship direction, where diarrhea is a process that affects low birth weight infants."
     },
     {
         "id": 1658,
@@ -11799,7 +11799,7 @@
         "text": "results:     in the tacrolimus-treated group, anemia and <e2>diarrhea</e2> were associated with the    <e1>ugt1a9</e1>-98c     and    ugt1a9-275t     alleles, respectively (p < 0.05).",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] In the clinical trial, the UGT1A9 enzyme was associated with <e2>diarrhea</e2> in patients taking the medication. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] In the clinical trial, the <e1>ugt1a9</e1> enzyme was associated with <e2>diarrhea</e2> in patients taking the medication. [SEP]"
     },
     {
         "id": 1686,
@@ -12107,7 +12107,7 @@
         "text": "three fresh water microalgal isolates [<e1>phormidium ambiguum</e1> (<e2>cyanobacterium</e2>), pseudochlorococcum typicum and scenedesmus quadricauda var quadrispina (chlorophyta)] were tested for tolerance and removal of mercury (hg2+), lead (pb2+) and cadmium (cd2+) in aqueous solutions as a single metal species at conc.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] The toxicologist explained that Phormidium ambiguum is a <e2>cyanobacterium</e2> that can produce harmful toxins in contaminated water sources. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The toxicologist explained that <e1>phormidium ambiguum</e1> is a <e2>cyanobacterium</e2> that can produce harmful toxins in contaminated water sources. [SEP]"
     },
     {
         "id": 1730,
@@ -12156,7 +12156,7 @@
         "text": "octreotide is active against chemotherapy-induced <e2>diarrhea</e2> caused by <e1>fluoropyrimidine</e1>s and irinotecan, with a distinct mechanism of action.",
         "label": 22,
         "relation_name": "cause",
-        "new_generation_response": "assistant\n\n[CLS] Fluoropyrimidine [SEP] can cause <e2>diarrhea</e2> in some patients, particularly when used in combination with other chemotherapy agents. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>fluoropyrimidine</e1> [SEP] can cause <e2>diarrhea</e2> in some patients, particularly when used in combination with other chemotherapy agents. [SEP]"
     },
     {
         "id": 1737,
@@ -12198,7 +12198,7 @@
         "text": "chloroplasts, unique organelles of plants, originated from endosymbiosis of an ancestor of today's <e2>cyanobacteria</e2> with a <e1>mitochondria</e1>-containing host cell.",
         "label": 10,
         "relation_name": "part of",
-        "new_generation_response": "assistant\n\n[CLS] Mitochondria is part of <e2>cyanobacteria</e2> in the context of cellular structure. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>mitochondria</e1> is part of <e2>cyanobacteria</e2> in the context of cellular structure. [SEP]"
     },
     {
         "id": 1743,
@@ -12317,7 +12317,7 @@
         "text": "aims: several relevant aspects of different fractions of leaf extracts of bauhinia bowkeri (bab), bauhinia galpinii (bag), bauhinia petersiana (bap), and bauhinia variegata (bav) used in south <e1>african traditional medicine</e1> to alleviate <e2>diarrhea</e2> related symptoms were evaluated.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] In South African traditional medicine, the herbal remedy [e1]South African traditional medicine[/e1] is often used to [treats] alleviate symptoms of [e2]<e2>diarrhea</e2>[/e2] in patients. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] In South <e1>african traditional medicine</e1>, the herbal remedy [e1]South African traditional medicine[/e1] is often used to [treats] alleviate symptoms of [e2]<e2>diarrhea</e2>[/e2] in patients. [SEP]"
     },
     {
         "id": 1760,
@@ -12352,7 +12352,7 @@
         "text": "unicellular, homocytous and heterocytous morphotypes were recovered, representing five orders, seven families and eight genera (synechococcus, <e1>cyanobium</e1>, <e2>cyanobacterium</e2>, chlorogloea, leptolyngbya, phormidium, nostoc and microchaete).",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Cyanobium is a <e2>cyanobacterium</e2> that has been found to be a potent producer of bioactive compounds. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>cyanobium</e1> is a <e2>cyanobacterium</e2> that has been found to be a potent producer of bioactive compounds. [SEP]"
     },
     {
         "id": 1765,
@@ -12394,7 +12394,7 @@
         "text": "unlike <e2>lipid a</e2> from heterotrophic gram-negative bacteria, lipid a from <e1>cyanobacteria</e1> usually lacks phosphates.",
         "label": 5,
         "relation_name": "location of",
-        "new_generation_response": "assistant\n\n[CLS] Unlike the cell wall of lipid A from heterotrophic gram-negative bacteria, the cell wall of lipid A from <e1>cyanobacteria</e1> usually lacks phosphates. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] Unlike the cell wall of <e2>lipid a</e2> from heterotrophic gram-negative bacteria, the cell wall of lipid A from <e1>cyanobacteria</e1> usually lacks phosphates. [SEP]"
     },
     {
         "id": 1771,
@@ -12450,7 +12450,7 @@
         "text": "autumnalamide, a prenylated cyclic peptide from the <e2>cyanobacterium</e2> <e1>phormidium autumnale</e1>, acts on sh-sy5y cells at the mitochondrial level.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Phormidium autumnale is a <e2>cyanobacterium</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>phormidium autumnale</e1> is a <e2>cyanobacterium</e2>. [SEP]"
     },
     {
         "id": 1779,
@@ -12478,7 +12478,7 @@
         "text": "the large (a) and small (b) subunits of ribulose-1,5-bisphosphate carboxylase/oxygenase (ec 4.1.1.39) from the <e2>cyanobacterium</e2> <e1>aphanothece halophytica</e1> and from the purple sulfur photosynthetic bacterium chromatium vinosum (strain d) were separated by sucrose density gradient centrifugation at low ionic strength and alkaline ph (9.3), respectively.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Aphanothece halophytica is a <e2>cyanobacterium</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>aphanothece halophytica</e1> is a <e2>cyanobacterium</e2>. [SEP]"
     },
     {
         "id": 1783,
@@ -12562,7 +12562,7 @@
         "text": "inhibition of abcc3 by shrna-mediated knockdown or with small-molecule inhibitor <e1>fidaxomicin</e1>, currently used for <e2>diarrhea</e2> associated with    clostridium difficile     infection, effectively resensitized hsc-derived mll-aml toward standard chemotherapeutic drugs.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Fidaxomicin [SEP] is an antibiotic that treats <e2>diarrhea</e2>."
+        "new_generation_response": "assistant\n\n[CLS] <e1>fidaxomicin</e1> [SEP] is an antibiotic that treats <e2>diarrhea</e2>."
     },
     {
         "id": 1795,
@@ -12590,7 +12590,7 @@
         "text": "randomized controlled trial of <e1>berberine sulfate</e1> therapy for <e2>diarrhea</e2> due to enterotoxigenic escherichia coli and vibrio cholerae.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Berberine sulfate [SEP] has been shown to effectively treats <e2>diarrhea</e2> caused by enterotoxigenic escherichia coli and vibrio cholerae in several clinical studies. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>berberine sulfate</e1> [SEP] has been shown to effectively treats <e2>diarrhea</e2> caused by enterotoxigenic escherichia coli and vibrio cholerae in several clinical studies. [SEP]"
     },
     {
         "id": 1799,
@@ -12660,14 +12660,14 @@
         "text": "the rice field <e2>cyanobacteria</e2> <e1>anabaena azotica</e1> and anabaena sp.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Anabaena azotica [E1] is a [E2] <e2>cyanobacteria</e2> [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>anabaena azotica</e1> [E1] is a [E2] <e2>cyanobacteria</e2> [SEP]"
     },
     {
         "id": 1809,
         "text": "the effects of some common rice field herbicides, such as 2,4-dichlorophenoxyacetic acid (2,4-d), machete, and saturn, on the paddy field nitrogen-fixing <e2>cyanobacteria</e2> <e1>nostoc linckia</e1>, nostoc calcicola, nostoc sp., and anabaena doliolum were studied.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Nostoc linckia is a <e2>cyanobacteria</e2> that has been found to form symbiotic relationships with certain species of fungi. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>nostoc linckia</e1> is a <e2>cyanobacteria</e2> that has been found to form symbiotic relationships with certain species of fungi. [SEP]"
     },
     {
         "id": 1810,
@@ -12765,7 +12765,7 @@
         "text": "enterotoxin-producing escherichia coli and <e1>diarrhea</e1> among newborn babies in <e2>darwin</e2>.",
         "label": 2,
         "relation_name": "diagnoses",
-        "new_generation_response": "assistant\n\n[CLS] The pediatrician suspected that the newborn babies in Darwin had <e1>diarrhea</e1>, which diagnoses the presence of enterotoxin-producing Escherichia coli. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The pediatrician suspected that the newborn babies in <e2>darwin</e2> had <e1>diarrhea</e1>, which diagnoses the presence of enterotoxin-producing Escherichia coli. [SEP]"
     },
     {
         "id": 1824,
@@ -12919,7 +12919,7 @@
         "text": "the <e2>target population</e2> of the current demonstration study in bushenyi district, uganda, presented with acute fever, pneumonia, or <e1>diarrhea</e1> and were treated by community health workers (chws) providing integrated community case management (iccm).",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship \"process of\" is: [SEP] The <e1>diarrhea</e1> was a symptom that required immediate attention as part of the <e2>target population</e2>'s health assessment."
+        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship \"process of\" is: [SEP] The <e1><e1>diarrhea</e1></e1> was a symptom that required immediate attention as part of the <e2><e2>target population</e2></e2>'s health assessment."
     },
     {
         "id": 1846,
@@ -13164,7 +13164,7 @@
         "text": "escarpment endoliths were dominated by eukaryotic phylotypes suggestive of lichenised associations (a trebouxia lichen phycobiont and leptodontidium lichen mycobiont), whereas float endoliths were dominated by bacterial phylotypes, including the <e2>cyanobacterium</e2> <e1>chroococcidiopsis</e1> plus several unidentified beta proteobacteria and crenarchaea.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] The genus Chroococcidiopsis is a <e2>cyanobacterium</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The genus <e1>chroococcidiopsis</e1> is a <e2>cyanobacterium</e2>. [SEP]"
     },
     {
         "id": 1881,
@@ -13766,7 +13766,7 @@
         "text": "patients were assessed for refractory cdi, defined as persistent <e2>diarrhea</e2> after 7 days of <e1>metronidazole</e1> therapy, and stratified by age and clinical characteristics.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Metronidazole [E1] treats [E2] <e2>diarrhea</e2> [SEP] \n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The doctor prescribed <e1>metronidazole</e1> to treat the patient's persistent diarrhea, which had been ongoing for several weeks, and was relieved to see that the medication was effective in treating the diarrhea [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>metronidazole</e1> [E1] treats [E2] <e2>diarrhea</e2> [SEP] \n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The doctor prescribed metronidazole to treat the patient's persistent diarrhea, which had been ongoing for several weeks, and was relieved to see that the medication was effective in treating the diarrhea [SEP]"
     },
     {
         "id": 1967,
@@ -13808,14 +13808,14 @@
         "text": "[treatment of <e2>diarrhea</e2> in infants with <e1>polymyxin b</e1>].",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] [SEP] [treatment of <e2>diarrhea</e2> in adults is often associated with <e1>polymyxin b</e1>]. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] [SEP] [treatment of <e2><e2>diarrhea</e2></e2> in adults is often associated with <e1><e1>polymyxin b</e1></e1>]. [SEP]"
     },
     {
         "id": 1973,
         "text": "aeruginosin 103-a, a thrombin inhibitor from the <e2>cyanobacterium</e2> <e1>microcystis viridis</e1>.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Microcystis viridis is a <e2>cyanobacterium</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>microcystis viridis</e1> is a <e2>cyanobacterium</e2>. [SEP]"
     },
     {
         "id": 1974,
@@ -14179,7 +14179,7 @@
         "text": "however, given the fact that gastrointestinal symptoms such as reflux, bleeding, <e1>diarrhea</e1> are common in the <e2>general population</e2>, their clinical significance needs to be carefully interpreted.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship \"process of\" is: [SEP] however, given the fact that gastrointestinal symptoms such as reflux, bleeding, <e1>diarrhea</e1> are a common <e2>general population</e2> process of."
+        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship \"process of\" is: [SEP] however, given the fact that gastrointestinal symptoms such as reflux, bleeding, <e1><e1>diarrhea</e1></e1> are a common <e2><e2>general population</e2></e2> process of."
     },
     {
         "id": 2026,
@@ -14354,7 +14354,7 @@
         "text": "even though the overall percentage of enteropathogen detection hardly showed any differences between the two groups, it is worth mentioning that there was a certain predominance of <e2>diarrhea</e2>s due to s. enterica (i) in the healthy cohort as compared to the incidence of diarrheas due to <e1>campylobacter sp</e1>. and aeromonas sp. in hiv-positive patients.",
         "label": 22,
         "relation_name": "cause",
-        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship is: [SEP] The presence of <e1>campylobacter sp</e1> in the water supply was identified as the primary cause of the widespread outbreak of <e2>diarrhea</e2> in the affected community."
+        "new_generation_response": "assistant\n\n[CLS] The new sentence with the preserved relationship is: [SEP] The presence of <e1><e1>campylobacter sp</e1></e1> in the water supply was identified as the primary cause of the widespread outbreak of <e2><e2>diarrhea</e2></e2> in the affected community."
     },
     {
         "id": 2051,
@@ -14571,7 +14571,7 @@
         "text": "breast milk <e1>vitamin b12</e1> concentration and incidence of <e2>diarrhea</e2> and respiratory infections among infants in urban tanzania: a prospective cohort study.objective: a recent trial of vitamin b12 supplementation among indian children 6-30 months found no effect on the incidence of diarrhea and respiratory infections.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] A recent study found that vitamin B12 deficiency is associated with a higher risk of <e2>diarrhea</e2> and respiratory infections in children under the age of 5. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] A recent study found that <e1>vitamin b12</e1> deficiency is associated with a higher risk of <e2>diarrhea</e2> and respiratory infections in children under the age of 5. [SEP]"
     },
     {
         "id": 2082,
@@ -14585,7 +14585,7 @@
         "text": "objective: we evaluated and compared the efficacy of the <e1>world health organization (who) oral rehydration solution (ors)</e1> and 2 different formulations of reduced osmolarity orss in infants with persistent <e2>diarrhea</e2>.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] The World Health Organization (WHO) oral rehydration solution (ORS) is widely used to treat infants suffering from <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The <e1>world health organization (who) oral rehydration solution (ors)</e1> is widely used to treat infants suffering from <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 2084,
@@ -14676,7 +14676,7 @@
         "text": "when naloxone, 12 mg/kg, or <e1>sr 58002 c</e1>, 50 mg/kg, were given s.c. in combination with repeated morphine as above, mice which had received naloxone with morphine presented virtually no <e2>diarrhea</e2> or jumping upon naloxone challenge; those repeatedly treated with morphine plus sr 58002 c were substantially protected from naloxone-precipitated diarrhea, but not jumping.",
         "label": 8,
         "relation_name": "prevents",
-        "new_generation_response": "assistant\n\n[CLS] The new medication, SR 58002 C, prevents the onset of <e2>diarrhea</e2> in patients undergoing chemotherapy. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The new medication, <e1>sr 58002 c</e1>, prevents the onset of <e2>diarrhea</e2> in patients undergoing chemotherapy. [SEP]"
     },
     {
         "id": 2097,
@@ -14767,7 +14767,7 @@
         "text": "[resorption of <e1>hydrocarbons</e1> in the intestines in prolonged <e2>diarrhea</e2> in infants].",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistantassistant\n\n[CLS] [SEP] The doctor prescribed a medication that facilitates the resorption of <e1>hydrocarbons</e1> to effectively treats <e2>diarrhea</e2> in infants. [SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] [SEP] The doctor prescribed a medication that facilitates the resorption of <e1><e1>hydrocarbons</e1></e1> to effectively treats <e2><e2>diarrhea</e2></e2> in infants. [SEP]"
     },
     {
         "id": 2110,
@@ -14809,7 +14809,7 @@
         "text": "<e1>diarrhea</e1> among vietnamese <e2>refugees</e2> in the philippines.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistantassistant\n\n[CLS] Diarrhea is a common process of malnutrition among Vietnamese <e2>refugees</e2> in the Philippines. [SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>diarrhea</e1> is a common process of malnutrition among Vietnamese <e2>refugees</e2> in the Philippines. [SEP]"
     },
     {
         "id": 2116,
@@ -15075,7 +15075,7 @@
         "text": "cell damage caused by ultraviolet b radiation in the desert <e2>cyanobacterium</e2> <e1>phormidium tenue</e1> and its recovery process.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] The species Phormidium tenue is a <e2>cyanobacterium</e2> that has been found to have a unique ability to withstand extreme temperatures. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The species <e1>phormidium tenue</e1> is a <e2>cyanobacterium</e2> that has been found to have a unique ability to withstand extreme temperatures. [SEP]"
     },
     {
         "id": 2154,
@@ -15180,7 +15180,7 @@
         "text": "shigella sp are known to cause <e1>shigellosis</e1>, an <e2>acute enteric infection</e2> affecting over 164.7 million people accounting for 69% mortality in children below 5 years of age globally (kotloff et al., 1999; who, 2005) and 80% of these cases are registered in asia (bardhan et al., 2010). i",
         "label": 17,
         "relation_name": "type of",
-        "new_generation_response": "assistant\n\n[CLS] Shigellosis is a type of <e2>acute enteric infection</e2> that can be caused by contaminated food or water, highlighting the importance of proper hygiene practices in preventing its spread. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>shigellosis</e1> is a type of <e2>acute enteric infection</e2> that can be caused by contaminated food or water, highlighting the importance of proper hygiene practices in preventing its spread. [SEP]"
     },
     {
         "id": 2169,
@@ -15348,7 +15348,7 @@
         "text": "<e2>lactose intake</e2> was associated with <e1>diarrhea</e1>.",
         "label": 15,
         "relation_name": "coexists with",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea coexists with <e2>lactose intake</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> coexists with <e2>lactose intake</e2>. [SEP]"
     },
     {
         "id": 2193,
@@ -15369,7 +15369,7 @@
         "text": "the diagnosis was delayed because the main manifestations of c.f. were the same as the main symptoms of common <e2>disease</e2>s such as cough, <e1>diarrhea</e1> and failure to thrive.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a <e2>disease</e2> that affects millions of people worldwide, causing dehydration and malnutrition. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a <e2>disease</e2> that affects millions of people worldwide, causing dehydration and malnutrition. [SEP]"
     },
     {
         "id": 2196,
@@ -15509,7 +15509,7 @@
         "text": "<e1>cholera</e1> is a <e2>bacterial disease</e2>, its spread is strongly influenced by environmental factors and some socio-economic factors such as hygiene standards and nutrition of the population.",
         "label": 17,
         "relation_name": "type of",
-        "new_generation_response": "assistant\n\n[CLS] Cholera is a <e2>bacterial disease</e2>, and its spread is strongly influenced by environmental factors and some socio-economic factors such as hygiene standards and nutrition of the population. [SEP] \n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The doctor explained to the patient that <e1>cholera</e1> is a bacterial disease, which is why it's essential to maintain good hygiene standards to prevent its spread. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>cholera</e1> is a <e2>bacterial disease</e2>, and its spread is strongly influenced by environmental factors and some socio-economic factors such as hygiene standards and nutrition of the population. [SEP] \n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] The doctor explained to the patient that cholera is a bacterial disease, which is why it's essential to maintain good hygiene standards to prevent its spread. [SEP]"
     },
     {
         "id": 2216,
@@ -15558,7 +15558,7 @@
         "text": "household water treatment with <e1>chlorine</e1> can improve microbiological quality and reduce <e2>diarrhea</e2>.",
         "label": 13,
         "relation_name": "disrupts",
-        "new_generation_response": "assistant\n\n[CLS] Chlorine [SEP] disrupts the normal functioning of the gut, leading to an increased risk of <e2>diarrhea</e2>."
+        "new_generation_response": "assistant\n\n[CLS] <e1>chlorine</e1> [SEP] disrupts the normal functioning of the gut, leading to an increased risk of <e2>diarrhea</e2>."
     },
     {
         "id": 2223,
@@ -15628,7 +15628,7 @@
         "text": "<e1>isia</e1>, a chlorophyll    a    -binding <e2>cyanobacteria</e2>l protein, serves as an accessory antenna complex for photosystem i.",
         "label": 0,
         "relation_name": "interacts with",
-        "new_generation_response": "assistant\n\n[CLS] IsiA, a protein involved in iron homeostasis, interacts with <e2>cyanobacteria</e2> to regulate the expression of genes involved in iron acquisition. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>isia</e1>, a protein involved in iron homeostasis, interacts with <e2>cyanobacteria</e2> to regulate the expression of genes involved in iron acquisition. [SEP]"
     },
     {
         "id": 2233,
@@ -15656,7 +15656,7 @@
         "text": "pis are common among <e1>cyanobacteria</e1> and have been shown to negatively affect herbivorous <e2>zooplankton</e2>.",
         "label": 0,
         "relation_name": "interacts with",
-        "new_generation_response": "assistant\n\n[CLS] Cyanobacteria interacts with <e2>zooplankton</e2> in aquatic ecosystems, where they can form symbiotic relationships. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>cyanobacteria</e1> interacts with <e2>zooplankton</e2> in aquatic ecosystems, where they can form symbiotic relationships. [SEP]"
     },
     {
         "id": 2237,
@@ -15880,14 +15880,14 @@
         "text": "salinity tolerance of picochlorum atomus and the use of salinity for contamination control by the freshwater <e2>cyanobacterium</e2> <e1>pseudanabaena limnetica</e1>.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] The species Pseudanabaena limnetica is a <e2>cyanobacterium</e2> that can be found in freshwater environments. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The species <e1>pseudanabaena limnetica</e1> is a <e2>cyanobacterium</e2> that can be found in freshwater environments. [SEP]"
     },
     {
         "id": 2269,
         "text": "although the relative increase in intestinal permeability was similar in the two groups, by far the largest values for intestinal permeability were found among <e2>black african</e2>s with hiv/aids and <e1>diarrhea</e1>.",
         "label": 19,
         "relation_name": "process of",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is a process of black African. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is a process of <e2>black african</e2>. [SEP]"
     },
     {
         "id": 2270,
@@ -15901,7 +15901,7 @@
         "text": "<e2>diarrhea</e2> has led to discontinuation in 5 to 6% of patients treated with tolcapone and in 2.5% of those treated with <e1>entacapone</e1>.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Entacapone treats <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>entacapone</e1> treats <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 2272,
@@ -15929,14 +15929,14 @@
         "text": "some characteristics of cytochrome f in the <e2>cyanobacterium</e2> <e1>phormidium laminosum</e1>: its sequence and charge properties in the reaction with plastocyanin.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS] Phormidium laminosum is a <e2>cyanobacterium</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>phormidium laminosum</e1> is a <e2>cyanobacterium</e2>. [SEP]"
     },
     {
         "id": 2276,
         "text": "<e1>escherichia coli</e1>, an important fecal indicator bacterium, is known to persist and reproduce in association with cladophora and other <e2>macrophytic algae</e2> and environmental substrates",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] In aquatic ecosystems, Escherichia coli is often associated with <e2>macrophytic algae</e2>, which provide a habitat for the bacteria to thrive. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] In aquatic ecosystems, <e1>escherichia coli</e1> is often associated with <e2>macrophytic algae</e2>, which provide a habitat for the bacteria to thrive. [SEP]"
     },
     {
         "id": 2277,
@@ -16027,7 +16027,7 @@
         "text": "[biochemical and serological properties of <e1>proteus</e1> isolated in <e2>diarrhea</e2> in children].",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] [SEP] The recent outbreak of <e1>proteus</e1> infections is associated with <e2>diarrhea</e2> in several regions. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] [SEP] The recent outbreak of <e1><e1>proteus</e1></e1> infections is associated with <e2><e2>diarrhea</e2></e2> in several regions. [SEP]"
     },
     {
         "id": 2290,
@@ -16083,7 +16083,7 @@
         "text": "homologues for smta have been identified in a limited number of <e2>bacterial genome</e2>s from <e1>cyanobacteria</e1>, pseudomonads, alphaproteobacteria, gammaproteobacteria, and firmicutes.",
         "label": 5,
         "relation_name": "location of",
-        "new_generation_response": "assistant\n\n[CLS] Cyanobacteria are the location of <e2>bacterial genome</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>cyanobacteria</e1> are the location of <e2>bacterial genome</e2>. [SEP]"
     },
     {
         "id": 2298,
@@ -16188,7 +16188,7 @@
         "text": "intractable <e2>diarrhea</e2> due to <e1>whipple's disease</e1> in a saudi: report of a case and literature review.",
         "label": 22,
         "relation_name": "cause",
-        "new_generation_response": "assistant\n\n[CLS] The patient was diagnosed with Whipple's disease, which was the underlying cause of the intractable <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The patient was diagnosed with <e1>whipple's disease</e1>, which was the underlying cause of the intractable <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 2313,
@@ -16328,7 +16328,7 @@
         "text": "a distinct and reproducible co-occurrence pattern of environmental 16s <e1>rrna gene</e1> sequences of the mgmjr-022 clade and <e2>cyanobacteria</e2> in the suboxic zone of hypersaline mats points to a specific dependence of members of this clade on decaying cyanobacteria.",
         "label": 0,
         "relation_name": "interacts with",
-        "new_generation_response": "assistant\n\n[CLS] The presence of 16S rRNA gene sequences of the MGMJR-022 clade in the rhizosphere of certain plants suggests that these microorganisms interacts with <e2>cyanobacteria</e2> to facilitate nutrient exchange. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The presence of 16S <e1>rrna gene</e1> sequences of the MGMJR-022 clade in the rhizosphere of certain plants suggests that these microorganisms interacts with <e2>cyanobacteria</e2> to facilitate nutrient exchange. [SEP]"
     },
     {
         "id": 2333,
@@ -16454,7 +16454,7 @@
         "text": "low body weight: a simple indicator of the risk of <e2>dehydration</e2> among children with <e1>diarrhea</e1>.",
         "label": 3,
         "relation_name": "predisposes",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea predisposes children to <e2>dehydration</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> predisposes children to <e2>dehydration</e2>. [SEP]"
     },
     {
         "id": 2351,
@@ -16510,7 +16510,7 @@
         "text": "the families    <e1>alcaligenaceae</e1>    ,    bacteroidaceae    , and    porphyromonadaceae     were more abundant in children with constipation, whereas the relative abundance of the    clostridium     genus was higher in those with <e2>diarrhea</e2>.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] The new strain of bacteria, Alcaligenaceae, was associated with a higher incidence of <e2>diarrhea</e2> in patients with compromised immune systems. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The new strain of bacteria, <e1>alcaligenaceae</e1>, was associated with a higher incidence of <e2>diarrhea</e2> in patients with compromised immune systems. [SEP]"
     },
     {
         "id": 2359,
@@ -16762,7 +16762,7 @@
         "text": "<e2>clostridium difficile infection</e2> in children hospitalized due to <e1>diarrhea</e1>.",
         "label": 22,
         "relation_name": "cause",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea [e1] is a common cause of Clostridium difficile infection [e2] in elderly patients. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> [e1] is a common cause of <e2>clostridium difficile infection</e2> [e2] in elderly patients. [SEP]"
     },
     {
         "id": 2395,
@@ -16776,14 +16776,14 @@
         "text": "<e1>glycinuria</e1> following administration of glycine-supplemented oral rehydration solution in rotavirus <e2>diarrhea</e2>.",
         "label": 15,
         "relation_name": "coexists with",
-        "new_generation_response": "assistant\n\n[CLS] Glycinuria [SEP] coexists with [SEP] <e2>diarrhea</e2> [SEP] in patients with impaired renal function. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>glycinuria</e1> [SEP] coexists with [SEP] <e2>diarrhea</e2> [SEP] in patients with impaired renal function. [SEP]"
     },
     {
         "id": 2397,
         "text": "microcystins (mc) and nodularin (nod) are <e2>toxin</e2>s released by <e1>cyanobacteria</e1> during harmful algal blooms.",
         "label": 14,
         "relation_name": "produces",
-        "new_generation_response": "assistant\n\n[CLS] Cyanobacteria produces <e2>toxin</e2> during the process of photosynthesis, which is essential for their survival. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>cyanobacteria</e1> produces <e2>toxin</e2> during the process of photosynthesis, which is essential for their survival. [SEP]"
     },
     {
         "id": 2398,
@@ -16916,7 +16916,7 @@
         "text": "<e1>sucralfate</e1> therapy for choleretic <e2>diarrhea</e2>.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Sucralfate [e1]<e1>sucralfate</e1>[/e1] is often prescribed to [e2]<e2>diarrhea</e2>[/e2] patients to alleviate symptoms. [SEP]\n\nIn this new sentence, the relationship between the entities remains the same, with sucralfate treating diarrhea."
+        "new_generation_response": "assistant\n\n[CLS] <e1>sucralfate</e1> [e1]sucralfate[/e1] is often prescribed to [e2]<e2>diarrhea</e2>[/e2] patients to alleviate symptoms. [SEP]\n\nIn this new sentence, the relationship between the entities remains the same, with sucralfate treating diarrhea."
     },
     {
         "id": 2417,
@@ -17203,7 +17203,7 @@
         "text": "through this study, the significant benefits of sodium selenite supplementation with regards to <e1>selenium deficiency</e1> and radiotherapy induced <e2>diarrhea</e2> in patients with cervical and uterine cancer has been shown for the first time in a prospective randomized trial.",
         "label": 22,
         "relation_name": "cause",
-        "new_generation_response": "assistant\n\n[CLS] Selenium deficiency [e1] can cause [e2] <e2>diarrhea</e2> [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>selenium deficiency</e1> [e1] can cause [e2] <e2>diarrhea</e2> [SEP]"
     },
     {
         "id": 2458,
@@ -17231,14 +17231,14 @@
         "text": "14 were switched to levodopa/<e1>carbidopa</e1> with resolution of <e2>diarrhea</e2> in 9 but symptom recurrence in 5.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Carbidopa treats <e2>diarrhea</e2> in patients with Parkinson's disease by reducing the severity of symptoms. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>carbidopa</e1> treats <e2>diarrhea</e2> in patients with Parkinson's disease by reducing the severity of symptoms. [SEP]"
     },
     {
         "id": 2462,
         "text": "tripotassium citrate can safely replace <e1>sodium bicarbonate</e1> and potassium chloride and may be the most useful and beneficial treatment for <e2>diarrhea</e2> and associated hypokalaemia.",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Sodium bicarbonate treats <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>sodium bicarbonate</e1> treats <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 2463,
@@ -17252,7 +17252,7 @@
         "text": "<e1>diarrhea</e1> associated with <e2>pancreatic disease</e2>.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] Diarrhea is often associated with <e2>pancreatic disease</e2> in patients with a history of gastrointestinal disorders. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>diarrhea</e1> is often associated with <e2>pancreatic disease</e2> in patients with a history of gastrointestinal disorders. [SEP]"
     },
     {
         "id": 2465,
@@ -17266,7 +17266,7 @@
         "text": "<e1>brachyspira</e1> is associated with <e2>diarrhea</e2> and colitis in pigs, and control of these pathogens is complicated by their complex ecology.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] Brachyspira is associated with <e2>diarrhea</e2> and colitis in humans, and control of these pathogens is complicated by their complex ecology. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>brachyspira</e1> is associated with <e2>diarrhea</e2> and colitis in humans, and control of these pathogens is complicated by their complex ecology. [SEP]"
     },
     {
         "id": 2467,
@@ -18477,7 +18477,7 @@
         "text": "while this is the first report of a umuc-like homolog in an archeon, we detected additional homologs using protein sequence comparisons in <e2>gram-positive bacteria</e2>, <e1>cyanobacteria</e1>, and among potential human est products, indicating that umuc-related proteins comprise a ubiquitous superfamily of proteins probably involved in dna repair and mutagenesis.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistantassistant\n\n[CLS] Cyanobacteria is a Gram-positive bacteria, and both are capable of producing toxins that can harm human health, indicating that these microorganisms comprise a diverse group of pathogens probably involved in various diseases and infections.[SEP]"
+        "new_generation_response": "assistantassistant\n\n[CLS] <e1>cyanobacteria</e1> is a <e2>gram-positive bacteria</e2>, and both are capable of producing toxins that can harm human health, indicating that these microorganisms comprise a diverse group of pathogens probably involved in various diseases and infections.[SEP]"
     },
     {
         "id": 2640,
@@ -19191,7 +19191,7 @@
         "text": "[effects of <e1>chenodeoxycholic acid</e1> (cdca) and ursodeoxycholic (udca) to glucose transport in hamster small intestine in vitro--a study on the mechanism of <e2>diarrhea</e2> due to cdca therapy (author's transl)].",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] Chenodeoxycholic acid is used to treat <e2>diarrhea</e2> in patients with certain gallstone diseases. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>chenodeoxycholic acid</e1> is used to treat <e2>diarrhea</e2> in patients with certain gallstone diseases. [SEP]"
     },
     {
         "id": 2742,
@@ -20094,7 +20094,7 @@
         "text": "the concentration of mib and the biomass of mib-producing <e2>cyanobacteria</e2> <e1>planktothrix</e1> were measured (n = 887) at different sites and depths during different seasons.",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\n[CLS]The species Planktothrix is a type of <e2>cyanobacteria</e2> that can be found in various freshwater environments.[SEP]"
+        "new_generation_response": "assistant\n\n[CLS]The species <e1>planktothrix</e1> is a type of <e2>cyanobacteria</e2> that can be found in various freshwater environments.[SEP]"
     },
     {
         "id": 2871,
@@ -21704,7 +21704,7 @@
         "text": "however, the antibiotic activity of doxycycline can create an <e1>imbalance</e1> of the intestinal flora, resulting in <e2>diarrhea</e2> and in a smaller number of animals in colitis.",
         "label": 22,
         "relation_name": "cause",
-        "new_generation_response": "assistant\n\n[CLS]However, the antibiotic activity of doxycycline can create an imbalance of the intestinal flora, resulting in diarrhea and in a smaller number of animals in colitis.[SEP]\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS]The prolonged use of doxycycline can lead to an <e1>imbalance</e1> of the gut microbiome, which in turn may <e2>cause</e2> diarrhea in some patients.[SEP]\n\nIn this new sentence, the relationship between the entities \"imbalance\" and \"diarrhea\" is still \"cause\", where the imbalance (e1) causes diarrhea (e2)."
+        "new_generation_response": "assistant\n\n[CLS]However, the antibiotic activity of doxycycline can create an <e1>imbalance</e1> of the intestinal flora, resulting in <e2>diarrhea</e2> and in a smaller number of animals in colitis.[SEP]\n\nHere is a new sentence with the same entities and relationship:\n\n [CLS]The prolonged use of doxycycline can lead to an <e1>imbalance</e1> of the gut microbiome, which in turn may <e2>cause</e2> diarrhea in some patients.[SEP]\n\nIn this new sentence, the relationship between the entities \"imbalance\" and \"diarrhea\" is still \"cause\", where the imbalance (e1) causes diarrhea (e2)."
     },
     {
         "id": 3101,
@@ -21914,7 +21914,7 @@
         "text": "the causes of potassium wasting were <e1>diarrhea</e1> (n=4), alcohol abuse (n=2), pseudoaldosteronism (n=2), primary aldosteronism (n=1), distal renal tubular acidosis associated with <e2>sjogren's syndrome</e2> (n=1) and an unknown cause (n=1).",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] The patient's symptoms of dry eyes and mouth were associated with Sjogren's syndrome, which was further complicated by <e1>diarrhea</e1> due to a gastrointestinal infection. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The patient's symptoms of dry eyes and mouth were associated with <e2>sjogren's syndrome</e2>, which was further complicated by <e1>diarrhea</e1> due to a gastrointestinal infection. [SEP]"
     },
     {
         "id": 3131,
@@ -22705,7 +22705,7 @@
         "text": "palytoxin (pltx) is a complex marine toxin produced by zoanthids (palyhtoa), dinoflagellates (ostreopsis), and <e2>cyanobacteria</e2> (<e1>trichodesmium</e1>).",
         "label": 7,
         "relation_name": "is a",
-        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] Trichodesmium is a type of <e2>cyanobacteria</e2> that can form large blooms in tropical waters.[SEP]\n\nIn this sentence, the relationship \"is a\" is preserved, with \"Trichodesmium\" (e1) being a type of \"cyanobacteria\" (e2)."
+        "new_generation_response": "assistant\n\nHere is a new sentence with the same entities and relationship:\n\n[CLS] <e1>trichodesmium</e1> is a type of <e2>cyanobacteria</e2> that can form large blooms in tropical waters.[SEP]\n\nIn this sentence, the relationship \"is a\" is preserved, with \"Trichodesmium\" (e1) being a type of \"cyanobacteria\" (e2)."
     },
     {
         "id": 3244,
@@ -27129,7 +27129,7 @@
         "text": "the crosstalk between the cyclic nucleotide-dependent protein kinase/cystic fibrosis transmembrane conductance regulator (camp or cgmp/<e1>cftr</e1>) pathway involved in etec-induced <e2>diarrhea</e2> channels, and the canonical wnt/beta-catenin signaling pathway leads to changes in intestinal stem cell (isc) fates, which are strongly associated with developmental disorders caused by diarrhea.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] The research highlights that mutations in the CFTR gene are associated with respiratory complications, and the study of CFTR's role in the regulation of epithelial transport is crucial for understanding the mechanisms underlying cystic fibrosis, which is often associated with <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] The research highlights that mutations in the <e1>cftr</e1> gene are associated with respiratory complications, and the study of CFTR's role in the regulation of epithelial transport is crucial for understanding the mechanisms underlying cystic fibrosis, which is often associated with <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 3876,
