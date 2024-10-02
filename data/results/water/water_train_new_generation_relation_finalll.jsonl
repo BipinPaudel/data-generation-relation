@@ -7431,7 +7431,7 @@
         "text": "[contribution to the treatment of <e2>diarrhea</e2>s with <e1>mexaform</e1>].",
         "label": 21,
         "relation_name": "treats",
-        "new_generation_response": "assistant\n\n[CLS] <e1>mexaform</e1> [SEP] is often prescribed to effectively treats <e2>diarrhea</e2>. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e1>mexaform</e1> is often prescribed to effectively treats <e2>diarrhea</e2>. [SEP]"
     },
     {
         "id": 1062,
@@ -8033,7 +8033,7 @@
         "text": "<e2>cyclosporiasis</e2> associated with <e1>diarrhea</e1> in an immunocompetent patient in turkey.",
         "label": 1,
         "relation_name": "associated with",
-        "new_generation_response": "assistant\n\n[CLS] <e2>cyclosporiasis</e2> [SEP] is a disease associated with <e1>diarrhea</e1> in travelers returning from mexico. [SEP]"
+        "new_generation_response": "assistant\n\n[CLS] <e2>cyclosporiasis</e2> is a disease associated with <e1>diarrhea</e1> in travelers returning from mexico. [SEP]"
     },
     {
         "id": 1148,
