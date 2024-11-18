@@ -77,7 +77,7 @@ def run_new_generation_experiment(cfg, dataset, data_type):
         write_json_lists_to_file(filename, dataset_list)
         
 def run_pseudo_label_experiment(cfg, dataset, datatype):
-    dataset_list, id_relation_dict = read_relation_data(dataset=dataset, data_type=datatype)
+    dataset_list, id_relation_dict = read_relation_data_from_final_file(dataset=dataset, datatype=datatype)
     prompts = []
     predefined_relations = list(id_relation_dict.values())
     prompt_obj = get_prompt_obj(dataset)
@@ -86,7 +86,7 @@ def run_pseudo_label_experiment(cfg, dataset, datatype):
         prompts.append(prompt)
     max_workers = 4
     model = get_model(cfg.gen_model)
-    
+    model_name = cfg.gen_model.name.split('/')[-1]
     results = model.predict_multi(prompts, max_workers=max_workers)
     results_temp = []
     for res in tqdm(results):
@@ -99,7 +99,7 @@ def run_pseudo_label_experiment(cfg, dataset, datatype):
             data = dataset_list[i]
             data['pseudo_label_prediction'] = r
             dataset_list[i]  = data
-        filename = f"data/results/{dataset}_{datatype}_psuedo_label_prediction_relation.jsonl"
+        filename = f"data/results/{dataset}/{dataset}_{datatype}_psuedo_label_prediction_relation_{model_name}.jsonl"
         write_json_lists_to_file(filename, dataset_list)
     
     
@@ -143,7 +143,6 @@ def fix_new_gen_remaining(cfg, dataset):
         
 def run_few_shot_pseudo_label_experiment(cfg, dataset, data_type):
     
-    
     dataset_list, id_relation_dict = read_relation_data_from_final_file(dataset=dataset, datatype=data_type)
     sent_model = SimcseModel(id_relation_dict, dataset=dataset)
     
@@ -175,5 +174,5 @@ def run_few_shot_pseudo_label_experiment(cfg, dataset, data_type):
             data = dataset_list[i]
             data['few_shot_pseudo_label_prediction'] = r
             dataset_list[i]  = data
-        filename = f"data/results/{dataset}_{data_type}_15shot_label_{model_name}.json"
+        filename = f"data/results/{dataset}/{data_type}_10shot_label_{model_name}.json"
         write_json_lists_to_file(filename, dataset_list)

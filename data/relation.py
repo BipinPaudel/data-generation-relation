@@ -63,8 +63,11 @@ def read_relation_data_from_final_file(dataset='semeval', datatype='train'):
         labelpath = f'data/{dataset}/{datatype}_label_id.json'
         relation2id_filename = f'data/{dataset}/relation2id.json'
     elif dataset == 'semeval':
-        filepath = "/home/n/ngautam/researchscripts/#CustomAUMST/data/test_sentence.json"
-        labelpath = "/home/n/ngautam/researchscripts/#CustomAUMST/data/test_label_id.json"
+        # filepath = "/home/n/ngautam/researchscripts/#CustomAUMST/data/test_sentence.json"
+        # labelpath = "/home/n/ngautam/researchscripts/#CustomAUMST/data/test_label_id.json"
+        
+        filepath = f"data/{datatype}_sentence.json"
+        labelpath = f"data/{datatype}_label_id.json"
         relation2id_filename = 'data/relation2id.json'
     elif dataset == 'water':
         return read_relation_data(dataset, datatype)

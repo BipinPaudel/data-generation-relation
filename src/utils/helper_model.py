@@ -15,8 +15,10 @@ class SimcseModel:
 
     def generate_sim_cse_model(self, ):
         if self.dataset == 'semeval':
-            data = read_json('/home/n/ngautam/researchscripts/MetaSRE/data/SemEval/train_sentence.json')
-            data2 = read_json('/home/n/ngautam/researchscripts/MetaSRE/data/SemEval/train_label_id.json')
+            # data = read_json('/home/n/ngautam/researchscripts/MetaSRE/data/SemEval/train_sentence.json')
+            # data2 = read_json('/home/n/ngautam/researchscripts/MetaSRE/data/SemEval/train_label_id.json')
+            data = read_json('data/train_sentence.json')
+            data2 = read_json('data/train_label_id.json')
         elif self.dataset == 'tacred':
             data = read_json('data/tacred/train_sentence.json')
             data2 = read_json('data/tacred/train_label_id.json')
