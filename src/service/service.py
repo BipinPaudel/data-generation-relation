@@ -24,6 +24,9 @@ def run_experiment(cfg, experiment, dataset, data_type):
     elif experiment == Experiment.FEW_SHOT_PSEUDO_LABEL_GENERATION.value:
         run_few_shot_pseudo_label_experiment(cfg, dataset, data_type)
         
+    elif experiment == Experiment.ADD_SIMSCE_TO_DATA.value:
+        add_simcse_to_data(cfg, dataset, data_type)
+        
 
 def run_rephrase_experiment(cfg, dataset, data_type):
     dataset_list = read_relation_data(dataset=dataset, data_type=data_type)
@@ -176,3 +179,21 @@ def run_few_shot_pseudo_label_experiment(cfg, dataset, data_type):
             dataset_list[i]  = data
         filename = f"data/results/{dataset}/{data_type}_10shot_label_{model_name}.json"
         write_json_lists_to_file(filename, dataset_list)
+
+
+def add_simcse_to_data(cfg, dataset, data_type):
+    dataset_list, id_relation_dict = read_relation_data_from_final_file(dataset=dataset, datatype=data_type)
+    sent_model = SimcseModel(id_relation_dict, dataset=dataset)
+    
+
+    predefined_relations = list(id_relation_dict.values())
+    prompt_obj = get_prompt_obj(dataset)
+    prompts = []
+    for ds in dataset_list:
+        ex = sent_model.get_sim_examples(ds['text']) #This comes from sim eval prompt
+
+        prompt = prompt_obj.generate_few_shot_pseudo_label(ds['text'], predefined_relations, id_relation_dict, ex)
+
+        ds['prompt'] = str(prompt)
+    filename = f"data/results/{dataset}/{data_type}_simcse_prompt.json"
+    write_json_lists_to_file(filename, dataset_list)

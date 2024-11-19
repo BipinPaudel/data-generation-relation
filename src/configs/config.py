@@ -9,6 +9,7 @@ class Experiment(Enum):
     PSEUDO_LABEL_GENERATION = 'psuedo_label_generation'
     FIX_NEW_GEN_REMAINING = 'fix_new_gen_remaining'
     FEW_SHOT_PSEUDO_LABEL_GENERATION = 'few_shot_psuedo_label_generation'
+    ADD_SIMSCE_TO_DATA = 'add_simcse_results_to_data'
 
 class PredefinedRelations:
     RELATIONS = [
