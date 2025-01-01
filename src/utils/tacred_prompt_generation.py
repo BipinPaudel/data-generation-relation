@@ -44,7 +44,7 @@ class TacredPrompt:
         
         footer = "Please output the relationship between entities in the format below:\n <relation> </relation>\n "\
                 f"Select only one option from the predefined relations list given in the list below: \n{predefined_relations}\n" \
-                    "The relationship in the list denote the flow of relation from entity e1 to e2 or e2 to e1. "\
+                    "The relationship in the list denote how entity e1 is related to e2 separated by a colon(:) . "\
                 "Also, output the confidence score (0-1) indicating your certainty about the relationship inside the <confidence> tag."
         
         footer += f"\nTest Sentence:\n{original_text}\n is"
@@ -74,7 +74,7 @@ class TacredPrompt:
 
         footer = "Please output the relationship between entities in the format below:\n <relation> </relation>\n "\
         f"Select only one option from the predefined relations list given in the list below: \n{predefined_relations}\n " \
-        "The relationship in the list denote the flow of relation from entity e1 to e2 or e2 to e1. "\
+        "The relationship in the list denote how entity e1 is related to e2 separated by a colon(:). "\
         "Also, output the confidence score (0-1) indicating your certainty about the relationship inside the <confidence> tag."\
         "Use the following demonstrations as examples:"
 

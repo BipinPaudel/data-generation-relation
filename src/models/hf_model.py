@@ -5,7 +5,7 @@ from src.prompts import Prompt
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from .model import BaseModel
 from transformers import BitsAndBytesConfig
-
+import torch
 class HFModel(BaseModel):
     curr_models: Dict[str, AutoModelForCausalLM] = {}
 
@@ -14,16 +14,16 @@ class HFModel(BaseModel):
         if (
             config.name not in self.curr_models
         ):  # Hacky but avoids loading the same model multiple times
-            # bnb_config = BitsAndBytesConfig(
-            #     load_in_8bit=True,  # or load_in_8bit=True
-            #     bnb_8bit_compute_dtype=torch.float16,  # Specify compute dtype
-            # )
+            bnb_config = BitsAndBytesConfig(
+                load_in_8bit=True,  # or load_in_8bit=True
+                bnb_8bit_compute_dtype=torch.float16,  # Specify compute dtype
+            )
             self.curr_models[config.name] = AutoModelForCausalLM.from_pretrained(
                 config.name,
                 torch_dtype=(
                     torch.float16 if config.dtype == "float16" else torch.float32
                 ),
-                # quantization_config=bnb_config,
+                quantization_config=bnb_config,
                 device_map=config.device,
             )
         
@@ -62,11 +62,11 @@ class HFModel(BaseModel):
         return self.tokenizer.decode(out_ids[0], skip_special_tokens=True).strip()
 
     def predict_multi(
-        self, inputs: List[Prompt], **kwargs
+        self, inputs: List[str], **kwargs
     ) -> Iterator[Tuple[Prompt, str]]:
         new_inputs = []
         for input in inputs:
-            text = input.get_prompt().rstrip()
+            text = input.get_prompt().rstrip()#input.rstrip()#input.get_prompt().rstrip()
             new_inputs.append(self.apply_model_template(text))
 
         if "max_workers" in kwargs:

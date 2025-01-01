@@ -87,11 +87,12 @@ def run_pseudo_label_experiment(cfg, dataset, datatype):
     for data in dataset_list:
         prompt = prompt_obj.generate_pseudo_label(data['text'],  predefined_relations)
         prompts.append(prompt)
-    max_workers = 4
+    max_workers = 2
     model = get_model(cfg.gen_model)
     model_name = cfg.gen_model.name.split('/')[-1]
     results = model.predict_multi(prompts, max_workers=max_workers)
     results_temp = []
+    yo = 0
     for res in tqdm(results):
         print('----------********-------')
         print(res[1])
@@ -102,8 +103,12 @@ def run_pseudo_label_experiment(cfg, dataset, datatype):
             data = dataset_list[i]
             data['pseudo_label_prediction'] = r
             dataset_list[i]  = data
-        filename = f"data/results/{dataset}/{dataset}_{datatype}_psuedo_label_prediction_relation_{model_name}.jsonl"
-        write_json_lists_to_file(filename, dataset_list)
+        yo += 1
+        if yo % 100 == 0:
+            filename = f"data/results/{dataset}/{dataset}_{datatype}_psuedo_label_prediction_relation_{model_name}.jsonl"
+            write_json_lists_to_file(filename, dataset_list)
+    filename = f"data/results/{dataset}/{dataset}_{datatype}_psuedo_label_prediction_relation_{model_name}.jsonl"
+    write_json_lists_to_file(filename, dataset_list)
     
     
 def fix_new_gen_remaining(cfg, dataset):
@@ -146,30 +151,35 @@ def fix_new_gen_remaining(cfg, dataset):
         
 def run_few_shot_pseudo_label_experiment(cfg, dataset, data_type):
     
-    dataset_list, id_relation_dict = read_relation_data_from_final_file(dataset=dataset, datatype=data_type)
-    sent_model = SimcseModel(id_relation_dict, dataset=dataset)
+    # dataset_list, id_relation_dict = read_relation_data_from_final_file(dataset=dataset, datatype=data_type)
     
-
-    predefined_relations = list(id_relation_dict.values())
-    prompt_obj = get_prompt_obj(dataset)
+    
+    dataset_list = read_json(f'data/results/{dataset}/test_simcse_prompt.json')
+    # predefined_relations = list(id_relation_dict.values())
+    # prompt_obj = get_prompt_obj(dataset)
     prompts = []
+    # dataset_list = [i for i in dataset_list if i['id']>=6320]
+    i = 0
+    # sent_model = SimcseModel(id_relation_dict, dataset=dataset)
     for ds in dataset_list:
-        ex = sent_model.get_sim_examples(ds['text']) #This comes from sim eval prompt
-
-        prompt = prompt_obj.generate_few_shot_pseudo_label(ds['text'], predefined_relations, id_relation_dict, ex)
-
+        # ex = sent_model.get_sim_examples(ds['text']) #This comes from sim eval prompt
+        if i % 50 == 0:
+            print(f"I done: {i}")
+        # prompt = prompt_obj.generate_few_shot_pseudo_label(ds['text'], predefined_relations, id_relation_dict, ex)
+        prompt = ds['prompt']
+        i += 1
         prompts.append(prompt)
 
     
     model_name = cfg.gen_model.name.split('/')[-1]
-    max_workers = 4
+    max_workers = 2
     model = get_model(cfg.gen_model)
-    
     results = model.predict_multi(prompts, max_workers=max_workers)
     results_temp = []
+    yo = 0
     for res in tqdm(results):
         print('----------********-------')
-        print(res[1])
+        # print(res[1])
         print('----------********-------\n\n\n')
         results_temp.append(res[1])
     
@@ -177,8 +187,12 @@ def run_few_shot_pseudo_label_experiment(cfg, dataset, data_type):
             data = dataset_list[i]
             data['few_shot_pseudo_label_prediction'] = r
             dataset_list[i]  = data
-        filename = f"data/results/{dataset}/{data_type}_10shot_label_{model_name}.json"
-        write_json_lists_to_file(filename, dataset_list)
+        yo += 1
+        if yo % 60 == 0:
+            filename = f"data/results/{dataset}/{dataset}_{data_type}_15shot_label_{model_name}.json"
+            write_json_lists_to_file(filename, dataset_list)
+    filename = f"data/results/{dataset}/{dataset}_{data_type}_15shot_label_{model_name}.json"
+    write_json_lists_to_file(filename, dataset_list)
 
 
 def add_simcse_to_data(cfg, dataset, data_type):
