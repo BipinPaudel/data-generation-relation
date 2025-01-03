@@ -51,8 +51,8 @@ class SimcseModel:
         self.label_idx = label_idx
         return self.model
     
-    def get_sim_examples(self, text):
-        shot = 16
+    def get_sim_examples(self, text, shot):
+        shot += 1
         results = self.model.search(text, threshold=0.0, top_k=shot+5)
 
         if results != []:

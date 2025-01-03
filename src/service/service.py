@@ -22,7 +22,9 @@ def run_experiment(cfg, experiment, dataset, data_type):
         fix_new_gen_remaining(cfg, dataset)
 
     elif experiment == Experiment.FEW_SHOT_PSEUDO_LABEL_GENERATION.value:
-        run_few_shot_pseudo_label_experiment(cfg, dataset, data_type)
+        shots = [1, 5,10,20]
+        for shot in shots:
+            run_few_shot_pseudo_label_experiment(cfg, dataset, data_type, shot=shot)
         
     elif experiment == Experiment.ADD_SIMSCE_TO_DATA.value:
         add_simcse_to_data(cfg, dataset, data_type)
@@ -149,30 +151,30 @@ def fix_new_gen_remaining(cfg, dataset):
         filename = "data/results/new_generation_relation_remaining1.jsonl"
         write_json_lists_to_file(filename, dataset_list)
         
-def run_few_shot_pseudo_label_experiment(cfg, dataset, data_type):
+def run_few_shot_pseudo_label_experiment(cfg, dataset, data_type, shot=15):
     
-    # dataset_list, id_relation_dict = read_relation_data_from_final_file(dataset=dataset, datatype=data_type)
+    dataset_list, id_relation_dict = read_relation_data_from_final_file(dataset=dataset, datatype=data_type)
     
     
-    dataset_list = read_json(f'data/results/{dataset}/test_simcse_prompt.json')
-    # predefined_relations = list(id_relation_dict.values())
-    # prompt_obj = get_prompt_obj(dataset)
+    # dataset_list = read_json(f'data/results/{dataset}/test_simcse_prompt.json')
+    predefined_relations = list(id_relation_dict.values())
+    prompt_obj = get_prompt_obj(dataset)
     prompts = []
     # dataset_list = [i for i in dataset_list if i['id']>=6320]
     i = 0
-    # sent_model = SimcseModel(id_relation_dict, dataset=dataset)
+    sent_model = SimcseModel(id_relation_dict, dataset=dataset)
     for ds in dataset_list:
-        # ex = sent_model.get_sim_examples(ds['text']) #This comes from sim eval prompt
+        ex = sent_model.get_sim_examples(ds['text'], shot=shot) #This comes from sim eval prompt
         if i % 50 == 0:
             print(f"I done: {i}")
-        # prompt = prompt_obj.generate_few_shot_pseudo_label(ds['text'], predefined_relations, id_relation_dict, ex)
-        prompt = ds['prompt']
+        prompt = prompt_obj.generate_few_shot_pseudo_label(ds['text'], predefined_relations, id_relation_dict, ex)
+        # prompt = ds['prompt']
         i += 1
         prompts.append(prompt)
 
     
     model_name = cfg.gen_model.name.split('/')[-1]
-    max_workers = 2
+    max_workers = 4
     model = get_model(cfg.gen_model)
     results = model.predict_multi(prompts, max_workers=max_workers)
     results_temp = []
