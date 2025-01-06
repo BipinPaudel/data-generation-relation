@@ -191,9 +191,9 @@ def run_few_shot_pseudo_label_experiment(cfg, dataset, data_type, shot=15):
             dataset_list[i]  = data
         yo += 1
         if yo % 60 == 0:
-            filename = f"data/results/{dataset}/{dataset}_{data_type}_15shot_label_{model_name}.json"
+            filename = f"data/results/{dataset}/{dataset}_{data_type}_{shot}shot_label_{model_name}.json"
             write_json_lists_to_file(filename, dataset_list)
-    filename = f"data/results/{dataset}/{dataset}_{data_type}_15shot_label_{model_name}.json"
+    filename = f"data/results/{dataset}/{dataset}_{data_type}_{shot}shot_label_{model_name}.json"
     write_json_lists_to_file(filename, dataset_list)
 
 
