@@ -22,7 +22,7 @@ def run_experiment(cfg, experiment, dataset, data_type):
         fix_new_gen_remaining(cfg, dataset)
 
     elif experiment == Experiment.FEW_SHOT_PSEUDO_LABEL_GENERATION.value:
-        shots = [1, 5,10,20]
+        shots = [5]
         for shot in shots:
             run_few_shot_pseudo_label_experiment(cfg, dataset, data_type, shot=shot)
         
@@ -57,7 +57,7 @@ def run_rephrase_experiment(cfg, dataset, data_type):
 def run_new_generation_experiment(cfg, dataset, data_type):
     dataset_list, id_relation_dict = read_relation_data(dataset=dataset, data_type=data_type)
     prompt_obj = get_prompt_obj(dataset)
-    dataset_list = [js for js in dataset_list if js['id'] >= 1456]
+    dataset_list = [js for js in dataset_list if js['id'] >= 7501]
     prompts = []
     for data in dataset_list:
         prompt = prompt_obj.new_sentence_generation(data['text'], data['relation_name'])
@@ -163,6 +163,7 @@ def run_few_shot_pseudo_label_experiment(cfg, dataset, data_type, shot=15):
     # dataset_list = [i for i in dataset_list if i['id']>=6320]
     i = 0
     sent_model = SimcseModel(id_relation_dict, dataset=dataset)
+    # dataset_list = [i for i in dataset_list if i['id']>7499]
     for ds in dataset_list:
         ex = sent_model.get_sim_examples(ds['text'], shot=shot) #This comes from sim eval prompt
         if i % 50 == 0:
